@@ -1,0 +1,25 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{ site.baseurl }}/"><i class="fa fa-check-square-o text-success"></i> {{ site.title }}</a>
+		</div>
+		
+
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li {% if current[1] == 'methods' %}class="active"{% endif %}><a class="page-link" href="/methods/">Methods</a></li>
+				<li {% if current[1] == 'properties' %}class="active"{% endif %}><a class="page-link" href="/properties/">Properties</a></li>
+				<li {% if current[1] == 'upload-files' %}class="active"{% endif %}><a class="page-link" href="/upload-files/">Upload Files</a></li>
+				<li {% if current[1] == 'fastform' %}class="active"{% endif %}><a class="page-link" href="/fastform/">FastForm</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
