@@ -506,6 +506,8 @@ If you enter the wrong path to HTML Purifier, Formr will use the default cleanin
 
 The following table contains all of Formr's validation rules for the `post()` method.
 
+<div class="row">
+<div class="col-sm-12 table-responsive">
 <table class="table table-striped table-bordered table-hover">
 <tr>
 <th align="left">Rule</th>
@@ -652,3 +654,5 @@ The following table contains all of Formr's validation rules for the `post()` me
 <td class="td">&nbsp;</td>
 </tr>
 </table>
+</div>
+</div>
