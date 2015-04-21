@@ -1212,15 +1212,109 @@ This is different from the <code>error_messages()</code> method in that this met
 
 
 
-## form_info()
 
-Prints out the settings of your form. Try it!
 
+
+## send_email()
+
+Sends a **very basic** HTML or plain-text email using PHP's `mail()` function. Optionally loops though the contents of the `$_POST` array and prints the `key` / `value` pair in the email.
+
+1. The first parameter is the recipient's email address and is required.
+1. The second parameter is the email subject and is required.
+1. The third parameter contains the message body and is required.
+1. The fourth parameter is optional and contains a 'from' email address.
+1. The optional fifth parameter is binary; set to `TRUE` if you'd like to send the email in HTML.
+
+### Example: Send a Plain-Text Email
 {% highlight php startinline %}
-$form->form_info();
+$to      = 'recipient@email.com';
+$subject = 'Ahoy, Matey!';
+$message = 'Welcome to our website!...';
+
+$form->send_email($to, $subject, $message);
 {% endhighlight %}
 
 
+
+### Example: Send an HTML Email with a Return Address
+{% highlight php startinline %}
+$to      = 'recipient@email.com';
+$from    = 'me@domain.com';
+$subject = 'Ahoy, Matey!';
+$message = 'Welcome to our website!...';
+
+$form->send_email($to, $subject, $message, $from, TRUE);
+{% endhighlight %}
+
+
+### Example: Automatically Format and Send the POST Contents as HTML
+By setting the `message` parameter to **'POST'**, Formr will loop through the PHP `$_POST` array and automatically clean and print the field name and value.
+{% highlight php startinline %}
+$to      = 'recipient@email.com';
+$from    = 'me@domain.com';
+$subject = 'Ahoy, Matey!';
+
+$form->send_email($to, $subject, 'POST', $from, TRUE);
+{% endhighlight %}
+
+Produces something like
+{% highlight html startinline %}
+first_name: Jack
+last_name: Black
+{% endhighlight %}
+
+
+
+### Example: Formatting Fields with Underscores for Prettier Emails
+If you want prettier emails while looping through the `$_POST` array, name your input fields with capital letters and underscores, and then prepend each name with an underscore. Prepending a field with an underscore tells Formr to replace all underscores with spaces, making for an easier to read email!
+{% highlight php startinline %}
+$form->input_text('_First_Name','First Name');
+$form->input_text('_Last_Name','Last Name');
+{% endhighlight %}
+
+And the email will look like this...
+{% highlight html startinline %}
+First Name: Jack
+Last Name: Black
+{% endhighlight %}
+
+
+
+
+
+
+
+## printr()
+
+Incredibly handy! Formr's shortcut for `print_r()`, which automatically formats (in `<pre>` tags) and prints the contents of an array, which massively speeds up testing.
+
+#### Prints the contents of an array
+{% highlight php startinline %}
+$form->printr($_POST);
+$form->printr($_GET);
+$form->printr($data);
+$form->printr('POST');	// lazy alias...
+$form->printr('GET');	// lazy alias...
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+## slug()
+
+Only allows letters, numbers and underscores in a string. If any character other than a letter, number or underscore is encountered it will be converted to an underscore.
+
+#### Example: Slug the string 'P Sherman 42'
+{% highlight php startinline %}
+$username = $form->slug('P Sherman 42');
+// produces
+'P_Sherman_42'
+{% endhighlight %}
 
 
 
@@ -1249,35 +1343,11 @@ This is useful if you have a form that is more along the lines of a test, or que
 
 
 
+## form_info()
 
-## slug()
+Prints out the settings of your form. Try it!
 
-Only allows letters, numbers and underscores in a string. If any character other than a letter, number or underscore is encountered it will be converted to an underscore.
-
-#### Example: Slug the string 'P Sherman 42'
 {% highlight php startinline %}
-$username = $form->slug('P Sherman 42');
-// produces
-'P_Sherman_42'
+$form->form_info();
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
-## printr()
-
-Incredibly handy! Formr's shortcut for `print_r()`, which automatically formats (in `<pre>` tags) and prints the contents of an array, which massively speeds up testing.
-
-#### Prints the contents of an array
-{% highlight php startinline %}
-$form->printr($_POST);
-$form->printr($_GET);
-$form->printr($data);
-$form->printr('post');
-$form->printr('get');
-{% endhighlight %}

@@ -71,7 +71,7 @@ When we're talking about <strong>methods</strong> we're referring to a <strong>f
 </div>
 
 <div class="alert alert-warning">
-<i class="fa fa-warning"></i> Formr does not have database or email capabilities - there are plenty of great classes out there that do that much, much better than I ever could.
+<i class="fa fa-warning"></i> Formr does not have database capabilities, and very limited email capabilities; there are plenty of great classes out there that do that much, much better than I ever could.
 </div>
 
 
@@ -87,7 +87,7 @@ To create your own:
 
 <br>
 
-<div class="alert alert-danger">
+<div class="alert alert-info">
 <i class="fa fa-bomb"></i> For now you may only add your own custom wrapper class by editing the <code>formr/lib/class.wrappers.php</code> file. I plan on updating the Wrapper to make it a true plugin when I can find the time.
 </div>
 
@@ -129,9 +129,9 @@ Hi,
 
 Thank you for checking out Formr. I began writing Formr for myself a couple years ago, and I've found it to be such an invaluable part of my toolkit that I decided to share it. I'm well aware the code behind Formr isn't something a rock star coder would write, and that's because I'm not a rock star coder; I just like creating things. <i class="fa fa-smile-o"></i>
 
-As with all software, there are bound to be some bugs in Formr. Heck, I'm the only person (up until now) that's ever used it! So if you find Formr useful (bugs and all), <a href="#welcome" class="text-danger"><span class="text-danger">please consider a donation</span></a>. Donating even $1 will really help in allowing me to work more on improving Formr and less on the day-to-day stuff in my freelancer life.
+As with all software, there are bound to be some bugs in Formr. Heck, I'm the only person (up until now) that's ever used it! So if you find a bug, <a href="https://github.com/formr/Formr/issues" title="Report Formr bugs"><span class="text-danger">please report it!</span></a> And if you find Formr useful (bugs and all), <a href="#welcome" title="Donate to Formr">please consider a donation</a>. Donating even $2 will really help in allowing me to work more on improving Formr and less on the day-to-day stuff in my freelancer life.
 
-Thanks, and I hope you find Formr as useful as I have.
+Thanks, and I hope you find Formr as useful as I have!
 
 &mdash; Tim
 
