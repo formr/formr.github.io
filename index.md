@@ -18,6 +18,7 @@ exclude_from_nav: true
 				</button>
 			</a>
 		</div>
+		<span class="hidden-sm hidden-md hidden-lg"><br></span>
 		<div class="col-sm-4">
 			<a href="https://github.com/formr/Formr/zipball/master">
 				<button class="btn btn-success btn-lg btn-block">
@@ -26,6 +27,7 @@ exclude_from_nav: true
 				</button>
 			</a>
 		</div>
+		<span class="hidden-sm hidden-md hidden-lg"><br></span>
 		<div class="col-sm-4">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="Q8SGKD4YF5QSU">
@@ -37,8 +39,8 @@ exclude_from_nav: true
 			</form>
 		</div>
 	</div>
-	<br><br>
-	<div class="row">
+	<div class="row hidden-xs">
+		<br><br>
 		<div class="col-sm-12 text-center">
 			<iframe src="https://ghbtns.com/github-btn.html?user=formr&repo=Formr&type=star&count=true&size=small" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> 
 			<iframe src="https://ghbtns.com/github-btn.html?user=formr&repo=Formr&type=watch&count=true&size=small&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> 
