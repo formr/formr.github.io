@@ -8,6 +8,8 @@ date:   2015-04-22 21:27:27
 
 categories: formr fastform
 
+permalink: /blog/2015-04-22/fastform-in-the-real-world
+
 ---
 
 One of my favority things about Formr is the ability to save form + validation sets for reuse. I can't even count the number of times I've had to create a registration form and all I had to type was...
