@@ -12,11 +12,11 @@ permalink: /blog/2015-04-23/formr-for-designers/
 
 ---
 
-Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? No Problem, Form has you covered. If you can type (or even copy + paste), you can use Formr, and this article aims to show you how.
+Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? No Problem, Formr has you covered. If you can type (or even copy + paste), you can use Formr, and this article aims to show you how.
 
 ## Installation
 
-Formr isn't at all complicated; to install it all you have to do is [download it from GitHub](http://formr.github.io), drag the `Formr` folder into your site folder and type:
+Formr isn't at all complicated; to install it all you have to do is [download Formr from GitHub](http://formr.github.io), drag the `Formr` folder into your site folder and type:
 {% highlight php startinline %}
 <?php
 	require_once 'Formr/class.formr.php';
@@ -74,15 +74,15 @@ if($form->submit()) {
 
 ## Checking for Errors
 
-If you've made some form fields required, and the visitor didn't fill them out, Formr will let them know via error messages, but first you must tell Formr which fields are required and where to display the error messages.
+If you've made some form fields required - and the visitor didn't fill them out - Formr will let them know via error messages, but first you must tell Formr which fields are required and where to display the error messages.
 
-To make fields required, we use the `required` variable, like so:
+To make fields required we use the `required` variable, like so:
 
 {% highlight php startinline %}
 $form->required = '*';
 {% endhighlight %}
 
-Entering an asterisk `*` tells Formr that you want **all** fields required. If you only want some of the fields required, just enter a comma separated list of those field's names.
+Entering an asterisk `*` tells Formr that you want **all** fields required. If you only want some of the fields required just enter a comma separated list of those field's names.
 
 {% highlight php startinline %}
 $form->required = 'name,email';
@@ -98,7 +98,7 @@ This can appear anywhere in your document, as along as it's **after** where you 
 
 ## Sending Email
 
-Now that our form has been processed, let's check for errors, and if no errors are found we'll email the results to our client. Since we're doing a simple email, let's skip putting our `POST` values in the `$post` array and just send them right from inside Formr's `send_email()` email function!
+Now that our form has been processed, let's check for errors, and if no errors are found we'll email the results to our client. Since we're doing a simple email let's skip putting our `POST` values into the `$post` array and just send them right from inside Formr's `send_email()` email function!
 
 {% highlight php startinline %}
 // check if the form has been submitted
