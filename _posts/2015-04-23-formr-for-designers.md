@@ -6,10 +6,6 @@ title:  "Formr for Designers"
 
 date:   2015-04-23
 
-categories: formr
-
-permalink: /blog/2015-04-23/formr-for-designers/
-
 ---
 
 Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? No Problem, Formr has you covered. If you can type (or even copy + paste), you can use Formr, and this article aims to show you how.

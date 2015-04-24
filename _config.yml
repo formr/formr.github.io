@@ -9,3 +9,4 @@ twitter_username: timgavin
 github_username:  timgavin
 google_analytics: UA-2126511-9
 markdown: kramdown
+permalink: /blog/:title/
