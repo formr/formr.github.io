@@ -2,6 +2,10 @@
 layout: page
 title: Properties
 permalink: /properties/
+sitemap:
+  priority: 0.7
+  changefreq: weekly
+  lastmod: 2015-04-12T00:00:00
 ---
 
 

@@ -2,6 +2,10 @@
 layout: default
 title: Blog
 permalink: /blog/
+sitemap:
+  priority: 0.7
+  changefreq: weekly
+  lastmod: 2015-04-22T00:00:00
 ---
 
 <div class="home">

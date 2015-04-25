@@ -2,6 +2,10 @@
 layout: page
 title: Uploading Files
 permalink: /upload-files/
+sitemap:
+  priority: 0.7
+  changefreq: weekly
+  lastmod: 2015-04-11T00:00:00
 ---
 
 <header class="post-header">
