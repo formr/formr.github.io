@@ -8,11 +8,11 @@ date:   2015-04-23
 
 ---
 
-Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? No Problem, Formr has you covered. If you can type (or even copy + paste), you can use Formr, and this article aims to show you how.
+Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? What if you don't even know PHP? No Problem, Formr has you covered.
 
 ## Installation
 
-Formr isn't at all complicated; to install it all you have to do is [download Formr from GitHub](http://formr.github.io), drag the `Formr` folder into your site folder and type:
+Formr isn't at all complicated; to install it all you have to do is [download Formr from GitHub](http://formr.github.io), unzip it and drag the `Formr` folder into your site's root folder and type:
 {% highlight php startinline %}
 <?php
 	require_once 'Formr/class.formr.php';
@@ -31,7 +31,7 @@ Build your form in HTML like you normally would, and when you come to your eleme
 $form->value('the_fieldname_goes_here');
 {% endhighlight %}
 
-In your form it may look something like this:
+Your form will now look something like this:
 
 {% highlight php startinline %}
 <input type="text" name="name" value="<?php echo $form->value('name'); ?>">
@@ -115,7 +115,7 @@ if($form->submit()) {
 }
 {% endhighlight %}
 
-## Our Final Form
+## Our Final File
 
 {% highlight html startinline %}
 <?php
@@ -132,7 +132,10 @@ if($form->submit()) {
         $subject = 'Form Submission';
         $from = 'designer@email.com';
 
-        $form->send_email($to, $subject, 'POST', $from);
+        // print a success message to the browser if the email was sent
+        if($form->send_email($to, $subject, 'POST', $from)) {
+	        $form->success_message('Email Sent!');
+        }
     }
 }
 ?>
