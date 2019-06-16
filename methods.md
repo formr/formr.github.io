@@ -31,13 +31,19 @@ echo $form->form_close();
 
 // will produce
 <form action="/index.php" method="post" accept-charset="utf-8">
-    <label for="first_name">First name</label> 
+    <label for="first_name">
+        First name
+    </label> 
     <input type="text" name="first_name" id="first_name" class="input">
     
-    <label for="last_name"> Last name</label> 
+    <label for="last_name">
+        Last name
+    </label> 
     <input type="text" name="last_name" id="last_name" class="input">
 
-    <label for="email_address"> Email address</label> 
+    <label for="email_address">
+        Email address
+    </label> 
     <input type="email" name="email_address" id="email_address" class="input">
 
     <input type="submit" name="submit" value="Submit" id="submit">
@@ -55,17 +61,23 @@ echo $form->form_close();
 // will produce
 <form action="/index.php" method="post" accept-charset="utf-8">
     <div id="_first_name" class="form-group">
-        <label class="control-label" for="first_name">First name*</label>
-        <input type="text" name="first_name" id="first_name" class="form-control" required>
+        <label class="control-label" for="first_name">
+            First name
+        </label>
+        <input type="text" name="first_name" id="first_name" class="form-control">
     </div>
 
     <div id="_last_name" class="form-group">
-        <label class="control-label" for="last_name"> Last name</label>
+        <label class="control-label" for="last_name">
+            Last name
+        </label>
         <input type="text" name="last_name" id="last_name" class="form-control">
     </div>
 
     <div id="_email_address" class="form-group">
-        <label class="control-label" for="email_address"> Email address</label>
+        <label class="control-label" for="email_address">
+            Email address
+        </label>
         <input type="email" name="email_address" id="email_address" class="form-control">
     </div>
 
