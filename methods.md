@@ -5,7 +5,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2015-04-21T00:00:00
+  lastmod: 2019-06-16T00:00:00
 ---
 
 <header class="post-header">
@@ -15,6 +15,71 @@ sitemap:
 
 
 ---
+
+# Create
+## create()
+
+The easiest - and most basic - way to create a form. Simply add a comma delimited list of your form's labels and Formr will create the labels, form fields, IDs, etc. If your label contains the word 'email', Formr will automatically use the <code>email</code> input type.
+
+### Example: Create a basic form
+{% highlight php startinline %}
+$form = new Formr();
+echo $form->form_open();
+echo $form->create('First name, Last name, Email address');
+echo $form->input_submit();
+echo $form->form_close();
+
+// will produce
+<form action="/index.php" method="post" accept-charset="utf-8">
+    <label for="first_name">First name</label> 
+    <input type="text" name="first_name" id="first_name" class="input">
+    
+    <label for="last_name"> Last name</label> 
+    <input type="text" name="last_name" id="last_name" class="input">
+
+    <label for="email_address"> Email address</label> 
+    <input type="email" name="email_address" id="email_address" class="input">
+
+    <input type="submit" name="submit" value="Submit" id="submit">
+</form>
+{% endhighlight %}
+
+### Example: Create a basic form with the Bootstrap wrapper
+{% highlight php startinline %}
+$form = new Formr('bootstrap');
+echo $form->form_open();
+echo $form->create('First name, Last name, Email address');
+echo $form->input_submit();
+echo $form->form_close();
+
+// will produce
+<form action="/index.php" method="post" accept-charset="utf-8">
+    <div id="_first_name" class="form-group">
+        <label class="control-label" for="first_name">First name*</label>
+        <input type="text" name="first_name" id="first_name" class="form-control" required>
+    </div>
+
+    <div id="_last_name" class="form-group">
+        <label class="control-label" for="last_name"> Last name</label>
+        <input type="text" name="last_name" id="last_name" class="form-control">
+    </div>
+
+    <div id="_email_address" class="form-group">
+        <label class="control-label" for="email_address"> Email address</label>
+        <input type="email" name="email_address" id="email_address" class="form-control">
+    </div>
+
+    <div id="_submit" class="form-group">
+	    <label class="sr-only" for="submit"></label>
+	    <input type="submit" name="submit" value="Submit" class="btn" id="submit">
+    </div>
+</form>
+{% endhighlight %}
+
+
+
+
+
 
 # Inputs
 
@@ -402,7 +467,7 @@ If the array passed as <code>$options</code> is a multidimensional array, <code>
 
 ### Drop-downs Use Strings
 
-`input_select()` has a little trick up its sleeve: if you pass a string as the second parameter (instead of an array) it will look for the corresponding method name in the `class.formr.dropdowns.php` file. For instance, if you enter "state" it will automatically produce a menu containing all 50 US states. The other two methods that are included in the class are countries, which will produce a menu containing all of the countries in the world, and provinces, which will create a menu of all Canadian provinces and territories.
+`input_select()` has a little trick up its sleeve: if you pass a string as the eighth parameter (instead of an array) it will look for the corresponding method name in the `class.formr.dropdowns.php` file. For instance, if you enter "state" it will automatically produce a menu containing all 50 US states. The other two methods that are included in the class are countries, which will produce a menu containing all of the countries in the world, and provinces, which will create a menu of all Canadian provinces and territories.
 
 What this boils down to is that, `class.formr.dropdowns.php` basically behaves as a plugin. If you wanted to add a list of motorcycles, for instance, all you would need to do is add the array of options (motorcycles) as a method to the Dropdowns class and then enter "motorcycles" as the second parameter. Take a look at the methods in the Dropdowns class for examples.
 
@@ -816,7 +881,7 @@ Identical to the `fastform()` method, except it adds `enctype="multipart/form-da
 
 
 ## fastpost()
-Use this in concert with `fastpost()` to create form and validation sets which you can quickly and easily plugin and reuse. This method will also return an array of the key/value pairs from the `POST` array, plus perform some basic validation based upon the field names.
+Use this in concert with `fastform()` to create form and validation sets which you can quickly and easily plugin and reuse. This method will also return an array of the key/value pairs from the `POST` array, plus perform some basic validation based upon the field names.
 
 
 
@@ -1300,6 +1365,17 @@ $form->printr($data);
 $form->printr('POST');	// lazy alias...
 $form->printr('GET');	// lazy alias...
 {% endhighlight %}
+
+
+
+
+
+
+
+
+
+## dd()
+Alias of `printr()`
 
 
 
