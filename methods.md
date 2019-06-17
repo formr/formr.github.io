@@ -28,8 +28,11 @@ echo $form->form_open();
 echo $form->create('First name, Last name, Email address');
 echo $form->input_submit();
 echo $form->form_close();
+{% endhighlight %}
 
-// will produce
+### produces the following HTML
+
+{% highlight html startinline %}
 <form action="/index.php" method="post" accept-charset="utf-8">
     <label for="first_name">
         First name
