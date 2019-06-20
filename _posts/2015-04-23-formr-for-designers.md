@@ -12,7 +12,7 @@ Formr is a PHP micro framework which allows developers to easily build forms; bu
 
 ## Installation
 
-Formr isn't at all complicated; to install it all you have to do is [download Formr from GitHub](http://formr.github.io), unzip it and drag the `Formr` folder into your site's root folder and type:
+Formr isn't at all complicated; to install it all you have to do is [download Formr from GitHub](https://formr.github.io), unzip it and drag the `Formr` folder into your site's root folder and type:
 {% highlight php startinline %}
 <?php
 	require_once 'Formr/class.formr.php';
