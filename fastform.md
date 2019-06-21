@@ -1,11 +1,12 @@
 ---
 layout: page
-title: FastForm
+title: Formr | FastForm
+description: Create and validate complex PHP forms in seconds.
 permalink: /fastform/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2015-04-11T00:00:00
+  lastmod: 2019-06-20T00:00:00
 ---
 
 
@@ -111,19 +112,19 @@ In the example below, notice how the field types (text, email, select, etc.) are
 
 #### This simple array...
 {% highlight php startinline %}
-$data = array(
-    'text'      => 'fname,First name:,,fname',
-    'text2'     => 'lname,Last name:,,lname',
-    'email'     => 'email,Email:,,email',
-    'text3'     => 'city,City:,,city',
-    'select'    => 'state,State:,,state,,,,state',
-    'text4'     => 'zip,Zip/Postal Code:,,zip',
-    'select2'   => 'country,Country:,,country,,,US,country',
-    'label'     => 'sex,What sex are you?',
-    'radioM'    => 'sex,Male,male,male',
-    'radioF'    => 'sex,Female,female,female',
-    'textarea'  => 'comments,Comments:,,comments'
-);
+$data = [
+    'text' => 'fname,First name:,,fname',
+    'text2' => 'lname,Last name:,,lname',
+    'email' => 'email,Email:,,email',
+    'text3' => 'city,City:,,city',
+    'select' => 'state,State:,,state,,,,state',
+    'text4' => 'zip,Zip/Postal Code:,,zip',
+    'select2' => 'country,Country:,,country,,,US,country',
+    'label' => 'sex,What sex are you?',
+    'radioM' => 'sex,Male,male,male',
+    'radioF' => 'sex,Female,female,female',
+    'textarea' => 'comments,Comments:,,comments'
+];
 
 echo $form->fastform($data);
 {% endhighlight %}
@@ -240,14 +241,14 @@ $shirts = array(
 );
 
 // build our drop-down array and add the t-shirt array as our list of options
-$data = array(
-        'select' => array(
+$data = [
+        'select' => [
         'name'=> 'shirts',
         'label'=> 'Shirts:',
         'options'=> $shirts,
         'selected'=> 'small'
-    )
-);
+    ]
+];
 
 echo $form->fastform($data);
 {% endhighlight %}

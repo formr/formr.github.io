@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Methods
+title: Formr | Methods
+description: A list of Formr's functions for building forms in PHP.
 permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-16T00:00:00
+  lastmod: 2019-06-20T00:00:00
 ---
 
 <header class="post-header">
@@ -21,11 +22,13 @@ sitemap:
 
 The easiest - and most basic - way to create a form. Simply add a comma delimited list of your form's labels and Formr will create the labels, form fields, IDs, etc. If your label contains the word 'email', Formr will automatically use the <code>email</code> input type.
 
+Other than the <code>email</code> type described previously, all inputs will be defaulted to the <code>text</code> type. However, if you want to add a specific input type simply add a pipe <code>|</code> and then the type you would like to use.
+
 ### Example: Create a basic form
 {% highlight php startinline %}
 $form = new Formr();
 echo $form->form_open();
-echo $form->create('First name, Last name, Email address');
+echo $form->create('First name, Last name, Email address, Age|number, Comments|textarea');
 echo $form->input_submit();
 echo $form->form_close();
 {% endhighlight %}
@@ -48,6 +51,16 @@ echo $form->form_close();
         Email address
     </label> 
     <input type="email" name="email_address" id="email_address" class="input">
+
+    <label for="age">
+        Age
+    </label> 
+    <input type="number" name="age" id="age" class="input">
+    
+    <label for="comments">
+        Comments
+    </label> 
+    <textarea name="comments" id="comments" class="input"></textarea>
 
     <input type="submit" name="submit" value="Submit" id="submit">
 </form>

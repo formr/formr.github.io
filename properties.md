@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Properties
+title: Formr | Properties
+description: A list of Formr's variables for building forms in PHP.
 permalink: /properties/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2015-04-12T00:00:00
+  lastmod: 2019-06-20T00:00:00
 ---
 
 

@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Blog
+title: Formr | Blog
+description: Learn how to easily build PHP forms with Formr.
 permalink: /blog/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2015-04-22T00:00:00
+  lastmod: 2019-06-20T00:00:00
 ---
 
 <div class="home">
