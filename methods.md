@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-20T00:00:00
+  lastmod: 2019-06-21T00:00:00
 ---
 
 <header class="post-header">
@@ -325,6 +325,9 @@ This method is identical in all respects to the `input_text()` method except it 
 ## input_hidden()
 Allows you to generate hidden input fields.
 
+1. The first parameter contains the field's name.
+1. The second parameter contains the field's value.
+
 #### Example: submit a key/value pair to create a single `hidden` element
 {% highlight php startinline %}
 echo $form->input_hidden('fname','John');
@@ -335,11 +338,11 @@ echo $form->input_hidden('fname','John');
 
 #### Example: submit an associative array to create multiple `hidden` elements
 {% highlight php startinline %}
-$data = array(
-    'name'  => 'John Doh',
+$data = [
+    'name' => 'John Doh',
     'email' => 'john@mysite.com',
-    'url'   => 'http://mysite.com'
-);
+    'url' => 'http://mysite.com'
+];
 
 echo $form->input_hidden($data);
 
