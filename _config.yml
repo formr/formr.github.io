@@ -1,5 +1,5 @@
 # Site settings
-title: Formr | PHP Forms Made Easy
+title: Formr
 email: tim@timgavin.name
 description: > # this means to ignore newlines until "baseurl:"
   Formr is a PHP micro-framework form class which installs easily and helps you build and validate PHP forms quickly, painlessly, and without all the complicated, messy overhead.
