@@ -11,13 +11,12 @@ sitemap:
 
 <header class="post-header">
 	<h1 class="post-title"><i class="fa fa-check"></i> Form Validation</h1>
-	<p class="lead">This document contains a list of Formr's form validation methods and rules.</p>
-    <p class="lead">Validation mainly takes place inside the `post()` function. You can find more about processing forms on the [Methods](https://formr.github.io/methods/#processing) page, located at: [https://formr.github.io/methods/#processing](https://formr.github.io/methods/#processing)</p>
+	<p class="lead">This document contains a list of Formr's form validation methods and rules</p>
+    <p class="lead">Note: Form validation mainly takes place inside the <code>post()</code> function, which is covered on this page. You can find more about processing forms with Formr on the <a href="https://formr.github.io/methods/#processing">Methods</a> page.</p>
 </header>
 
 
 ---
-
 
 ## post()
 
