@@ -980,7 +980,20 @@ Identical to `input_submit()` except that it creates an `<input type="reset">` e
 
 
 ## input_button()
-Identical to `input_submit()` but creates an `<button>` element.
+Identical to `input_submit()` but creates an `<button type="button">` element.
+
+
+
+
+
+---
+
+
+
+
+
+## input_button_submit()
+Identical to `input_button()` but creates an `<button type="submit">` element.
 
 
 
