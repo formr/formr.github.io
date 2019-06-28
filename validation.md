@@ -18,6 +18,8 @@ sitemap:
 
 ---
 
+# Receive Input
+
 ## post()
 
 The `post()` function processes and validates (if required) the `POST` form input based upon a series of chainable rules.
@@ -67,6 +69,7 @@ $form->post('email','Email|Please enter your email address','valid_email');
 
 
 
+# Validation Rules
 
 # <i class="fa fa-filter"></i> Form Validation Rules
 
