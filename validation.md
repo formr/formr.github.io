@@ -68,9 +68,6 @@ $form->post('email','Email|Please enter your email address','valid_email');
 
 
 
-
-# Validation Rules
-
 # <i class="fa fa-filter"></i> Form Validation Rules
 
 The following table contains all of Formr's validation rules for the `post()` method.
