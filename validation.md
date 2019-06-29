@@ -18,7 +18,7 @@ sitemap:
 
 ---
 
-# Receive Input
+# <i class="fa fa-check"></i> Receiving Input
 
 ## post()
 

@@ -60,11 +60,12 @@ sitemap:
 	<li><i class="fa-li fa fa-check-circle"></i> Create complex forms with server-side processing and validation in only minutes</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Instantly make one field required, all fields required, or all but one field required</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Built-in POST validation rules, including validating email, comparisons, slugging and hashing</li>
-	<li><i class="fa-li fa fa-check-circle"></i> Bootstrap 3 ready; automatically wrap all of your form elements and messages in Bootstrap classes</li>
+	<li><i class="fa-li fa fa-check-circle"></i> Bootstrap 4 ready; automatically wrap all of your form elements and messages in Bootstrap classes</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Automatically build and format <code>&lt;label&gt;</code> tags, saving lots of time</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Extensible: roll your own form &amp; validation sets and dropdown menus and share 'em with others</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Create and validate radio groups and checkbox arrays in seconds</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Automatically wrap field elements in <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code>, Bootstrap's <code>.form-control</code> or roll your own</li>
+	<li><i class="fa-li fa fa-check-circle"></i> Built-in, easy to use CSRF protection</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Object-oriented; supports multiple forms per page</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Little helpers to assist in building, layout, testing and debugging</li>
 	<li><i class="fa-li fa fa-check-circle"></i> And a ton of other cool stuff too!</li>

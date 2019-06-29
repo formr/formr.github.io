@@ -110,6 +110,38 @@ echo $form->form_close();
 
 
 
+# CSRF Protection
+## csrf()
+
+Generates a hidden input with a CSRF token, which will automatically expire in 1 hour. 
+
+Accepts a single, optional parameter which sets the token timeout duration in seconds. Default is 1 hour.
+
+<div class="alert alert-danger">
+<i class="fa fa-bomb"></i>	
+If using this method you <strong>must</strong> enable sessions by adding <code><?php session_start() ?></code> at the top of your file.
+</div>
+
+### Example: Generate a CSRF token
+{% highlight php startinline %}
+echo $form->csrf();
+{% endhighlight %}
+
+### Produces the following HTML
+{% highlight html startinline %}
+<input type="hidden" name="csrf_token" value="c5bbdceae577a385529ffb71213f7cb9ad223240f305947f75f73e175ef4efbc">
+{% endhighlight %}
+
+### Example: Generate a CSRF token with a timeout of 30 minutes
+{% highlight php startinline %}
+echo $form->csrf(1800);
+{% endhighlight %}
+
+
+
+
+
+
 
 # Inputs
 
