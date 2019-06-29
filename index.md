@@ -68,7 +68,7 @@ sitemap:
 	<li><i class="fa-li fa fa-check-circle"></i> Built-in, easy to use CSRF protection</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Object-oriented; supports multiple forms per page</li>
 	<li><i class="fa-li fa fa-check-circle"></i> Little helpers to assist in building, layout, testing and debugging</li>
-	<li><i class="fa-li fa fa-check-circle"></i> And a ton of other cool stuff too!</li>
+	<li><i class="fa-li fa fa-check-circle"></i> And a ton of other cool stuff!</li>
 </ul>
 <br>
 

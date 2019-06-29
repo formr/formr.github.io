@@ -119,7 +119,7 @@ Accepts a single, optional parameter which sets the token timeout duration in se
 
 <div class="alert alert-danger">
 <i class="fa fa-bomb"></i>	
-If using this method you <strong>must</strong> enable sessions by adding <code><?php session_start() ?></code> at the top of your file.
+If using this method you <strong>must</strong> enable sessions by adding <code>&lt;?php session_start() ?&gt;</code> at the top of your file.
 </div>
 
 ### Example: Generate a CSRF token
@@ -129,6 +129,7 @@ echo $form->csrf();
 
 ### Produces the following HTML
 {% highlight html startinline %}
+// note: token will change value with each page refresh
 <input type="hidden" name="csrf_token" value="c5bbdceae577a385529ffb71213f7cb9ad223240f305947f75f73e175ef4efbc">
 {% endhighlight %}
 
