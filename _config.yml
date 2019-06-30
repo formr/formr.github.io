@@ -10,3 +10,5 @@ google_analytics: UA-2126511-9
 markdown: kramdown
 permalink: /blog/:title/
 highlighter: rouge
+plugins:
+  - jekyll-seo-tag
