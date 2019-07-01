@@ -2,7 +2,7 @@
 title: Formr
 email: tim@timgavin.name
 description: > # this means to ignore newlines until "baseurl:"
-  Formr is a PHP micro-framework form class which installs easily and helps you build and validate PHP forms quickly, painlessly, and without all the complicated, messy overhead.
+  Formr is a free PHP micro-framework form class which installs easily and helps you build and validate any form in minutes.
 baseurl: ""
 url: "https://formr.github.io"
 github_username:  timgavin
