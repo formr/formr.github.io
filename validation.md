@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Formr | Validation
-description: Validating PHP forms with Formr
+title: Form Validation
+description: Simple, fast and easy PHP form validation with Formr.
 permalink: /validation/
 sitemap:
   priority: 0.7
@@ -11,18 +11,18 @@ sitemap:
 
 <header class="post-header">
 	<h1 class="post-title"><i class="fa fa-check"></i> Form Validation</h1>
-	<p class="lead">This document contains a list of Formr's form validation methods and rules</p>
-    <p class="lead">Note: Form validation mainly takes place inside the <code>post()</code> function, which is covered on this page. You can find more about processing forms with Formr on the <a href="https://formr.github.io/methods/#processing">Methods</a> page.</p>
+	<p class="lead">This document contains a list of Formr's form validation methods and rules.</p>
+    <p>Note: Form validation mainly takes place inside the <code>post()</code> function, which is covered on this page. You can find more about processing forms with Formr on the <a href="https://formr.github.io/methods/#processing">Methods</a> page.</p>
 </header>
 
 
 ---
 
-# <i class="fa fa-check"></i> Receiving Input
+# Receiving Input
 
 ## post()
 
-The `post()` function processes and validates (if required) the `POST` form input based upon a series of chainable rules.
+The `post()` function processes and validates the `POST` form input based upon a series of chainable rules.
 
 There are three parameters to the `post()` function:
 
@@ -41,25 +41,25 @@ The form data is passed through the PHP <code>trim()</code> and <code>strip_tags
 $fname = $form->post('fname');
 {% endhighlight %}
 
-
+<br>
 #### Example: Make sure an email address is valid using `FILTER_VALIDATE_EMAIL`
 {% highlight php startinline %}
 $form->post('email','Email','valid_email');
 {% endhighlight %}
 
-
-#### Example: Require `password` is no less than 6 characters and no more than 20
+<br>
+#### Example: Require the submitted `password` is no less than 6 characters and no more than 20
 {% highlight php startinline %}
 $form->post('password','Password','min_length[6]|max_length[20]');
 {% endhighlight %}
 
-
-#### Example: Require `password_conf` matches `password`, is no less than 6 characters and no more than 20
+<br>
+#### Example: Require the `password_conf` field matches the `password` field
 {% highlight php startinline %}
-$form->post('password_conf','Password Confirm','matches[password]|min_length[6]|max_length[20]');
+$form->post('password_conf','Password Confirm','matches[password]');
 {% endhighlight %}
 
-
+<br>
 #### Example: Create a custom error message string
 {% highlight php startinline %}
 // adding a pipe (`|`) character after the human readable text will create a custom error string
@@ -67,12 +67,13 @@ $form->post('email','Email|Please enter your email address','valid_email');
 {% endhighlight %}
 
 
+---
 
-# <i class="fa fa-filter"></i> Form Validation Rules
+# Validation Rules
 
 The following table contains all of Formr's validation rules for the `post()` method.
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-sm-12 table-responsive">
 <table class="table table-striped table-bordered table-hover">
 <tr>

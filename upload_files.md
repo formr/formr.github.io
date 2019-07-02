@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Formr | Uploading Files
-description: Quickly and easily upload, rename and resize images in your PHP forms.
+title: Upload Files
+description: Easily upload, rename, and resize images in your PHP forms.
 permalink: /upload-files/
 sitemap:
   priority: 0.7

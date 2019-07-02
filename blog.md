@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Formr | Blog
+title: Blog
 description: Learn how to easily build PHP forms with Formr.
 permalink: /blog/
 sitemap:

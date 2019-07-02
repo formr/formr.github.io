@@ -8,7 +8,7 @@ date:   2015-04-23
 
 ---
 
-Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? What if you don't even know PHP? No Problem, Formr has you covered.
+Formr is a PHP micro framework which allows developers to easily build forms; but what if you're not a PHP developer? What if you don't even know PHP? No problem, Formr has you covered!
 
 ## Installation
 
@@ -25,7 +25,7 @@ and that's it! Formr is now installed and ready to go to work.
 
 ## Building a Form
 
-Build your form in HTML like you normally would, and when you come to your element's `value` attribute you'll enter a small snippet of PHP that will allow Formr to do the heavy lifting for you.
+Build your form in HTML like you normally would, and when you come to your form element's `value` attribute you'll enter a small snippet of PHP that will allow Formr to do the heavy lifting for you.
 
 {% highlight php startinline %}
 $form->value('the_fieldname_goes_here');

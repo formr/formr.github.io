@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Formr | Properties
-description: A list of Formr's variables for building forms in PHP.
+title: Properties
+description: A list of variables for building PHP forms with Formr.
 permalink: /properties/
 sitemap:
   priority: 0.7
@@ -12,7 +12,7 @@ sitemap:
 
 <header class="post-header">
 	<h1 class="post-title"><i class="fa fa-dollar"></i> Properties</h1>
-	<p class="lead">This document contains a list of Formr's public properties</p>
+	<p class="lead">This document contains a list of Formr's public properties.</p>
 </header>
 
 

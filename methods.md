@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Formr | Methods
-description: A list of Formr's functions for building forms in PHP.
+title: Methods
+description: A list of available functions for building PHP forms with Formr.
 permalink: /methods/
 sitemap:
   priority: 0.7
@@ -117,11 +117,10 @@ Generates a hidden input with a CSRF token, which will automatically expire in 1
 
 Accepts a single, optional parameter which sets the token timeout duration in seconds. Default is 1 hour.
 
-<br>
 
 <div class="alert alert-danger">
 <i class="fa fa-bomb"></i>	
-If using this method you <strong>must</strong> enable sessions by adding <code>&lt;?php session_start() ?&gt;</code> at the top of your file.
+When using CSRF protection you <strong>must</strong> enable sessions by adding <code>&lt;?php session_start() ?&gt;</code> at the top of your file.
 </div>
 
 ### Example: Generate a CSRF token

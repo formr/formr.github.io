@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Formr | FastForm
-description: Create and validate complex PHP forms in seconds.
+title: FastForm
+description: Create and validate complex PHP forms in mere seconds.
 permalink: /fastform/
 sitemap:
   priority: 0.7
@@ -260,10 +260,10 @@ echo $form->fastform($data);
 <fieldset>
 	<div id="_shirts" class="form-group">
 	<label class=control-label for="shirts">Shirts:	</label>
-			<select name="shirts" id="shirts" class="form-control">
-			<option value="large">Large</option>
-			<option value="medium">Medium</option>
-			<option value="small" selected="selected">Small</option>
+        <select name="shirts" id="shirts" class="form-control">
+        <option value="large">Large</option>
+        <option value="medium">Medium</option>
+        <option value="small" selected="selected">Small</option>
 	</select>
 	</div>
 	<div id="_submit" class="form-group">
@@ -294,20 +294,26 @@ $data = array(
 echo $form->fastform($data);
 {% endhighlight %}
 
-#### ...will produce the following HTML (using Bootstrap as our wrapper)
+#### ...will produce the following HTML (using Bootstrap 3 as our wrapper)
 {% highlight html startinline %}
 <form action="/index.php" method="post" accept-charset="utf-8">
 <fieldset>
 	<div id="_food" class="form-group">
-			<label class="control-label">Favorite food:</label>
+		<label class="control-label">Favorite food:</label>
 		<div class="radio">
-			<label for="steak"><input type="radio" name="food" value="steak" id="steak">Steak</label>
+			<label for="steak">
+                <input type="radio" name="food" value="steak" id="steak">Steak
+            </label>
 		</div>
 		<div class="radio">
-			<label for="chicken"><input type="radio" name="food" value="chicken" id="chicken">Chicken</label>
+			<label for="chicken">
+                <input type="radio" name="food" value="chicken" id="chicken">Chicken
+            </label>
 		</div>
 		<div class="radio">
-			<label for="fish"><input type="radio" name="food" value="fish" id="fish">Fish</label>
+			<label for="fish">
+                <input type="radio" name="food" value="fish" id="fish">Fish
+            </label>
 		</div>
 	</div>
 	<div id="_submit" class="form-group">

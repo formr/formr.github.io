@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Formr | Easily Create & Validate PHP Forms in Minutes
-description: Formr is easily installed and helps you build, layout & validate PHP forms quickly, painlessly, and without all the complicated, messy overhead.
+title: Easily Create and Validate PHP Forms in Minutes
+description: Formr is a free PHP micro-framework form class which installs easily and helps you build and validate any form in minutes.
 permalink: /
 exclude_from_nav: true
 sitemap:
