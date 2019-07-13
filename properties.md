@@ -85,10 +85,26 @@ $form->controls['text-error'] = 'my-error-class';
 <div class="alert alert-info">
 <i class="fa fa-lightbulb-o"></i> 
 See the <a href="/#extensability">Extensibility</a> section for more info on creating your own classes.
-</div>	
+</div>
 
 
 
+
+
+
+
+
+
+## $custom_validation_messages
+
+Works in conjunction with the <doce>$post()</code> method and tells Formr to suppress the default validation messages and only show your own custom message.
+
+{% highlight php startinline %}
+$form->custom_validation_messages = true;
+$form->post('email', 'Email|Please enter your email', 'valid_email');
+{% endhighlight %}
+
+Will only display the error message: &quot;Please enter your email&quot; upon validation error of the email field.
 
 
 

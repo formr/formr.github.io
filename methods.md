@@ -898,11 +898,54 @@ $form->post('email','Email|Please enter your email address','valid_email');
 
 
 
-# get()
+## get()
 
 Identical to `post()` except that it processes information via the `$_GET` Superglobal
 
 
+
+
+
+
+
+
+
+## validate()
+
+The easiest - and most basic - way to validate a form. Simply add a comma delimited list of your form's labels and Formr will grab all of the <code>POST</code> data, validate it according to your rules, and put the values into an array. If your label contains the word <code>email</code>, Formr will automatically assign the <code>valid_email</code> validation rule. This method is bascially a basic wrapper around the [post()](/validation#post) method.
+
+There is one parameter to the `validate()` function:
+
+1. The first parameter is required and accepts a comma delimited string of form labels and their associated validation rules, wrapped in parentheses <code>()</code>.
+
+
+#### Usage
+{% highlight php startinline %}
+$form->validate('Name, Email, Comments');
+{% endhighlight %}
+
+#### Example: Get the value of the form fields after the form has been submitted
+{% highlight php startinline %}
+$data = $form->validate('Name, Email address');
+
+$name = $data['name'];
+$email = $data['email_address'];
+{% endhighlight %}
+
+<div class="alert alert-info">
+<i class="fa fa-lightbulb-o"></i>	
+Notice how our label is named <code>Email address</code> yet our form field is named <code>email_address</code>? This is because Formr will take any spaces in your labels and convert them to an underscore.
+</div>
+
+#### Example: Ensure the Name field has a minimum of 3 characters and a max of 5 characters
+{% highlight php startinline %}
+$form->validate('Name(min_length[3]|max_length[5]), Email address');
+{% endhighlight %}
+
+<div class="alert alert-info">
+<i class="fa fa-lightbulb-o"></i>	
+You can add as many validation rules as you like by separating each rule with a pipe (<code>|</code>) character.
+</div>
 
 
 ---
@@ -1509,5 +1552,27 @@ Prints out the settings of your form. Try it!
 
 {% highlight php startinline %}
 $form->form_info();
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+## redirect()
+
+Redirects to the supplied URL after form submission.
+
+{% highlight php startinline %}
+if ($form->submit()) {
+    // form has been submitted
+    if (! $form->errors()) {
+        // there are no errors, redirect to thank you page
+        $form->redirect('https://mysite.com/thankyou/');
+    }
+}
 {% endhighlight %}
 
