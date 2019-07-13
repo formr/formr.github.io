@@ -93,12 +93,6 @@ To create your own:
 1. Paste the method into the appropriate class file in the `my_classes` directory.
 1. Rename and modify the method to create your own. <span class="text-danger">Make sure your methods have unique names!</span> 
 
-<br>
-
-<div class="alert alert-info">
-<i class="fa fa-bomb"></i> For now you may only add your own custom wrapper class by editing the <code>formr/lib/class.wrappers.php</code> file. I plan on updating the Wrapper to make it a true plugin when I can find the time.
-</div>
-
 
 
 
