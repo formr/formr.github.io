@@ -97,7 +97,7 @@ See the <a href="/#extensability">Extensibility</a> section for more info on cre
 
 ## $custom_validation_messages
 
-Works in conjunction with the <doce>$post()</code> method and tells Formr to suppress the default validation messages and only show your own custom message.
+Works in conjunction with the `post()` method and tells Formr to suppress the default validation messages and only show your own custom message.
 
 {% highlight php startinline %}
 $form->custom_validation_messages = true;
