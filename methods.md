@@ -615,6 +615,18 @@ See the <a href="/#extensability">Extensibility</a> section for more info on cre
 
 
 
+## input_select_multiple()
+
+This method is exactly the same as <code>input_select()</code> but adds the <code>multiple</code> attribute to create a multiple select list.
+
+
+
+
+
+
+
+
+
 ## input_textarea()
 
 This method is identical in all respects to the `input_text()` method except it generates a `textarea`. Note: Instead of the `maxlength` attribute of the previous `input_text()` example, you will instead specify `rows` and `cols`.
