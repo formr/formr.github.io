@@ -229,19 +229,25 @@ The following table contains all of Formr's validation rules for the `post()` me
 <tr>
 <td class="td"><strong>sanitize_string</strong></td>
 <td class="td text-center">No</td>
-<td class="td">Passes result through the FILTER_SANITIZE_STRING function.</td>
+<td class="td">Passes result through the <a href="https://www.php.net/manual/en/filter.filters.sanitize.php">FILTER_SANITIZE_STRING</a> function.</td>
 <td class="td">&nbsp;</td>
 </tr>
 <tr>
 <td class="td"><strong>sanitize_url</strong></td>
 <td class="td text-center">No</td>
-<td class="td">Passes result through the FILTER_SANITIZE_URL function.</td>
+<td class="td">Passes result through the <a href="https://www.php.net/manual/en/filter.filters.sanitize.php">FILTER_SANITIZE_URL</a> function.</td>
 <td class="td">&nbsp;</td>
 </tr>
 <tr>
 <td class="td"><strong>sanitize_email</strong></td>
 <td class="td text-center">No</td>
-<td class="td">Passes result through the FILTER_SANITIZE_EMAIL function.</td>
+<td class="td">Passes result through the <a href="https://www.php.net/manual/en/filter.filters.sanitize.php">FILTER_SANITIZE_EMAIL</a> function.</td>
+<td class="td">&nbsp;</td>
+</tr>
+<tr>
+<td class="td"><strong>sanitize_int</strong></td>
+<td class="td text-center">No</td>
+<td class="td">Passes result through the <a href="https://www.php.net/manual/en/filter.filters.sanitize.php">FILTER_SANITIZE_NUMBER_INT</a> function.</td>
 <td class="td">&nbsp;</td>
 </tr>
 <tr>
