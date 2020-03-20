@@ -6,7 +6,7 @@ permalink: /validation/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-28T00:00:00
+  lastmod: 2020-03-19T00:00:00
 ---
 
 <header class="post-header">

@@ -7,7 +7,7 @@ exclude_from_nav: true
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-19T00:00:00
+  lastmod: 2020-03-19T00:00:00
 ---
 
 <div class="jumbotron" id="welcome">
@@ -164,6 +164,46 @@ $form = new Formr();
 
 ---
 
+
+# <i class="fa fa-bolt"></i> Quick Start
+
+Creating forms has never been this easy! Simply enter your form fields as a comma delimited string and Formr will build the form, complete with opening and closing tags, a submit button, and email validation - plus all values retained upon <code>POST</code>!
+
+This is all you need to create a form...
+{% highlight php startinline %}
+$form = new Formr('bootstrap');
+echo $form->create_form('Name, Email, Comments|textarea');
+{% endhighlight %}
+
+The above code produces the following HTML with full Bootstrap 4 formatting
+{% highlight html startinline %}
+<form action="/index.php" method="post" accept-charset="utf-8">
+    <div id="_name" class="form-group">
+        <label class="control-label" for="name">
+            Name
+        </label>
+        <input type="text" name="name" id="name" class="form-control">
+    </div>
+    <div id="_email" class="form-group">
+        <label class="control-label" for="email">
+            Email
+        </label>
+        <input type="email" name="email" id="email" class="form-control">
+    </div>
+    <div id="_comments" class="form-group">
+        <label class="control-label" for="comments">
+            Comments
+        </label>
+        <textarea name="comments" id="comments" class="form-control"></textarea>
+    </div>
+    <div id="_button" class="form-group">
+        <label class="sr-only" for="button"></label>
+        <button type="submit" name="button" id="button" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endhighlight %}
+
+---
 
 
 # <i class="fa fa-wrench"></i> Building a Form: the Basics
