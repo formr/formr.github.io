@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-21T00:00:00
+  lastmod: 2020-03-20T00:00:00
 ---
 
 <header class="post-header">
@@ -827,6 +827,23 @@ The `submit()` method checks to see if the form has been submitted or not. It do
 
 {% highlight php startinline %}
 if($form->submit()){
+    // form is submitted via POST
+}
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+## submitted()
+Alias of <code>submit()</code>
+
+{% highlight php startinline %}
+if($form->submitted()){
     // form is submitted via POST
 }
 {% endhighlight %}
