@@ -4,7 +4,7 @@ layout: post
 
 title:  "FastForm in the Real World"
 
-date:   2015-04-22 21:27:27
+date:   2020-04-15 21:27:27
 
 ---
 
@@ -37,7 +37,7 @@ In fact, this is pretty much what my registration forms now look like from a PHP
 		$form->required = '*';
 		$post = $form->fastpost('registration');
 		
-		if(!$form->error()) {
+		if(!$form->errors()) {
 			$session->process_registration();
 		}
 	}
