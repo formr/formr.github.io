@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-03-20T00:00:00
+  lastmod: 2020-04-21T00:00:00
 ---
 
 <header class="post-header">
@@ -655,6 +655,33 @@ Alias of the `input_file()` method.
 ## input_upload_multiple()
 Identical to `input_upload()` except that it adds the `multiple` attribute, allowing for multiple files to be uploaded with one field element. May not work in all browsers.
 
+
+
+
+
+
+
+
+
+## input()
+Lets you create any of the above inputs by specifying your field type in an array.
+
+{% highlight php startinline %}
+$data = array(
+    'type' => 'text',
+    'name' => 'fname',
+    'id' => 'fname',
+    'value' => 'John',
+    'maxlength' => '30',
+    'label' => 'Name'
+);
+
+echo $form->input($data);
+
+// will produce
+<label for="fname">Name</label> 
+<input name="fname" id="fname" value="John" maxlength="30" type="text" class="input">
+{% endhighlight %}
 
 
 
