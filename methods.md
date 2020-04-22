@@ -524,6 +524,36 @@ echo $form->input_select('books', 'Books','','','','',$featured_books,$options);
 If the array passed as <code>$options</code> is a multidimensional array, <code>input_select()</code> will produce an <code>&lt;optgroup&gt;</code> with the array key as the label.
 </div>
 
+#### Example: creating a select from an associative array
+It's also possible to create the select menu and all of the options in an associative array.
+
+{% highlight php startinline %}
+$data = [
+    'name' => 'books',
+    'id' => 'books',
+    'label' => 'Books',
+    'options' => [
+        'cat' => 'The Cat in the Hat',
+        'lorax' => 'The Lorax',
+        'yertle' => 'Yertle the Turtle',
+        'grinch' => 'The Grinch Who Stole Christmas',
+    ],
+    'selected' => 'lorax',
+    'value' => ''
+];
+
+echo $form->input_select($data);
+
+// will produce
+<label for="books">Books</label> 
+<select name="books" id="books" class="input" >
+    <option value="cat">The Cat in the Hat</option>
+    <option value="lorax" selected="selected">The Lorax</option>
+    <option value="yertle">Yertle the Turtle</option>
+    <option value="grinch">The Grinch Who Stole Christmas</option>
+</select>
+{% endhighlight %}
+
 
 
 
