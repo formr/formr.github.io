@@ -7,7 +7,7 @@ exclude_from_nav: true
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-03-19T00:00:00
+  lastmod: 2020-04-26T00:00:00
 ---
 
 <div class="jumbotron" id="welcome">
