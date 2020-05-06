@@ -632,7 +632,9 @@ Formr comes with a few drop-down menus to get you started, however, it wouldn't 
 
 To use your classes, just enter the name of the method (as a string) - just like you would with the `state` or `country` methods. <span class="text-danger">Make sure your classes have unique names!</span> 
 
-#### Bonus: Pass an array of data to your custom dropdowns!
+#### Bonus: Pass an array of data to your custom dropdowns
+
+It's really easy to add your own data to your custom dropdowns, just pass an array as the ninth parameter of the <code>input_select()</code> or <code>input_select_multiple()</code> methods and you're good to go!
 
 {% highlight php startinline %}
 $data = ['foo', 'bar', 'baz'];
