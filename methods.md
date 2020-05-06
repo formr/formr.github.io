@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-04-21T00:00:00
+  lastmod: 2020-05-05T00:00:00
 ---
 
 <header class="post-header">
@@ -631,6 +631,26 @@ Formr comes with a few drop-down menus to get you started, however, it wouldn't 
 3. Rename and then modify the sample classes to create your own.
 
 To use your classes, just enter the name of the method (as a string) - just like you would with the `state` or `country` methods. <span class="text-danger">Make sure your classes have unique names!</span> 
+
+#### Bonus: Pass an array of data to your custom dropdowns!
+
+{% highlight php startinline %}
+$data = ['foo', 'bar', 'baz'];
+echo $form->input_select('foos','','','','','','','my_function',$data);
+{% endhighlight %}
+
+{% highlight php startinline %}
+class MyDropdowns {
+    public static function my_function($data)
+    {
+        foreach($data as $key => $value) {
+            $return[$key] = $value;
+        }
+
+        return $return;
+    }
+}
+{% endhighlight %}
 
 <div class="alert alert-info">
 <i class="fa fa-lightbulb-o"></i> 
