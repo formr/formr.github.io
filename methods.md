@@ -1495,6 +1495,7 @@ $form->add_to_errors('name');
 {% endhighlight %}
 
 You can also add a custom message string by separating your field name and message with a pipe character.
+{% highlight php startinline %}
 $form->add_to_errors('name|Please enter your name');
 {% endhighlight %}
 
