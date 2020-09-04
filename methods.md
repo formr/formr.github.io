@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-05-05T00:00:00
+  lastmod: 2020-09-04T00:00:00
 ---
 
 <header class="post-header">
@@ -1492,6 +1492,10 @@ Manually add a field's key to the `$errors` array.
 
 {% highlight php startinline %}
 $form->add_to_errors('name');
+{% endhighlight %}
+
+You can also add a custom message string by separating your field name and message with a pipe character.
+$form->add_to_errors('name|Please enter your name');
 {% endhighlight %}
 
 <div class="alert alert-danger">
