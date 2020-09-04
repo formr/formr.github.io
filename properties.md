@@ -6,7 +6,7 @@ permalink: /properties/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-20T00:00:00
+  lastmod: 2020-09-02T00:00:00
 ---
 
 
@@ -337,6 +337,20 @@ Will produce in the label
 <input type="text" name="username" id="username" required>
 {% endhighlight %}
 
+
+
+
+
+
+
+
+
+## $sanitize_html
+Will pass any <code>$_POST</code> values through PHP's <code><a href="https://www.php.net/manual/en/filter.filters.sanitize.php">FILTER_SANITIZE_SPECIAL_CHARS</a></code> filter. Disabled by default.
+
+{% highlight html startinline %}
+$form->sanitize_html = true;
+{% endhighlight %}
 
 
 

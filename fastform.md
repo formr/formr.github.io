@@ -6,7 +6,7 @@ permalink: /fastform/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-20T00:00:00
+  lastmod: 2020-09-02T00:00:00
 ---
 
 
@@ -49,8 +49,13 @@ All we need to build a `fastform()` is create an initial array and populate it w
 
 This method allows you to build incredibly complex forms - complete with server-side validation - using simple key/value arrays and strings.
 
-1. The first - and only - parameter contains the array and is required.
+1. The first parameter contains the array (or string) and is required.
+2. If you'd like to add CSRF protection, just enter `CSRF` or `TRUE` in the second parameter.
 
+<div class="alert alert-danger">
+<i class="fa fa-bomb"></i>	
+When using CSRF protection you <strong>must</strong> enable sessions by adding <code>&lt;?php session_start() ?&gt;</code> at the top of your file.
+</div>
 
 
 
