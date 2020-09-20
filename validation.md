@@ -6,7 +6,7 @@ permalink: /validation/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-03-19T00:00:00
+  lastmod: 2020-09-04T00:00:00
 ---
 
 <header class="post-header">
@@ -49,7 +49,7 @@ Notice how our label is named <code>Email address</code> yet our form field is n
 
 #### Example: Ensure the Name field has a minimum of 3 characters and a max of 5 characters
 {% highlight php startinline %}
-$form->validate('Name(min_length[3]|max_length[5]), Email address');
+$form->validate('Name(min[3]|max[5]), Email address');
 {% endhighlight %}
 
 <div class="alert alert-info">
@@ -92,7 +92,7 @@ $form->post('email','Email','valid_email');
 <br>
 #### Example: Require the submitted `password` is no less than 6 characters and no more than 20
 {% highlight php startinline %}
-$form->post('password','Password','min_length[6]|max_length[20]');
+$form->post('password','Password','min[6]|max[20]');
 {% endhighlight %}
 
 <br>
@@ -131,22 +131,22 @@ The following table contains all of Formr's validation rules for the `post()` me
 <td class="td">matches[form_item]</td>
 </tr>
 <tr>
-<td class="td"><strong>min_length</strong></td>
+<td class="td"><strong>min</strong></td>
 <td class="td text-center">Yes</td>
 <td class="td">Returns FALSE if the form element is shorter then the parameter value.</td>
-<td class="td">min_length[6]</td>
+<td class="td">min[6]</td>
 </tr>
 <tr>
-<td class="td"><strong>max_length</strong></td>
+<td class="td"><strong>max</strong></td>
 <td class="td text-center">Yes</td>
 <td class="td">Returns FALSE if the form element is longer then the parameter value.</td>
-<td class="td">max_length[12]</td>
+<td class="td">max[12]</td>
 </tr>
 <tr>
-<td class="td"><strong>exact_length</strong></td>
+<td class="td"><strong>exact</strong></td>
 <td class="td text-center">Yes</td>
 <td class="td">Returns FALSE if the form element is not exactly the parameter value.</td>
-<td class="td">exact_length[8]</td>
+<td class="td">exact[8]</td>
 </tr>
 <tr>
 <td class="td"><strong>greater_than</strong></td>
