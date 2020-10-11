@@ -6,13 +6,13 @@ permalink: /validation/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-09-04T00:00:00
+  lastmod: 2020-10-11T00:00:00
 ---
 
 <header class="post-header">
 	<h1 class="post-title"><i class="fa fa-check"></i> Form Validation</h1>
 	<p class="lead">This document contains a list of Formr's form validation methods and rules.</p>
-    <p>Note: Form validation mainly takes place inside the <code>post()</code> function, which is covered on this page. You can find more about processing forms with Formr on the <a href="https://formr.github.io/methods/#processing">Methods</a> page.</p>
+    <p>Note: Form validation mainly takes place inside the <code>post()</code> function, which is covered in this document. You can find more about processing forms with Formr on the <a href="https://formr.github.io/methods/#processing">Methods</a> page.</p>
 </header>
 
 
@@ -22,11 +22,13 @@ sitemap:
 
 ## validate()
 
-The easiest - and most basic - way to validate a form. Simply add a comma delimited list of your form's labels and Formr will grab all of the <code>POST</code> data, validate it according to your rules, and put the values into an array. If your label contains the word <code>email</code>, Formr will automatically assign the <code>valid_email</code> validation rule. This method is bascially a basic wrapper around the [post()](/validation#post) method.
+The easiest, and most basic way to validate a form. Simply add a comma delimited list of your form's labels and Formr will grab all of the `$_POST` data, perform basic sanitization on it, validate it according to your rules, and put the values into an array.
+
+If your label contains the word `Email`, Formr will automatically create an `<input type="email">` element and assign the `valid_email` validation rule. This method is essentially a basic wrapper around the [post()](/validation#post) method.
 
 There is one parameter to the `validate()` function:
 
-1. The first parameter is required and accepts a comma delimited string of form labels and their associated validation rules, wrapped in parentheses <code>()</code>.
+1. The first parameter is required and accepts a comma delimited string of form labels and their associated validation rules, wrapped in parentheses `()`.
 
 
 #### Usage
@@ -44,7 +46,7 @@ $email = $data['email_address'];
 
 <div class="alert alert-info">
 <i class="fa fa-lightbulb-o"></i>	
-Notice how our label is named <code>Email address</code> yet our form field is named <code>email_address</code>? This is because Formr will take any spaces in your labels and convert them to an underscore.
+Notice how our label is named <code>Email address</code> and our form field is named <code>email_address</code>? This is because Formr will take any spaces in your labels and convert them to an underscore.
 </div>
 
 #### Example: Ensure the Name field has a minimum of 3 characters and a max of 5 characters
@@ -64,12 +66,12 @@ You can add as many validation rules as you like by separating each rule with a 
 
 ## post()
 
-The `post()` function processes and validates the `POST` form input based upon a series of chainable rules.
+The `post()` method processes and validates the `$_POST` form input based upon a series of chainable rules.
 
 There are three parameters to the `post()` function:
 
 1. The first parameter is required and contains the field name: the <em>exact</em> name you've given the form field.
-1. The optional second parameter contains the human readable text for this field, which will be inserted into the error message. It can optionally contain a custom error message string that will be shown if the field is required, yet left empty when submitted.
+1. The optional second parameter contains the human readable text for this field, which will be used as an error message if that field fails validation. It can optionally contain a custom error message string that will be shown if the field is required, yet left empty when submitted.
 1. The optional third parameter contains pipe-delimited (`|`) validation rules for this field.
 
 <div class="alert alert-info">

@@ -4,7 +4,7 @@ layout: post
 
 title:  "Formr for Designers"
 
-date:   2015-04-23
+date:   2020-10-11 21:27:27
 
 ---
 
@@ -16,7 +16,7 @@ Formr isn't at all complicated; to install it all you have to do is [download Fo
 {% highlight php startinline %}
 <?php
 	require_once 'Formr/class.formr.php';
-	$form = new Formr();
+	$form = new Formr\Formr();
 ?>
 {% endhighlight %}
 
@@ -121,7 +121,7 @@ if($form->submit()) {
 <?php
 
 require_once 'Formr/class.formr.php';
-$form = new Formr();
+$form = new Formr\Formr();
 $form->required = '*';
 
 if($form->submit()) {

@@ -6,7 +6,7 @@ permalink: /fastform/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-09-02T00:00:00
+  lastmod: 2020-10-11T00:00:00
 ---
 
 
@@ -23,7 +23,7 @@ Yes, strings.
 The main advantage to using `fastform()` is that it's stupid fast; you can build a fully-functioning form in seconds, which includes server-side validation and supports form field arrays. The main disadvantage in using `fastform()` as opposed to building each form element piece-by-piece is that you will lose a certain level of control, but not much!
 
 * Supports wrapping fields in `<p>`, `<div>`, `<ul>`, `<ol>`, `<dl>`, Bootstrap's `.form-group`, or your own wrapper.
-* Enables you to save/share form &amp; validation sets.
+* Enables you to save and share you form &amp; validation sets.
 * Accepts names and attributes as comma-delimited (`,`) strings or arrays.
 * Has `state`, `province` and `country` drop-downs baked right in, so you can easily create full menus by only typing one word.
 
@@ -364,7 +364,7 @@ The following code is all you need - it will not only print the form to the brow
     <body>
     <?php
         require_once 'formr/class.formr.php';
-        $form = new Formr();
+        $form = new Formr\Formr();
         $form->id = 'MyForm';
 
         if($form->submit()) {

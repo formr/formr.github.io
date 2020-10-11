@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-09-04T00:00:00
+  lastmod: 2020-10-11T00:00:00
 ---
 
 <header class="post-header">
@@ -17,8 +17,9 @@ sitemap:
 
 ---
 
-# Create
-## create()
+# Creating Forms
+
+## create_form()
 
 The easiest - and most basic - way to create a form. Simply add a comma delimited list of your form's labels and Formr will create the labels, form fields, IDs, etc. If your label contains the word 'email', Formr will automatically use the <code>email</code> input type.
 
@@ -26,11 +27,8 @@ Other than the <code>email</code> type described previously, all inputs will be 
 
 ### Example: Create a basic form
 {% highlight php startinline %}
-$form = new Formr();
-echo $form->form_open();
-echo $form->create('First name, Last name, Email address, Age|number, Comments|textarea');
-echo $form->input_submit();
-echo $form->form_close();
+$form = new Formr\Formr();
+echo $form->create_form('First name, Last name, Email address, Age|number, Comments|textarea');
 {% endhighlight %}
 
 ### Produces the following HTML
@@ -41,38 +39,30 @@ echo $form->form_close();
         First name
     </label> 
     <input type="text" name="first_name" id="first_name" class="input">
-    
     <label for="last_name">
         Last name
     </label> 
     <input type="text" name="last_name" id="last_name" class="input">
-
     <label for="email_address">
         Email address
     </label> 
     <input type="email" name="email_address" id="email_address" class="input">
-
     <label for="age">
         Age
     </label> 
     <input type="number" name="age" id="age" class="input">
-    
     <label for="comments">
         Comments
     </label> 
     <textarea name="comments" id="comments" class="input"></textarea>
-
     <input type="submit" name="submit" value="Submit" id="submit">
 </form>
 {% endhighlight %}
 
 ### Example: Create a basic form with the Bootstrap wrapper
 {% highlight php startinline %}
-$form = new Formr('bootstrap');
-echo $form->form_open();
-echo $form->create('First name, Last name, Email address');
-echo $form->input_submit();
-echo $form->form_close();
+$form = new Formr\Formr('bootstrap');
+echo $form->create_form('First name, Last name, Email address');
 {% endhighlight %}
 
 ### Produces the following HTML
@@ -84,27 +74,70 @@ echo $form->form_close();
         </label>
         <input type="text" name="first_name" id="first_name" class="form-control">
     </div>
-    
     <div id="_last_name" class="form-group">
         <label class="control-label" for="last_name">
             Last name
         </label>
         <input type="text" name="last_name" id="last_name" class="form-control">
     </div>
-    
     <div id="_email_address" class="form-group">
         <label class="control-label" for="email_address">
             Email address
         </label>
         <input type="email" name="email_address" id="email_address" class="form-control">
     </div>
-    
     <div id="_submit" class="form-group">
         <label class="sr-only" for="submit"></label>
         <input type="submit" name="submit" value="Submit" class="btn" id="submit">
     </div>
 </form>
 {% endhighlight %}
+
+
+
+
+
+
+
+
+
+## create()
+Identical to <code>create()</code> except that it omits the form open tag, the form close tag, and the submit button.
+
+### Example: Create a basic form
+{% highlight php startinline %}
+$form = new Formr\Formr();
+echo $form->form_open();
+echo $form->create('First name, Last name, Email address, Age|number, Comments|textarea');
+echo $form->input_submit();
+echo $form->form_close();
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+## create_form_multipart()
+Identical to <code>create_form()</code> except it adds <code>enctype="multipart/form-data"</code> to the form tag.
+
+{% highlight php startinline %}
+$form = new Formr\Formr();
+echo $form->create('Name, Photo|file');
+{% endhighlight %}
+
+{% highlight php startinline %}
+// adding brackets to the file type tells Formr you want to upload multiple files
+$form = new Formr\Formr();
+echo $form->create('Name, Photos|file[]');
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -205,7 +238,7 @@ echo $form->input_text($data);
 ### Example: adding Bootstrap's `.help-block` class
 {% highlight php startinline %}
 // use Bootstrap as our wrapper
-$form = new Formr('bootstrap');
+$form = new Formr\Formr('bootstrap');
 
 $data = array(
     'name'      => 'fname',
@@ -741,6 +774,55 @@ echo $form->input($data);
 
 
 
+## Input Aliases
+
+As of September, 2020, all form field methods have received an alias in hopes this will speed up your development, even if just a little bit. This means you now have the option to use `$form->text()` instead of `$form->input_text()`, and so on.
+
+<div class="row">
+     <div class="col-md-4">
+         $form->button()
+         $form->checkbox()
+         $form->checkbox_inline()
+         $form->color()
+         $form->date()
+         $form->datetime()
+         $form->datetime_local()
+         $form->dropdown()
+         $form->dropdown_multiple()
+         $form->email()
+     </div>
+     <div class="col-md-4">
+         $form->file()
+         $form->file_multiple()
+         $form->hidden()
+         $form->month()
+         $form->number()
+         $form->password()
+         $form->radio()
+         $form->radio_inline()
+         $form->range()
+         $form->search()
+     </div>
+     <div class="col-md-4">
+         $form->select()
+         $form->select_multiple()
+         $form->tel()
+         $form->text()
+         $form->textarea()
+         $form->time()
+         $form->upload()
+         $form->upload_multiple()
+         $form->url()
+         $form->week()
+     </div>
+</row>
+
+
+
+---
+
+
+
 
 # HTML5 Inputs
 
@@ -753,10 +835,10 @@ Identical to `input_text()` except that it creates an `type="color"` element.
 Identical to `input_text()` except that it creates an `<input type="date">` element.
 
 ## input_datetime()
-Identical to `input_text()` except that it creates an `<input type="datetime">` element.
+Identical to `input_text()` except that it creates an `<input type="datetime-local">` element.
 
 ##  input_datetime_local()
-Identical to `input_text()` except that it creates an `<input type="datetime_local">` element.
+Identical to `input_text()` except that it creates an `<input type="datetime-local">` element.
 
 ## input_email()
 Identical to `input_text()` except that it creates an `<input type="email">` element.
@@ -828,7 +910,7 @@ A form ID will be added automatically if an ID is used when instantiating Formr,
 
 #### Example: instantiating Formr, setting an ID and opening a form
 {% highlight php startinline %}
-$form = new Formr();
+$form = new Formr\Formr();
 echo $form->form_open('MyForm');
 
 // will produce (assuming our script name is form.php)
@@ -1185,6 +1267,34 @@ Identical to `input_button()` but creates an `<button type="submit">` element.
 
 
 ---
+
+
+
+
+## submit_button()
+
+Creates a standard `<button type="submit">` element.
+
+1. The only parameter optionally contains the button label.
+
+
+{% highlight php startinline %}
+echo $form->submit_button()
+
+// will produce
+<button type="submit" name="submit" id="submit">
+    Submit
+</button>
+{% endhighlight %}
+
+{% highlight php startinline %}
+echo $form->submit_button('Go!')
+
+// will produce
+<button type="submit" name="submit" id="submit">
+    Go!
+</button>
+{% endhighlight %}
 
 
 
@@ -1689,3 +1799,16 @@ if ($form->submit()) {
 }
 {% endhighlight %}
 
+
+
+
+
+
+## unset_session()
+
+Performs a `session_unset()` on the `$form->session` property upon refresh or submit. Will output a message to the browser letting you know it has been unset.
+
+{% highlight php startinline %}
+$form->session = 'myForm';
+$form->session_unset();
+{% endhighlight %}

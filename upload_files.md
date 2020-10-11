@@ -6,7 +6,7 @@ permalink: /upload-files/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2019-06-20T00:00:00
+  lastmod: 2020-10-11T00:00:00
 ---
 
 <header class="post-header">
@@ -201,6 +201,14 @@ $form->upload_rename = 'prepend[my-file-]';
 my-file-our_day_at_the_beach.jpg
 {% endhighlight %}
 
+{% highlight php startinline %}
+// rename the uploaded file with a custom string.
+$form->upload_rename = 'string[myFilename]';
+
+// will produce
+myFilename.jpg
+{% endhighlight %}
+
 
 
 
@@ -278,7 +286,7 @@ $form->upload_resize = $resize;
 
 {% highlight php startinline %}
 // instantiate Formr
-$form = new Formr();
+$form = new Formr\Formr();
 
 // set our upload directory
 $form->upload_dir = 'uploads';

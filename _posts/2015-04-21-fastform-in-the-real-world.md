@@ -4,7 +4,7 @@ layout: post
 
 title:  "FastForm in the Real World"
 
-date:   2020-04-15 21:27:27
+date:   2020-10-11 21:27:27
 
 ---
 
@@ -31,7 +31,7 @@ In fact, this is pretty much what my registration forms now look like from a PHP
 {% highlight php startinline %}
 <?php
 	require_once 'Formr/class.formr.php';
-	$form = new Formr('bootstrap');
+	$form = new Formr\Formr('bootstrap');
 	
 	if($form->submit()) {
 		$form->required = '*';

@@ -7,7 +7,7 @@ exclude_from_nav: true
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-04-26T00:00:00
+  lastmod: 2020-10-11T00:00:00
 ---
 
 <div class="jumbotron" id="welcome">
@@ -34,10 +34,10 @@ sitemap:
 		</div>
 		<span class="hidden-sm hidden-md hidden-lg"><br></span>
 		<div class="col-sm-4">
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="Q8SGKD4YF5QSU">
 				<button type="submit" class="btn btn-warning btn-lg btn-block">
-					
 					<div class="hidden-sm"><i class="fa fa-paypal"></i> Donate via PayPal</div>
 					<div class="hidden-lg hidden-md hidden-xs"><i class="fa fa-paypal"></i> Donate</div>
 				</button>
@@ -81,22 +81,6 @@ When we're talking about <strong>methods</strong> we're referring to a <strong>f
 <div class="alert alert-warning">
 <i class="fa fa-warning"></i> Formr does not have database capabilities, and very limited email capabilities; there are plenty of great classes out there that do that much, much better than I ever could.
 </div>
-
-
-# <i class="fa fa-plug text-warning"></i><a name="extensability"></a> Extensibility
-
-Formr is extensible in that it has some additional classes to which you can easily modify and add methods; this should hopefully make your life a little easier by enabling you to build, save and share custom dropdown menus, CSS classes, field wrappers, and form/validation sets.
-
-To create your own:
-
-1. Open the appropriate `class.` file in the `formr/lib` directory and copy a method.
-1. Paste the method into the appropriate class file in the `my_classes` directory.
-1. Rename and modify the method to create your own. <span class="text-danger">Make sure your methods have unique names!</span> 
-
-
-
-
-
 
 
 # <i class="fa fa-youtube-play text-danger"></i> Screencasts
@@ -156,7 +140,7 @@ Next you'll need to include Formr in your script and then create an instance of 
 require_once 'formr/class.formr.php';
 
 // now create an instance and give it a name, such as $form
-$form = new Formr();
+$form = new Formr\Formr();
 {% endhighlight %}
 
 #### That's all there is to it. You're now ready to start building your forms!
@@ -171,7 +155,7 @@ Creating forms has never been this easy! Simply enter your form fields as a comm
 
 This is all you need to create a form...
 {% highlight php startinline %}
-$form = new Formr('bootstrap');
+$form = new Formr\Formr('bootstrap');
 echo $form->create_form('Name, Email, Comments|textarea');
 {% endhighlight %}
 
@@ -304,17 +288,17 @@ You can easily (and automatically) wrap each form field in a `<div>`, `<p>` Boot
 
 {% highlight php startinline %}
 // wrap each form field in a `<div>`
-$form = new Formr('div');
+$form = new Formr\Formr('div');
 {% endhighlight %}
 
 {% highlight php startinline %}
 // wrap each form field in a `<p>`
-$form = new Formr('p');
+$form = new Formr\Formr('p');
 {% endhighlight %}
 
 {% highlight php startinline %}
 // wrap each form field in a `<div class="form-group">`
-$form = new Formr('bootstrap');
+$form = new Formr\Formr('bootstrap');
 {% endhighlight %}
 
 
@@ -333,12 +317,12 @@ Let's see how easy it is to incorporate Bootstrap into our Formr workflow...
 require_once 'formr/class.formr.php';
 
 // just add 'bootstrap' as your wrapper when you instantiate Formr
-$form = new Formr('bootstrap');
+$form = new Formr\Formr('bootstrap');
 
 // now build your form...
 echo $form->form_open();
-echo $form->input_text('name');
-echo $form->input_email('email');
+echo $form->input_text('name','Name);
+echo $form->input_email('email','Email);
 echo $form->input_submit();
 echo $form->form_close();
 {% endhighlight %}
@@ -347,9 +331,11 @@ The above code produces the following HTML with full Bootstrap formatting
 {% highlight html startinline %}
 <form action="/index.php" method="post" accept-charset="utf-8">
     <div id="_name" class="form-group">
+        <label class="control-label" for="name">Name</label>
         <input type="text" name="name" id="name" class="form-control">
     </div>
     <div id="_email" class="form-group">
+        <label class="control-label" for="email">Email</label>
         <input type="email" name="email" id="email" autocorrect="off" autocapitalize="off" class="form-control">
     </div>
     <div id="_submit" class="form-group">
@@ -394,7 +380,7 @@ Notice that we're also using Formr's `value()` method, which prints the `POST` v
 <?php
 // include and instantiate Formr
 require_once 'formr/class.formr.php';
-$form = new Formr();
+$form = new Formr\Formr();
 
 // make all fields required
 $form->required = '*';
