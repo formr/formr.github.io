@@ -6,7 +6,7 @@ permalink: /methods/
 sitemap:
   priority: 0.7
   changefreq: weekly
-  lastmod: 2020-10-11T00:00:00
+  lastmod: 2020-10-17T00:00:00
 ---
 
 <header class="post-header">
@@ -780,42 +780,42 @@ As of September, 2020, all form field methods have received an alias in hopes th
 
 <div class="row">
      <div class="col-md-4">
-         $form->button()
-         $form->checkbox()
-         $form->checkbox_inline()
-         $form->color()
-         $form->date()
-         $form->datetime()
-         $form->datetime_local()
-         $form->dropdown()
-         $form->dropdown_multiple()
-         $form->email()
+         <code>$form->button()</code><br>
+         <code>$form->checkbox()</code><br>
+         <code>$form->checkbox_inline()</code><br>
+         <code>$form->color()</code><br>
+         <code>$form->date()</code><br>
+         <code>$form->datetime()</code><br>
+         <code>$form->datetime_local()</code><br>
+         <code>$form->dropdown()</code><br>
+         <code>$form->dropdown_multiple()</code><br>
+         <code>$form->email()</code>
      </div>
      <div class="col-md-4">
-         $form->file()
-         $form->file_multiple()
-         $form->hidden()
-         $form->month()
-         $form->number()
-         $form->password()
-         $form->radio()
-         $form->radio_inline()
-         $form->range()
-         $form->search()
+         <code>$form->file()</code><br>
+         <code>$form->file_multiple()</code><br>
+         <code>$form->hidden()</code><br>
+         <code>$form->month()</code><br>
+         <code>$form->number()</code><br>
+         <code>$form->password()</code><br>
+         <code>$form->radio()</code><br>
+         <code>$form->radio_inline()</code><br>
+         <code>$form->range()</code><br>
+         <code>$form->search()</code>
      </div>
      <div class="col-md-4">
-         $form->select()
-         $form->select_multiple()
-         $form->tel()
-         $form->text()
-         $form->textarea()
-         $form->time()
-         $form->upload()
-         $form->upload_multiple()
-         $form->url()
-         $form->week()
+         <cocde>$form->select()</code><br>
+         <cocde>$form->select_multiple()</code><br>
+         <cocde>$form->tel()</code><br>
+         <cocde>$form->text()</code><br>
+         <cocde>$form->textarea()</code><br>
+         <cocde>$form->time()</code><br>
+         <cocde>$form->upload()</code><br>
+         <cocde>$form->upload_multiple()</code><br>
+         <cocde>$form->url()</code><br>
+         <cocde>$form->week()</code>
      </div>
-</row>
+</div>
 
 
 
