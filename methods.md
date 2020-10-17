@@ -804,16 +804,16 @@ As of September, 2020, all form field methods have received an alias in hopes th
          <code>$form->search()</code>
      </div>
      <div class="col-md-4">
-         <cocde>$form->select()</code><br>
-         <cocde>$form->select_multiple()</code><br>
-         <cocde>$form->tel()</code><br>
-         <cocde>$form->text()</code><br>
-         <cocde>$form->textarea()</code><br>
-         <cocde>$form->time()</code><br>
-         <cocde>$form->upload()</code><br>
-         <cocde>$form->upload_multiple()</code><br>
-         <cocde>$form->url()</code><br>
-         <cocde>$form->week()</code>
+         <code>$form->select()</code><br>
+         <code>$form->select_multiple()</code><br>
+         <code>$form->tel()</code><br>
+         <code>$form->text()</code><br>
+         <code>$form->textarea()</code><br>
+         <code>$form->time()</code><br>
+         <code>$form->upload()</code><br>
+         <code>$form->upload_multiple()</code><br>
+         <code>$form->url()</code><br>
+         <code>$form->week()</code>
      </div>
 </div>
 
