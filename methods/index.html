@@ -1,0 +1,2800 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://formr.github.io/methods/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>Methods - Formr</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-2126511-9","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#methods" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://formr.github.io" title="Formr" class="md-header-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Formr
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Methods
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://formr.github.io" title="Formr" class="md-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Formr
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Methods
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Methods
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-builders" class="md-nav__link">
+    Form Builders
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Builders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_form" class="md-nav__link">
+    create_form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_form_multipart" class="md-nav__link">
+    create_form_multipart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create" class="md-nav__link">
+    create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastform" class="md-nav__link">
+    fastform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastform_multipart" class="md-nav__link">
+    fastform_multipart
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-processors" class="md-nav__link">
+    Form Processors
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Processors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    post
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastpost" class="md-nav__link">
+    fastpost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirect" class="md-nav__link">
+    redirect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitted" class="md-nav__link">
+    submitted
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-tags" class="md-nav__link">
+    Form Tags
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open_multipart" class="md-nav__link">
+    open_multipart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-inputs" class="md-nav__link">
+    Text Inputs
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datetime" class="md-nav__link">
+    datetime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hidden" class="md-nav__link">
+    hidden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month" class="md-nav__link">
+    month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    number
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" class="md-nav__link">
+    password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tel" class="md-nav__link">
+    tel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textarea" class="md-nav__link">
+    textarea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week" class="md-nav__link">
+    week
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkboxes-radios" class="md-nav__link">
+    Checkboxes &amp; Radios
+  </a>
+  
+    <nav class="md-nav" aria-label="Checkboxes &amp; Radios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox_inline" class="md-nav__link">
+    checkbox_inline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    radio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio_inline" class="md-nav__link">
+    radio_inline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-menus" class="md-nav__link">
+    Select Menus
+  </a>
+  
+    <nav class="md-nav" aria-label="Select Menus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select_multiple" class="md-nav__link">
+    select_multiple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown" class="md-nav__link">
+    dropdown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown_multiple" class="md-nav__link">
+    dropdown_multiple
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-uploads" class="md-nav__link">
+    File Uploads
+  </a>
+  
+    <nav class="md-nav" aria-label="File Uploads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file_multiple" class="md-nav__link">
+    file_multiple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload" class="md-nav__link">
+    upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload_multiple" class="md-nav__link">
+    upload_multiple
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    Buttons
+  </a>
+  
+    <nav class="md-nav" aria-label="Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input_submit" class="md-nav__link">
+    input_submit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit_button" class="md-nav__link">
+    submit_button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset_button" class="md-nav__link">
+    reset_button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    Messaging
+  </a>
+  
+    <nav class="md-nav" aria-label="Messaging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error_message" class="md-nav__link">
+    error_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info_message" class="md-nav__link">
+    info_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success_message" class="md-nav__link">
+    success_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warning_message" class="md-nav__link">
+    warning_message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error Handling
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_to_errors" class="md-nav__link">
+    add_to_errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors" class="md-nav__link">
+    in_errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors_if" class="md-nav__link">
+    in_errors_if
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors_else" class="md-nav__link">
+    in_errors_else
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    Labels
+  </a>
+  
+    <nav class="md-nav" aria-label="Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_open" class="md-nav__link">
+    label_open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_close" class="md-nav__link">
+    label_close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fieldsets" class="md-nav__link">
+    Fieldsets
+  </a>
+  
+    <nav class="md-nav" aria-label="Fieldsets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fieldset_open" class="md-nav__link">
+    fieldset_open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldset_close" class="md-nav__link">
+    fieldset_close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email_1" class="md-nav__link">
+    Email
+  </a>
+  
+    <nav class="md-nav" aria-label="Email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send_email" class="md-nav__link">
+    send_email
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printr" class="md-nav__link">
+    printr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd" class="md-nav__link">
+    dd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    Misc.
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slug" class="md-nav__link">
+    slug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unset_session" class="md-nav__link">
+    unset_session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heading" class="md-nav__link">
+    heading
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../properties/" class="md-nav__link">
+      Properties
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../validation/" class="md-nav__link">
+      Validation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../upload-files/" class="md-nav__link">
+      Upload Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../fastform/" class="md-nav__link">
+      FastForm
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/formr/extend" class="md-nav__link">
+      Extend
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../blog/" class="md-nav__link">
+      Blog
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-builders" class="md-nav__link">
+    Form Builders
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Builders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_form" class="md-nav__link">
+    create_form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_form_multipart" class="md-nav__link">
+    create_form_multipart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create" class="md-nav__link">
+    create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastform" class="md-nav__link">
+    fastform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastform_multipart" class="md-nav__link">
+    fastform_multipart
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-processors" class="md-nav__link">
+    Form Processors
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Processors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    post
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastpost" class="md-nav__link">
+    fastpost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirect" class="md-nav__link">
+    redirect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitted" class="md-nav__link">
+    submitted
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-tags" class="md-nav__link">
+    Form Tags
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open_multipart" class="md-nav__link">
+    open_multipart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-inputs" class="md-nav__link">
+    Text Inputs
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datetime" class="md-nav__link">
+    datetime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hidden" class="md-nav__link">
+    hidden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month" class="md-nav__link">
+    month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    number
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" class="md-nav__link">
+    password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tel" class="md-nav__link">
+    tel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textarea" class="md-nav__link">
+    textarea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week" class="md-nav__link">
+    week
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkboxes-radios" class="md-nav__link">
+    Checkboxes &amp; Radios
+  </a>
+  
+    <nav class="md-nav" aria-label="Checkboxes &amp; Radios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox_inline" class="md-nav__link">
+    checkbox_inline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    radio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radio_inline" class="md-nav__link">
+    radio_inline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-menus" class="md-nav__link">
+    Select Menus
+  </a>
+  
+    <nav class="md-nav" aria-label="Select Menus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select_multiple" class="md-nav__link">
+    select_multiple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown" class="md-nav__link">
+    dropdown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown_multiple" class="md-nav__link">
+    dropdown_multiple
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-uploads" class="md-nav__link">
+    File Uploads
+  </a>
+  
+    <nav class="md-nav" aria-label="File Uploads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file_multiple" class="md-nav__link">
+    file_multiple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload" class="md-nav__link">
+    upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload_multiple" class="md-nav__link">
+    upload_multiple
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    Buttons
+  </a>
+  
+    <nav class="md-nav" aria-label="Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input_submit" class="md-nav__link">
+    input_submit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit_button" class="md-nav__link">
+    submit_button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset_button" class="md-nav__link">
+    reset_button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messaging" class="md-nav__link">
+    Messaging
+  </a>
+  
+    <nav class="md-nav" aria-label="Messaging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error_message" class="md-nav__link">
+    error_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info_message" class="md-nav__link">
+    info_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success_message" class="md-nav__link">
+    success_message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warning_message" class="md-nav__link">
+    warning_message
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error Handling
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_to_errors" class="md-nav__link">
+    add_to_errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors" class="md-nav__link">
+    in_errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors_if" class="md-nav__link">
+    in_errors_if
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_errors_else" class="md-nav__link">
+    in_errors_else
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    Labels
+  </a>
+  
+    <nav class="md-nav" aria-label="Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_open" class="md-nav__link">
+    label_open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label_close" class="md-nav__link">
+    label_close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fieldsets" class="md-nav__link">
+    Fieldsets
+  </a>
+  
+    <nav class="md-nav" aria-label="Fieldsets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fieldset_open" class="md-nav__link">
+    fieldset_open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldset_close" class="md-nav__link">
+    fieldset_close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email_1" class="md-nav__link">
+    Email
+  </a>
+  
+    <nav class="md-nav" aria-label="Email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send_email" class="md-nav__link">
+    send_email
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#printr" class="md-nav__link">
+    printr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd" class="md-nav__link">
+    dd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    Misc.
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slug" class="md-nav__link">
+    slug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unset_session" class="md-nav__link">
+    unset_session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heading" class="md-nav__link">
+    heading
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="methods">Methods</h1>
+<p>This document contains a list of Formr's public methods, grouped by functionality.</p>
+<h2 id="form-builders">Form Builders</h2>
+<h3 id="create_form">create_form</h3>
+<p>This method allows you to create a form by entering the form's label text.</p>
+<p>The only parameter contains a comma separated string of your form's labels and is required.</p>
+<div class="admonition example">
+<p class="admonition-title">Build a basic form</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Name, Email&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/index.php&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;myForm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<p>The default behavior is to create each form element as <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">&gt;</span></code>. If you want to specify an element type, just add a pipe character and the type of element you want to use.</p>
+<div class="admonition example">
+<p class="admonition-title">Specify input types</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Name, Comments|textarea&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/index.php&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;myForm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;comments&quot;</span><span class="p">&gt;</span>Comments<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;comments&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;comments&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Formr will create an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span></code> element if your label text contains the word <code>email</code>.</p>
+</div>
+<h3 id="create_form_multipart">create_form_multipart</h3>
+<p>Identical to <code class="highlight"><span class="nx">create_form</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
+<h3 id="create">create</h3>
+<p>Identical to <code class="highlight"><span class="nx">create_form</span><span class="p">()</span></code> except that it omits the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code> tags and submit button.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="highlight"><span class="nx">create</span><span class="p">()</span></code>, <code class="highlight"><span class="nx">create_form</span><span class="p">()</span></code>, and <code class="highlight"><span class="nx">create_form_multipart</span><span class="p">()</span></code> form building methods are meant for rapid creation of basic forms, so they won't fully support all input element types, such as <code>select</code>, <code>checkbox</code>, or <code>radio</code>. If you require those elements, consider using <code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code>, or build the form element-by-element.</p>
+</div>
+<h3 id="fastform">fastform</h3>
+<p>This method allows you to build incredibly complex forms using simple key/value arrays and strings. <a href="../fastform/">Read the FastForm docs</a> for complete examples. Validate with the <code class="highlight"><span class="nx">fastpost</span><span class="p">()</span></code> method;</p>
+<ol>
+<li>The first parameter contains the array (or string) and is required.</li>
+<li>If you'd like to add CSRF protection, just enter <code>CSRF</code> or <code class="highlight"><span class="k">TRUE</span></code> in the second parameter.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/index.php&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;login&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="na">autocorrect</span><span class="o">=</span><span class="s">&quot;off&quot;</span> <span class="na">autocapitalize</span><span class="o">=</span><span class="s">&quot;off&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Login&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="fastform_multipart">fastform_multipart</h3>
+<p>Identical to <code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When using CSRF protection you must enable sessions by adding <code class="highlight"><span class="nb">session_start</span><span class="p">()</span></code> at the top of your file.</p>
+</div>
+<hr />
+<h2 id="form-processors">Form Processors</h2>
+<h3 id="validate">validate</h3>
+<p>This method allows you to retrieve and validate a form's values by entering only the form's label text. Read the <a href="../validation/">Validate Form docs</a> for complete examples.</p>
+<p>The only parameter contains a comma separated string of your form's labels and is required.</p>
+<div class="admonition example">
+<p class="admonition-title">Validate a basic form</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name, Email, Comments&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>All form values are put into an array, so it's really easy to retrieve them.</p>
+<div class="admonition example">
+<p class="admonition-title">Retrieve values</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name, Email, Comments&#39;</span><span class="p">);</span>
+
+<span class="nv">$name</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<span class="nv">$email</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+<span class="nv">$comments</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;comments&#39;</span><span class="p">];</span>
+</code></pre></div>
+</div>
+<p>You can add validation rules to each field by wrapping them in parenthesis. Each rule must be separated by a pipe character. If a field is named <code>Email</code> it will automatically have the <code class="highlight"><span class="nx">valid_email</span></code> rule applied.</p>
+<div class="admonition example">
+<p class="admonition-title">Validate values</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name(min[2]|max[60]), Email, Comments(min[5])&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h3 id="post">post</h3>
+<p>This method allows you to retrieve and validate a form's values with much more control and fine-tuning then the <code class="highlight"><span class="nx">validate</span><span class="p">()</span></code> method.</p>
+<ol>
+<li>The first required parameter is the form field's name.</li>
+<li>The optional second parameter contains a human readable field name and custom error message.</li>
+<li>The optional third parameter contains validation rules.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Basic example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$name</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Make sure a valid email address is posted</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="s1">&#39;Email&#39;</span><span class="p">,</span><span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Password is not less than 6 characters and not more than 20</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$password</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span><span class="s1">&#39;Password&#39;</span><span class="p">,</span><span class="s1">&#39;min[6]|max[20]&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Create a custom error message</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="s1">&#39;Email|Enter your email address&#39;</span><span class="p">,</span><span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The form data is passed through PHP's <code class="highlight"><span class="nb">trim</span><span class="p">()</span></code> and <code class="highlight"><span class="nb">strip_tags</span><span class="p">()</span></code> functions for basic sanitation. If you want to allow HTML in your forms, just add the <code class="highlight"><span class="nx">allow_html</span></code> validation rule in the third parameter and only <code class="highlight"><span class="nb">trim</span><span class="p">()</span></code> will be applied to the input.</p>
+</div>
+<h3 id="get">get</h3>
+<p>Identical to <code class="highlight"><span class="nx">post</span><span class="p">()</span></code> except that it retrieves values via PHP's <code class="highlight"><span class="nv">$_GET</span></code> array.</p>
+<h3 id="fastpost">fastpost</h3>
+<p>This method will return an array of key/value pairs, and perform validation. <a href="../fastform/">Read the FastForm docs</a> for complete examples. Use with the <code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code> method.</p>
+<ol>
+<li>The only parameter contains an array, or the form name as a string, and is required.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;?</span><span class="nx">php</span>
+    <span class="k">require</span> <span class="s1">&#39;Formr/class.formr.php&#39;</span><span class="p">;</span>
+    <span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastpost</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span>
+
+        <span class="nv">$username</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">];</span>
+        <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+<span class="x"> &lt;!DOCTYPE html&gt;</span>
+<span class="x"> &lt;html lang=&quot;en&quot;&gt;</span>
+<span class="x"> &lt;body&gt;</span>
+<span class="x">     &lt;div class=&quot;container&quot;&gt;</span>
+<span class="x">         </span><span class="cp">&lt;?php</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">     &lt;/div&gt;</span>
+<span class="x"> &lt;/body&gt;</span>
+<span class="x"> &lt;/html&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="redirect">redirect</h3>
+<p>This method lets you redirect to another URL after the form has been submitted.</p>
+<p>The only parameter contains the redirection URL and is required.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">redirect</span><span class="p">(</span><span class="s1">&#39;https://mysite.com/thankyou&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="submitted">submitted</h3>
+<p>The <code class="highlight"><span class="nx">submitted</span><span class="p">()</span></code> method checks to see if the form has been submitted or not. It does this by checking the <code class="highlight"><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span></code> for <code class="highlight"><span class="nx">POST</span></code>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">()){</span>
+    <span class="c1">// form is submitted via POST</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<hr />
+<h2 id="form-tags">Form Tags</h2>
+<h3 id="open">open</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span></code> tag.</p>
+<p>Opens a form with a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span></code> tag and accepts six parameters. All parameters are optional, so you can just leave it empty and the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span></code> tag will be created automatically with the proper attributes.</p>
+<ol>
+<li>The optional first parameter contains the form's name.</li>
+<li>The optional second parameter contains the form's ID.</li>
+<li>The optional third parameter contains the form's action.</li>
+<li>The optional fourth parameter contains the form's method. Default is <code class="highlight"><span class="nx">POST</span></code>.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+<li>The optional sixth parameter contains an associative array which creates hidden fields.</li>
+</ol>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>If an action isn't specified, <code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will assume you want to process the form in the current script and will add the script's filename in the form's <code>action</code> attribute using <code class="highlight"><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SCRIPT_NAME&#39;</span><span class="p">]</span></code>.</p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will optionally let you add form attributes and hidden input fields, and will always add the attribute <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span></code>, unless you change the <code class="highlight"><span class="nv">$charset</span></code> property.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The global property <a href="../properties/#id"><code>$form-&gt;id</code></a> will override the second parameter of <code class="highlight"><span class="nx">open</span><span class="p">()</span></code>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Opening a form and setting an ID</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;MyForm&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML (assuming our script's filename is form.php)
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;form.php&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Adding the form action manually</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;contact.php&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;class=&quot;bar&quot;&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;contact.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bar&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Adding hidden input fields</p>
+<p>Hidden fields can be added by passing an associative array to the sixth parameter, where the array key is the field name and the array value is the field's value.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$array</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;JohnWick&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;johnwick@gunfu.com&#39;</span>
+<span class="p">];</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;form.php&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="nv">$array</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;form.php&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;JohnWick&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;johnwick@gunfu.com&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="open_multipart">open_multipart</h3>
+<p>This method is identical to <code class="highlight"><span class="nx">open</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
+<h3 id="close">close</h3>
+<p>Closes the form with a standard <code class="highlight"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code> tag.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">close</span><span class="p">();</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="text-inputs">Text Inputs</h2>
+<h3 id="text">text</h3>
+<p>Creates an  <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">&gt;</span></code> element.</p>
+<ol>
+<li>The required first parameter contains the field's name.</li>
+<li>The optional second parameter contains the field's label text.</li>
+<li>The optional third parameter contains a default value.</li>
+<li>The optional fourth parameter contains the field's ID.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If an ID is not entered in the fourth parameter, it will be created using the name.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Create a text input element</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Create a text input element with a label and default value</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Your name&#39;</span><span class="p">,</span><span class="s1">&#39;John Wick&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Your name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Create a text input element using an associative array</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Your name&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;value&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;John Wick&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;maxlength&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;32&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;class&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;input&#39;</span>
+<span class="p">];</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Your name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span> <span class="na">maxlength</span><span class="o">=</span><span class="s">&quot;32&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Adding Bootstrap's <code>.form-text</code> class</p>
+<p><div class="highlight"><pre><span></span><code><span class="c1">// init Formr with the Bootstrap wrapper</span>
+<span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;John Wick&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;please enter your name&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;_name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-text&quot;</span><span class="p">&gt;</span>please enter your name<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can also specify if you want the <code>.form-text</code> text to show only when there's a form error on that field by wrapping the string with square brackets <code>[ ]</code>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;John Wick&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;[please enter your name]&#39;</span><span class="p">);</span>
+</code></pre></div></p>
+</div>
+<h3 id="color">color</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;color&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="date">date</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="datetime">datetime</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;datetime-local&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="email">email</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="hidden">hidden</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span><span class="p">&gt;</span> element</code>.</p>
+<ol>
+<li>The required first parameter contains the field's name.</li>
+<li>The required second parameter contains the field's value.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">hidden</span><span class="p">(</span><span class="s1">&#39;fname&#39;</span><span class="p">,</span><span class="s1">&#39;John&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;fname&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;fname&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Create hidden elements with an associative array</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;John Wick&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;johnwick@gunfu.com&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;url&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;http://gunfu.com&#39;</span>
+<span class="p">];</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">hidden</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;johnwick@gunfu.com&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;url&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;url&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;http://gunfu.com&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="month">month</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;month&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="number">number</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="password">password</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="range">range</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="search">search</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;search&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="tel">tel</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;tel&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="textarea">textarea</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates a <code class="highlight"><span class="p">&lt;</span><span class="nt">textarea</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="time">time</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;time&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="url">url</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;url&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="value">value</h3>
+<p>Prints the field's value after the form has been submitted. Use when building forms in HTML.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;address&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&lt;?php $form-&gt;value(&#39;address&#39;) ?&gt;&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="week">week</h3>
+<p>Identical to <code class="highlight"><span class="nx">text</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;week&quot;</span><span class="p">&gt;</span></code> element.</p>
+<hr />
+<h2 id="checkboxes-radios">Checkboxes &amp; Radios</h2>
+<h3 id="checkbox">checkbox</h3>
+<p>Creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">&gt;</span></code> element.</p>
+<ol>
+<li>The required first parameter contains the field's name.</li>
+<li>The optional second parameter contains the field's label text.</li>
+<li>The optional third parameter contains a default value.</li>
+<li>The optional fourth parameter contains the field's ID.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
+<li>The optional seventh parameter tells Formr if the checkbox should be ticked.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example: create a standard checkbox</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">checkbox</span><span class="p">(</span><span class="s1">&#39;agree&#39;</span><span class="p">,</span><span class="s1">&#39;I Agree&#39;</span><span class="p">,</span><span class="s1">&#39;agree&#39;</span><span class="p">,</span><span class="s1">&#39;agreeID&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;agree&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;agree&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;agreeID&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;agree&quot;</span><span class="p">&gt;</span>I Agree
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tick a checkbox on page load</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">checkbox</span><span class="p">(</span><span class="s1">&#39;agree&#39;</span><span class="p">,</span><span class="s1">&#39;I Agree&#39;</span><span class="p">,</span><span class="s1">&#39;agree&#39;</span><span class="p">,</span><span class="s1">&#39;agree&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;checked&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;agree&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;agree&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;agree&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;agree&quot;</span><span class="p">&gt;</span>I Agree
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Notice how in the seventh parameter we used the string <code>checked</code> instead of the boolean <code class="highlight"><span class="k">TRUE</span></code>? This is because anything in that parameter will return <code class="highlight"><span class="k">TRUE</span></code>, even if it's an incorrect value. Therefore we must either enter the string <code>checked</code>, the string <code>selected</code>, or the actual checkbox value (example below) to tell Formr we want this element checked on form load.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tick a checkbox using a variable</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$favorite_fruit</span> <span class="o">=</span> <span class="s1">&#39;bananas&#39;</span><span class="p">;</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">checkbox</span><span class="p">(</span><span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="nv">$favorite_fruit</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;bananas&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;bananas&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;bananas&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="checkbox_inline">checkbox_inline</h3>
+<p>Identical to <code class="highlight"><span class="nx">checkbox</span><span class="p">()</span></code>, plus adds the appropriate Bootstrap CSS classes to the <code class="highlight"><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span></code> and enclosing <code class="highlight"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span></code>.</p>
+<h3 id="radio">radio</h3>
+<p>Identical to <code class="highlight"><span class="nx">checkbox</span><span class="p">()</span></code> except that it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span><span class="p">&gt;</span></code> element.</p>
+<h3 id="radio_inline">radio_inline</h3>
+<p>Identical to <code class="highlight"><span class="nx">radio</span><span class="p">()</span></code>, plus adds the appropriate Bootstrap CSS classes to the <code class="highlight"><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span></code> and enclosing <code class="highlight"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span></code>.</p>
+<hr />
+<h2 id="select-menus">Select Menus</h2>
+<h3 id="select">select</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span></code> element.</p>
+<ol>
+<li>The required first parameter contains the field's name.</li>
+<li>The optional second parameter contains the field's label text.</li>
+<li>The optional third parameter contains a default value.</li>
+<li>The optional fourth parameter contains the field's ID.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
+<li>The optional seventh parameter contains a default value.</li>
+<li>The required eighth parameter contains an array of options to populate the menu.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Using an array to create a select menu</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;cat&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Cat in the Hat&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lorax&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Lorax&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;yertle&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Yertle the Turtle&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;grinch&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Grinch Who Stole Christmas&#39;</span><span class="p">,</span>
+<span class="p">];</span>
+
+<span class="c1">// notice that we added a &#39;selected&#39; value in the 7th parameter</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;books&#39;</span><span class="p">,</span><span class="s1">&#39;Books&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;yertle&#39;</span><span class="p">,</span><span class="nv">$options</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>Books<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;books&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;cat&quot;</span><span class="p">&gt;</span>The Cat in the Hat<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;lorax&quot;</span><span class="p">&gt;</span>The Lorax<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;yertle&quot;</span> <span class="na">selected</span><span class="p">&gt;</span>Yertle the Turtle<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;grinch&quot;</span><span class="p">&gt;</span>The Grinch Who Stole Christmas<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<p>Instead of selecting a value from our <code class="highlight"><span class="nv">$options</span></code> array we can insert a string, and if a match isn't available in the <code class="highlight"><span class="nv">$options</span></code> array then an empty <code class="highlight"><span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span></code> tag will be created instead.</p>
+<div class="admonition example">
+<p class="admonition-title">Adding a default option on the fly</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;books&#39;</span><span class="p">,</span><span class="s1">&#39;Books&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;Select a Book...&#39;</span><span class="p">,</span><span class="nv">$options</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>Books<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;books&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Select a Book...<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;cat&quot;</span><span class="p">&gt;</span>The Cat in the Hat<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;lorax&quot;</span><span class="p">&gt;</span>The Lorax<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;yertle&quot;</span><span class="p">&gt;</span>Yertle the Turtle<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;grinch&quot;</span><span class="p">&gt;</span>The Grinch Who Stole Christmas<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You may also pass an array of default values through the 7th parameter and Formr will create a <code class="highlight"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">multiple</span><span class="p">&gt;</span></code> element.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Selecting multiple options</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;cat&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Cat in the Hat&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lorax&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Lorax&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;yertle&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Yertle the Turtle&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;grinch&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Grinch Who Stole Christmas&#39;</span><span class="p">,</span>
+<span class="p">];</span>
+
+<span class="nv">$selected</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;yertle&#39;</span><span class="p">];</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;books&#39;</span><span class="p">,</span><span class="s1">&#39;Books&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="nv">$selected</span><span class="p">,</span><span class="nv">$options</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>Books<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;books&quot;</span> <span class="na">multiple</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;cat&quot;</span> <span class="na">selected</span><span class="p">&gt;</span>The Cat in the Hat<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;lorax&quot;</span><span class="p">&gt;</span>The Lorax<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;yertle&quot;</span> <span class="na">selected</span><span class="p">&gt;</span>Yertle the Turtle<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;grinch&quot;</span><span class="p">&gt;</span>The Grinch Who Stole Christmas<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<p>It's also possible to create the select menu and all of the options using an associative array.</p>
+<div class="admonition example">
+<p class="admonition-title">Creating a select menu from an associative array</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;books&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;books&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Books&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;options&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">&#39;cat&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Cat in the Hat&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;lorax&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Lorax&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;yertle&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Yertle the Turtle&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;grinch&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The Grinch Who Stole Christmas&#39;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;selected&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;lorax&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;value&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span>
+<span class="p">];</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;books&quot;</span><span class="p">&gt;</span>Books<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;books&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;books&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;cat&quot;</span><span class="p">&gt;</span>The Cat in the Hat<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;lorax&quot;</span> <span class="na">selected</span><span class="p">&gt;</span>The Lorax<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;yertle&quot;</span><span class="p">&gt;</span>Yertle the Turtle<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;grinch&quot;</span><span class="p">&gt;</span>The Grinch Who Stole Christmas<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Building selects with strings</p>
+<p>The <code class="highlight"><span class="nx">select</span><span class="p">()</span></code> method also has a little trick up its sleeve: if you pass a string as the 8th parameter, Formr will look for a method with the same name inside the <code>lib/class.formr.dropdowns.php</code> or <code>my_classes/my.dropdowns.php</code> files.</p>
+<p>For instance, if you enter the string <code>states</code> in the 8th parameter, Formr will automatically produce a menu containing all 50 US states. This is basically a plugin system, which will not only allow you to tap into all of Formr's built-in menus, but will also allow you to create and save your own.</p>
+<p>Check out the <a href="https://github.com/formr/extend">Formr Extend</a> repo for more information on creating your own dropdown menus.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;State:&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;states&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;state&quot;</span><span class="p">&gt;</span>State:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;state&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;state&quot;</span> <span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">selected</span><span class="o">=</span><span class="s">&quot;selected&quot;</span><span class="p">&gt;</span>Select a State...<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;AL&quot;</span><span class="p">&gt;</span>Alabama<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;AK&quot;</span><span class="p">&gt;</span>Alaska<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    ...
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;WI&quot;</span><span class="p">&gt;</span>Wisconsin<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;WY&quot;</span><span class="p">&gt;</span>Wyoming<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<p>Following is a list of Formr's built-in menus</p>
+<table>
+<thead>
+<tr>
+<th>Menu Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>states</td>
+<td>Displays all 50 U.S. States</td>
+</tr>
+<tr>
+<td>countries</td>
+<td>Displays all World Countries</td>
+</tr>
+<tr>
+<td>provinces</td>
+<td>Displays all Canadian Provinces</td>
+</tr>
+<tr>
+<td>states_provinces</td>
+<td>Displays all U.S. States and Canadian Provinces</td>
+</tr>
+<tr>
+<td>age</td>
+<td>Displays ages in groups, 18-24, 25-29, etc.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Displays a list of heights in feet and inches</td>
+</tr>
+<tr>
+<td>years_old</td>
+<td>Makes sure a person is of a certain age. Default is 18 years old</td>
+</tr>
+<tr>
+<td>days</td>
+<td>Displays numbers starting from 1 - 31. Good for registration forms</td>
+</tr>
+<tr>
+<td>months</td>
+<td>Display months of the year, with the month name being the key and the value</td>
+</tr>
+<tr>
+<td>years</td>
+<td>Displays every year starting from 1930. Good for registration forms</td>
+</tr>
+<tr>
+<td>months_alpha</td>
+<td>Displays months of the year with a numeric key</td>
+</tr>
+<tr>
+<td>cc_months</td>
+<td>Displays months of the year, with the key being an integer. Good for credit card forms</td>
+</tr>
+<tr>
+<td>cc_years</td>
+<td>Displays the current year up to 2025. Good for credit card forms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="select_multiple">select_multiple</h3>
+<p>Identical to <code class="highlight"><span class="nx">select</span><span class="p">()</span></code>, plus adds the <code>multiple</code> attribute to create a multiple select list.</p>
+<h3 id="dropdown">dropdown</h3>
+<p>Alias of <code class="highlight"><span class="nx">select</span><span class="p">()</span></code></p>
+<h3 id="dropdown_multiple">dropdown_multiple</h3>
+<p>Alias of <code class="highlight"><span class="nx">select_multiple</span><span class="p">()</span></code></p>
+<hr />
+<h2 id="file-uploads">File Uploads</h2>
+<h3 id="file">file</h3>
+<p>Creates an  <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span><span class="p">&gt;</span></code> element.</p>
+<ol>
+<li>The required first parameter contains the field's name.</li>
+<li>The optional second parameter contains the field's label text.</li>
+<li>The optional third parameter contains a default value.</li>
+<li>The optional fourth parameter contains the field's ID.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">(</span><span class="s1">&#39;image&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;image&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="file_multiple">file_multiple</h3>
+<p>Identical to <code class="highlight"><span class="nb">file</span><span class="p">()</span></code> except that it adds the <code>multiple</code> attribute, which allows the user to select multiple files with only one input. May not work in all browsers.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">file_multiple</span><span class="p">(</span><span class="s1">&#39;images[]&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;images[]&quot;</span> <span class="na">multiple</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Because we're uploading multiple files we have to prepend our field name with square brackets <code>[]</code>.</p>
+</div>
+<h3 id="upload">upload</h3>
+<p>Alias of <code class="highlight"><span class="nb">file</span><span class="p">()</span></code>.</p>
+<h3 id="upload_multiple">upload_multiple</h3>
+<p>Alias of <code class="highlight"><span class="nx">file_multiple</span><span class="p">()</span></code>.</p>
+<hr />
+<h2 id="buttons">Buttons</h2>
+<h3 id="button">button</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span></code> element.</p>
+<ol>
+<li>The optional first parameter contains the button name.</li>
+<li>The optional second parameter contains label text.</li>
+<li>The optional third parameter contains the button's value.</li>
+<li>The optional fourth parameter contains the button's ID.</li>
+<li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">button</span><span class="p">();</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Changing the button text</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">button</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;Press Me&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>Press Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="input_submit">input_submit</h3>
+<p>Identical to <code class="highlight"><span class="nx">button</span><span class="p">()</span></code> except it creates an <code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span></code> element.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_submit</span><span class="p">();</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="submit_button">submit_button</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span></code> element.</p>
+<p>The only parameter contains the button's value text and is optional.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submit_button</span><span class="p">();</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+    Submit
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Change the button value</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submit_button</span><span class="p">(</span><span class="s1">&#39;Submit Form&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+    Submit Form
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="reset_button">reset_button</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;reset&quot;</span><span class="p">&gt;</span></code> element.</p>
+<p>The only parameter contains the button's value text and is optional.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">reset_button</span><span class="p">();</span>
+</code></pre></div>
+<p>Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+    Reset
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="messaging">Messaging</h2>
+<h3 id="messages">messages</h3>
+<p>Use this method to print your form's messages. If using Bootstrap as your wrapper, error messages will be formatted automatically using the proper alert CSS classes.</p>
+<ol>
+<li>The optional first parameter contains your field wrapper's open tag.</li>
+<li>The optional second parameter contains your field wrapper's close tag.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Wrap messages in a custom div</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">(</span><span class="s1">&#39;&lt;div class=&quot;error&quot;&gt;&#39;</span><span class="p">,</span><span class="s1">&#39;&lt;/div&gt;&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code class="highlight"><span class="nx">messages</span><span class="p">()</span></code> will not print anything to the screen if Formr's <code class="highlight"><span class="nv">$errors</span></code> array is empty, so there's really no reason why you shouldn't have it in your scripts, as it will print out error messages if you forgot to add a property or configured something incorrectly.</p>
+</div>
+<h3 id="error_message">error_message</h3>
+<p>Add your own custom error messages throughout your application. Uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert</span> <span class="p">.</span><span class="nc">alert-danger</span></code> classes, which can be changed via the <code class="highlight"><span class="nv">$controls</span></code> property or by creating your own wrapper class. See the <a href="https://github.com/formr/extend">Extend Repo</a> for more info on creating your own wrappers.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">error_message</span><span class="p">(</span><span class="s1">&#39;This is bad, and you should feel bad!&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h3 id="info_message">info_message</h3>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-info</span></code> class.</p>
+<h3 id="success_message">success_message</h3>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-success</span></code> class.</p>
+<div class="admonition example">
+<p class="admonition-title">Print a success message after the form has been submitted</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$form_errors</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">success_message</span><span class="p">(</span><span class="s1">&#39;Thank you for submitting our form!&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="warning_message">warning_message</h3>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-warning</span></code> class.</p>
+<hr />
+<h2 id="error-handling">Error Handling</h2>
+<h3 id="errors">errors</h3>
+<p>Use this method to see if Formr's <code class="highlight"><span class="nv">$errors</span></code> array is empty.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">errors</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;there were form errors&#39;</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">&#39;no errors!&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="add_to_errors">add_to_errors</h3>
+<p>Manually add a field's <code>name</code> to the <code class="highlight"><span class="nv">$errors</span></code> array and it will be printed via the <code class="highlight"><span class="nx">messages</span><span class="p">()</span></code> method.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">add_to_errors</span><span class="p">(</span><span class="s1">&#39;zip&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>You can add a custom message by separating your field name and message with a pipe character.</p>
+<div class="admonition example">
+<p class="admonition-title">Adding a custom error message</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">add_to_errors</span><span class="p">(</span><span class="s1">&#39;zip|Please enter your zip code&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h3 id="in_errors">in_errors</h3>
+<p>Check if a field is in the <code class="highlight"><span class="nv">$errors</span></code> array.</p>
+<div class="admonition example">
+<p class="admonition-title">Check if email is in the $errors array</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">in_errors</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// email is in the $errors array</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="in_errors_if">in_errors_if</h3>
+<p>Returns a string if the given form field is in the <code class="highlight"><span class="nv">$errors</span></code>array.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">in_errors_if</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Please enter your name&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h3 id="in_errors_else">in_errors_else</h3>
+<p>If the given field is in the <code class="highlight"><span class="nv">$errors</span></code> array return a string, else return another string.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">in_errors_else</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Please enter your name&#39;</span><span class="p">,</span><span class="s1">&#39;You entered your name!&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<hr />
+<h2 id="labels">Labels</h2>
+<h3 id="label">label</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span></code> tag.</p>
+<ol>
+<li>The required first parameter contains the field name for which this label is being created.</li>
+<li>The required second parameter contains the label text and is required.</li>
+<li>The optional third parameter contains an ID attribute.</li>
+<li>The optional fourth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">label</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Your name:&#39;</span><span class="p">);</span>
+</code></pre></div>
+ Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Your name:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Add a CSS class to the label</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">label</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Your name:&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;class=&quot;label&quot;&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Your name:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="label_open">label_open</h3>
+<p>Identical to the <code class="highlight"><span class="nx">label</span><span class="p">()</span></code> method, except that it does not add a close <code class="highlight"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span></code> tag.</p>
+<h3 id="label_close">label_close</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span></code> tag.</p>
+<p>The only parameter to <code class="highlight"><span class="nx">label_close</span><span class="p">()</span></code> contains the label text. This is handy if you want to wrap a label around a checkbox or radio button and want the text to be after the element, rather than before.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">label_close</span><span class="p">(</span><span class="s1">&#39;Derby&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code>Derby<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Full label example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">label_open</span><span class="p">(</span><span class="s1">&#39;bowler&#39;</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_checkbox</span><span class="p">(</span><span class="s1">&#39;bowler&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;bowler&#39;</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">label_close</span><span class="p">(</span><span class="s1">&#39;Bowler&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;bowler&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;bowler&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;bowler&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;bowler&quot;</span><span class="p">&gt;</span>Bowler
+<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="fieldsets">Fieldsets</h2>
+<h3 id="fieldset_open">fieldset_open</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span></code> tag.</p>
+<ol>
+<li>The optional first parameter contains the legend text.</li>
+<li>The optional second parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fieldset_open</span><span class="p">(</span><span class="s1">&#39;Contact information&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Contact information<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<h3 id="fieldset_close">fieldset_close</h3>
+<p>Creates a standard <code class="highlight"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code> tag.</p>
+<p>The only parameter accepts a string and is optional.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fieldset_close</span><span class="p">();</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="email_1">Email</h2>
+<h3 id="send_email">send_email</h3>
+<p>Sends a very basic HTML or plain-text email using PHP's <code class="highlight"><span class="nb">mail</span><span class="p">()</span></code> function. Optionally loops though the contents of the <code class="highlight"><span class="nv">$_POST</span></code> array and prints the key/value pair in the email.</p>
+<ol>
+<li>The required first parameter is the recipient's email address.</li>
+<li>The required second parameter is the email subject.</li>
+<li>The required third parameter contains the message body.</li>
+<li>The optional fourth parameter is accepts a 'from' email address.</li>
+<li>The optional fifth parameter is binary: set to <code class="highlight"><span class="k">TRUE</span></code> if you'd like to send the email as HTML.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Send a plain-text email</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$to</span> <span class="o">=</span> <span class="s1">&#39;recipient@email.com&#39;</span><span class="p">;</span>
+<span class="nv">$subject</span> <span class="o">=</span> <span class="s1">&#39;Ahoy, Matey!&#39;</span><span class="p">;</span>
+<span class="nv">$message</span> <span class="o">=</span> <span class="s1">&#39;Welcome to our website!...&#39;</span><span class="p">;</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">send_email</span><span class="p">(</span><span class="nv">$to</span><span class="p">,</span> <span class="nv">$subject</span><span class="p">,</span> <span class="nv">$message</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Send an HTML Email with a Return Address</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$to</span> <span class="o">=</span> <span class="s1">&#39;recipient@email.com&#39;</span><span class="p">;</span>
+<span class="nv">$from</span> <span class="o">=</span> <span class="s1">&#39;me@domain.com&#39;</span><span class="p">;</span>
+<span class="nv">$subject</span> <span class="o">=</span> <span class="s1">&#39;Ahoy, Matey!&#39;</span><span class="p">;</span>
+<span class="nv">$message</span> <span class="o">=</span> <span class="s1">&#39;Welcome to our website!...&#39;</span><span class="p">;</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">send_email</span><span class="p">(</span><span class="nv">$to</span><span class="p">,</span> <span class="nv">$subject</span><span class="p">,</span> <span class="nv">$message</span><span class="p">,</span> <span class="nv">$from</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Send the $_POST array as HTML</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$to</span> <span class="o">=</span> <span class="s1">&#39;recipient@email.com&#39;</span><span class="p">;</span>
+<span class="nv">$from</span> <span class="o">=</span> <span class="s1">&#39;me@domain.com&#39;</span><span class="p">;</span>
+<span class="nv">$subject</span> <span class="o">=</span> <span class="s1">&#39;Ahoy, Matey!&#39;</span><span class="p">;</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">send_email</span><span class="p">(</span><span class="nv">$to</span><span class="p">,</span> <span class="nv">$subject</span><span class="p">,</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="nv">$from</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">);</span>
+</code></pre></div>
+Produces something like
+<div class="highlight"><pre><span></span><code>your_name: John Wick
+your_email: johnwick@gunfu.com
+</code></pre></div></p>
+</div>
+<p>If you want prettier emails while looping through the <code class="highlight"><span class="nv">$_POST</span></code> array, name your input fields with capital letters and underscores, and then prepend each name with an underscore. Prepending a field with an underscore tells Formr to replace all underscores with spaces, making for an easier to read email.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_text</span><span class="p">(</span><span class="s1">&#39;_First_Name&#39;</span><span class="p">,</span><span class="s1">&#39;First Name&#39;</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_text</span><span class="p">(</span><span class="s1">&#39;_Last_Name&#39;</span><span class="p">,</span><span class="s1">&#39;Last Name&#39;</span><span class="p">);</span>
+</code></pre></div>
+And the email will look like something this
+<div class="highlight"><pre><span></span><code>First Name: Jack
+Last Name: Black
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="debugging">Debugging</h2>
+<h3 id="printr">printr</h3>
+<p>Incredibly handy! Formr's shortcut for PHP's <code class="highlight"><span class="nb">print_r</span><span class="p">()</span></code> function, which automatically formats and prints the contents of an array.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">);</span>  <span class="c1">// lazy alias...</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">);</span>   <span class="c1">// lazy alias...</span>
+</code></pre></div>
+</div>
+<h3 id="dd">dd</h3>
+<p>Alias of <code class="highlight"><span class="nx">printr</span><span class="p">()</span></code>.</p>
+<h3 id="info">info</h3>
+<p>Prints out the settings of your form. Try it!</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">info</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<hr />
+<h2 id="misc">Misc.</h2>
+<h3 id="slug">slug</h3>
+<p>Only allows letters, numbers and underscores in a string. If any character other than a letter, number or underscore is encountered it will be converted to an underscore.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$username</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">slug</span><span class="p">(</span><span class="s1">&#39;P Sherman 42&#39;</span><span class="p">);</span>
+</code></pre></div>
+Produces the following slugged text
+<div class="highlight"><pre><span></span><code>P_Sherman_42
+</code></pre></div></p>
+</div>
+<h3 id="unset_session">unset_session</h3>
+<p>Performs a <code class="highlight"><span class="nb">session_unset</span><span class="p">()</span></code>on the <code class="highlight"><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">session</span></code> property upon refresh or submit. Will output a message to the browser letting you know it has been unset.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">session</span> <span class="o">=</span> <span class="s1">&#39;myForm&#39;</span><span class="p">;</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">session_unset</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<h3 id="heading">heading</h3>
+<p>This method is useful if you have a form that is more along the lines of a test, or questionnaire and you want to really call out the field when there's an error in the form. Basically, you enter the field name in the first parameter and the string in the second, and if there's an error the string will be enclosed in tags.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="cp">&lt;?php echo $form-&gt;heading(&#39;question1&#39;,&#39;How many inches in a foot?&#39;); ?&gt;</span>
+<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+
+// will produce upon page load
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>How many inches in a foot?<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+
+// will produce upon form error
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;error&quot;</span><span class="p">&gt;</span>How many inches in a foot?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+                
+                  
+                
+              
+              
+                
+
+  
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../properties/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Properties
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

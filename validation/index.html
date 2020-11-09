@@ -1,0 +1,725 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://formr.github.io/validation/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>Validation - Formr</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-2126511-9","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#validation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://formr.github.io" title="Formr" class="md-header-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Formr
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Validation
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://formr.github.io" title="Formr" class="md-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Formr
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../methods/" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../properties/" class="md-nav__link">
+      Properties
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Validation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Validation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retrieving-form-input" class="md-nav__link">
+    Retrieving Form Input
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieving Form Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastpost" class="md-nav__link">
+    fastpost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    post
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    Validation Rules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../upload-files/" class="md-nav__link">
+      Upload Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../fastform/" class="md-nav__link">
+      FastForm
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/formr/extend" class="md-nav__link">
+      Extend
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../blog/" class="md-nav__link">
+      Blog
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retrieving-form-input" class="md-nav__link">
+    Retrieving Form Input
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieving Form Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validate" class="md-nav__link">
+    validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastpost" class="md-nav__link">
+    fastpost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    post
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    Validation Rules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="validation">Validation</h1>
+<p>This document contains examples of Formr's form validation methods and rules.</p>
+<h2 id="retrieving-form-input">Retrieving Form Input</h2>
+<h3 id="validate">validate</h3>
+<p>The easiest, and most basic way to validate a form. Simply add a comma separated list of your form's labels and Formr will grab all of the form data, perform basic sanitization on it, validate it according to your rules, and put the values into an array.</p>
+<p>If a label contains the word <code>email</code>, Formr will automatically assign the <a href="./#validation-rules"><code class="highlight"><span class="nx">valid_email</span></code></a> validation rule.</p>
+<p>The only parameter accepts a comma delimited string of form labels and their associated validation rules, wrapped in parentheses, and is required.</p>
+<div class="admonition example">
+<p class="admonition-title">Retrieve the form's values</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name, Email Address, Comments, Age&#39;</span><span class="p">);</span>
+
+<span class="nv">$name</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<span class="nv">$email</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;email_address&#39;</span><span class="p">];</span>
+<span class="nv">$comments</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;comments&#39;</span><span class="p">];</span>
+<span class="nv">$age</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">];</span>
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Notice how our label is named <code>Email Address</code> and our form field is named <code>email_address</code>? This is because Formr will take any spaces in the labels and convert them to an underscore.</p>
+</div>
+<p>In order to perform validation, just add your rules in parentheses after the label. If a label contains the word <code>email</code>, a <a href="./#validation-rules"><code class="highlight"><span class="nx">valid_email</span></code></a> validation rule will automatically be applied.</p>
+<div class="admonition example">
+<p class="admonition-title">Validate the form's values</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name(min[2]|max[32]), Email, Comments, Age(min[18])&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition into">
+<p class="admonition-title">Into</p>
+<p>You can add as many validation rules as you like by separating each rule with a pipe <code>|</code> character.</p>
+</div>
+<h3 id="fastpost">fastpost</h3>
+<p>This method works in conjunction with <a href="../methods/#fastform"><code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code></a> and is covered in detail on the <a href="../fastform/">FastForm Examples</a> page.</p>
+<h3 id="post">post</h3>
+<p>This method processes and validates form input based upon a series of chained rules, and allows for the most control over your validation.</p>
+<ol>
+<li>The required first parameter contains the field name.</li>
+<li>The optional second parameter contains human readable text for messages.</li>
+<li>The optional third parameter contains the validation rules.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The second parameter will be used for error messages if that field fails validation. It can optionally contain a custom error message string that will be shown if the field is required, yet left empty when submitted.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The form data is passed through PHP's <code class="highlight"><span class="nb">trim</span><span class="p">()</span></code> and <code class="highlight"><span class="nb">strip_tags</span><span class="p">()</span></code> functions for basic sanitation. If you want to allow HTML in your forms, just add <code class="highlight"><span class="nx">allow_html</span></code> as a validation rule and only <code class="highlight"><span class="nb">trim</span><span class="p">()</span></code> will be applied to the input.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Process form input and assign to variables</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$name</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Password is no less than 6 characters and no more than 20</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$password</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span><span class="s1">&#39;Password&#39;</span><span class="p">,</span><span class="s1">&#39;min[6]|max[20]&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Make sure 'password_conf' matches 'password'</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$password_conf</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;password_conf&#39;</span><span class="p">,</span><span class="s1">&#39;Password Confirm&#39;</span><span class="p">,</span><span class="s1">&#39;matches[password]&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>You can assign a human readable version of the field name in the second parameter for better error messages.</p>
+<div class="admonition example">
+<p class="admonition-title">Make sure we get a valid email address</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="s1">&#39;Email&#39;</span><span class="p">,</span><span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>You can create custom error message by adding a pipe character after the name of the form field.</p>
+<div class="admonition example">
+<p class="admonition-title">Create a custom error message string</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="s1">&#39;Email|Please enter your email address&#39;</span><span class="p">,</span><span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h2 id="validation-rules">Validation Rules</h2>
+<p>The following table contains all validation rules.</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Parameter?</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>matches</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element does not match the one in the parameter.</td>
+<td>matches[field_name]</td>
+</tr>
+<tr>
+<td><strong>min</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is shorter then the parameter value.</td>
+<td>min[6]</td>
+</tr>
+<tr>
+<td><strong>max</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is longer then the parameter value.</td>
+<td>max[12]</td>
+</tr>
+<tr>
+<td><strong>exact</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is not exactly the parameter value.</td>
+<td>exact[8]</td>
+</tr>
+<tr>
+<td><strong>greater_than</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is less than the parameter value or not numeric.</td>
+<td>greater_than[8]</td>
+</tr>
+<tr>
+<td><strong>less_than</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is greater than the parameter value or not numeric.</td>
+<td>less_than[8]</td>
+</tr>
+<tr>
+<td><strong>alpha</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alphabetical characters.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>alpha_numeric</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>alpha_dash</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters,  underscores or dashes.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>numeric</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than numeric characters.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>integer</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than an integer.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>decimal</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element is not exactly the parameter value.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>valid_email</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element does not contain a valid email address.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>valid_ip</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the supplied IP is not valid.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>md5</strong></td>
+<td>No</td>
+<td>Returns an md5 encrypted string.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sha1</strong></td>
+<td>No</td>
+<td>Returns an sha1 encrypted string.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>hash</strong></td>
+<td>No</td>
+<td>Returns an encrypted string using the <code>password_hash</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sanitize_string</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_STRING</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sanitize_url</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_URL</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sanitize_email</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_EMAIL</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sanitize_int</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_NUMBER_INT</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>slug</strong></td>
+<td>No</td>
+<td>Creates a Twitter-style username string containing only letters, numbers and underscores.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>strip_numeric</strong></td>
+<td>No</td>
+<td>Strips out everything but numbers.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>allow_html</strong></td>
+<td>No</td>
+<td>Allows HTML, script tags, etc. Use with caution!</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+  
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../properties/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Properties
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../upload-files/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Upload Files
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
