@@ -859,6 +859,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ok" class="md-nav__link">
+    ok
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#slug" class="md-nav__link">
     slug
   </a>
@@ -1639,6 +1646,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ok" class="md-nav__link">
+    ok
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#slug" class="md-nav__link">
     slug
   </a>
@@ -1940,7 +1954,7 @@ Produces the following HTML
 <li>The optional third parameter contains a default value.</li>
 <li>The optional fourth parameter contains the field's ID.</li>
 <li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
-<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
+<li>The optional sixth parameter utilizes Bootstrap's or Bulma's <code>help</code> text.</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1981,14 +1995,14 @@ Produces the following HTML
 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span> <span class="na">maxlength</span><span class="o">=</span><span class="s">&quot;32&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;input&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">&gt;</span>
 </code></pre></div></p>
 </div>
+<p>Formr also supports adding Bootstrap and Bulma inline help classes.</p>
 <div class="admonition example">
-<p class="admonition-title">Adding Bootstrap's <code>.form-text</code> class</p>
-<p><div class="highlight"><pre><span></span><code><span class="c1">// init Formr with the Bootstrap wrapper</span>
-<span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
+<p class="admonition-title">Adding inline help</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
 
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;John Wick&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;please enter your name&#39;</span><span class="p">);</span>
 </code></pre></div>
-Produces the following HTML
+Produces something like...
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;_name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;John Wick&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span><span class="p">&gt;</span>
@@ -2452,27 +2466,28 @@ Produces the following HTML
 <p><code class="highlight"><span class="nx">messages</span><span class="p">()</span></code> will not print anything to the screen if Formr's <code class="highlight"><span class="nv">$errors</span></code> array is empty, so there's really no reason why you shouldn't have it in your scripts, as it will print out error messages if you forgot to add a property or configured something incorrectly.</p>
 </div>
 <h3 id="error_message">error_message</h3>
-<p>Add your own custom error messages throughout your application. Uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert</span> <span class="p">.</span><span class="nc">alert-danger</span></code> classes, which can be changed via the <code class="highlight"><span class="nv">$controls</span></code> property or by creating your own wrapper class. See the <a href="https://github.com/formr/extend">Extend Repo</a> for more info on creating your own wrappers.</p>
+<p>Add your own custom error messages throughout your application. Uses the Bootstrap or Bulma error classes, which can be changed via the <code class="highlight"><span class="nv">$controls</span></code> property or by creating your own wrapper class.</p>
+<p>Visit the <a href="https://github.com/formr/extend">Extend Repo</a> for more info on creating your own wrappers.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">error_message</span><span class="p">(</span><span class="s1">&#39;This is bad, and you should feel bad!&#39;</span><span class="p">);</span>
 </code></pre></div>
 </div>
 <h3 id="info_message">info_message</h3>
-<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-info</span></code> class.</p>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except adds an <code>info</code> CSS class.</p>
 <h3 id="success_message">success_message</h3>
-<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-success</span></code> class.</p>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except adds a <code>success</code> CSS class.</p>
 <div class="admonition example">
 <p class="admonition-title">Print a success message after the form has been submitted</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$form_errors</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">ok</span><span class="p">())</span> <span class="p">{</span>
         <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">success_message</span><span class="p">(</span><span class="s1">&#39;Thank you for submitting our form!&#39;</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 </div>
 <h3 id="warning_message">warning_message</h3>
-<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except uses the Bootstrap <code class="highlight"><span class="p">.</span><span class="nc">alert-warning</span></code> class.</p>
+<p>Identical to <code class="highlight"><span class="nx">error_message</span><span class="p">()</span></code> except adds a <code>warning</code> CSS class.</p>
 <hr />
 <h2 id="error-handling">Error Handling</h2>
 <h3 id="errors">errors</h3>
@@ -2609,7 +2624,7 @@ Produces the following HTML
 <li>The required first parameter is the recipient's email address.</li>
 <li>The required second parameter is the email subject.</li>
 <li>The required third parameter contains the message body.</li>
-<li>The optional fourth parameter is accepts a 'from' email address.</li>
+<li>The optional fourth parameter accepts a 'from' email address.</li>
 <li>The optional fifth parameter is binary: set to <code class="highlight"><span class="k">TRUE</span></code> if you'd like to send the email as HTML.</li>
 </ol>
 <div class="admonition example">
@@ -2650,20 +2665,24 @@ your_email: johnwick@gunfu.com
 <p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_text</span><span class="p">(</span><span class="s1">&#39;_First_Name&#39;</span><span class="p">,</span><span class="s1">&#39;First Name&#39;</span><span class="p">);</span>
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">input_text</span><span class="p">(</span><span class="s1">&#39;_Last_Name&#39;</span><span class="p">,</span><span class="s1">&#39;Last Name&#39;</span><span class="p">);</span>
 </code></pre></div>
-And the email will look like something this
-<div class="highlight"><pre><span></span><code>First Name: Jack
-Last Name: Black
+And the email will look like something like this
+<div class="highlight"><pre><span></span><code>First Name: John
+Last Name: Wick
 </code></pre></div></p>
 </div>
 <hr />
 <h2 id="debugging">Debugging</h2>
 <h3 id="printr">printr</h3>
-<p>Incredibly handy! Formr's shortcut for PHP's <code class="highlight"><span class="nb">print_r</span><span class="p">()</span></code> function, which automatically formats and prints the contents of an array.</p>
+<p>Incredibly handy! Formr's shortcut for PHP's <code class="highlight"><span class="nb">print_r</span><span class="p">()</span></code> function, which automatically formats and prints the contents of an array; or just pass a string for easy debugging.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">);</span>
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">);</span>
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+
+<span class="c1">// pass a string for breakpoints...</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="s1">&#39;Here&#39;</span><span class="p">);</span>
+
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">);</span>  <span class="c1">// lazy alias...</span>
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">);</span>   <span class="c1">// lazy alias...</span>
 </code></pre></div>
@@ -2679,6 +2698,17 @@ Last Name: Black
 </div>
 <hr />
 <h2 id="misc">Misc.</h2>
+<h3 id="ok">ok</h3>
+<p>Easy way to check if there are no errors with the submitted form.</p>
+<div class="admonition example">
+<p class="admonition-title">Send an email if the form was submitted successfully</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">ok</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">success_message</span> <span class="o">=</span> <span class="s1">&#39;We have received your submission|Thank You!&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <h3 id="slug">slug</h3>
 <p>Only allows letters, numbers and underscores in a string. If any character other than a letter, number or underscore is encountered it will be converted to an underscore.</p>
 <div class="admonition example">
