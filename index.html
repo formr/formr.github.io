@@ -556,7 +556,7 @@
 <p>To use Formr you will need to create a new form object. You can name it anything you like, so let's keep it simple and call it <code>$form</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
 </code></pre></div>
-<p>There are 2 arguments we can pass to our new form: the Wrapper, and the Silencer. The Wrapper tells Formr how you want your forms to be laid out; such as with Bootstrap, Bulma, or just a simple <code>&lt;div&gt;</code> tag.</p>
+<p>There are two arguments we can pass to our new form: the Wrapper, and the Silencer. The Wrapper tells Formr how you want your forms to be laid out; such as with Bootstrap, Bulma, or just a simple <code>&lt;div&gt;</code> tag.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
 </code></pre></div>
 <p>Formr will automatically echo form elements and messages to the screen, and this is usually fine. However, in some instances - such as when using a templating framework - this is not an option. In these cases simply pass the word <code>hush</code> and then manually <code>echo</code> your elements and messages.</p>
