@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://formr.github.io/validation/">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
@@ -174,66 +174,73 @@
       
       
 
-
-
-  <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
-      Home
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../methods/" class="md-nav__link">
-      Methods
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../properties/" class="md-nav__link">
-      Properties
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
   
 
+    
+      
+      
+      
 
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods/" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
     
       
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
     
+      
+      
+      
+
+  
+  
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Validation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Validation
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Validation
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -290,60 +297,69 @@
     </ul>
   
 </nav>
-    
-  </li>
-
-    
       
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../upload-files/" class="md-nav__link">
-      Upload Files
-    </a>
-  </li>
+    </li>
+  
 
     
       
       
       
 
-
-
-  <li class="md-nav__item">
-    <a href="../fastform/" class="md-nav__link">
-      FastForm
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="https://github.com/formr/extend" class="md-nav__link">
-      Extend
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upload-files/" class="md-nav__link">
+        Upload Files
+      </a>
+    </li>
+  
 
     
       
       
       
 
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastform/" class="md-nav__link">
+        FastForm
+      </a>
+    </li>
+  
 
+    
+      
+      
+      
 
-  <li class="md-nav__item">
-    <a href="../blog/" class="md-nav__link">
-      Blog
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/formr/extend" class="md-nav__link">
+        Extend
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
 
     
   </ul>
@@ -513,22 +529,28 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>matches</strong></td>
-<td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element does not match the one in the parameter.</td>
-<td>matches[field_name]</td>
+<td><strong>allow_html</strong></td>
+<td>No</td>
+<td>Allows HTML, script tags, etc. Nullifies all other string rules. Use with caution!</td>
+<td></td>
 </tr>
 <tr>
-<td><strong>min</strong></td>
-<td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is shorter then the parameter value.</td>
-<td>min[6]</td>
+<td><strong>alpha</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alphabetical characters.</td>
+<td></td>
 </tr>
 <tr>
-<td><strong>max</strong></td>
-<td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is longer then the parameter value.</td>
-<td>max[12]</td>
+<td><strong>alpha_dash</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters,  underscores or dashes.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>alpha_numeric</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters.</td>
+<td></td>
 </tr>
 <tr>
 <td><strong>exact</strong></td>
@@ -543,58 +565,40 @@
 <td>greater_than[8]</td>
 </tr>
 <tr>
+<td><strong>hash</strong></td>
+<td>No</td>
+<td>Returns an encrypted string using the <code>password_hash</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>int</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than an integer.</td>
+<td></td>
+</tr>
+<tr>
 <td><strong>less_than</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the form element is greater than the parameter value or not numeric.</td>
 <td>less_than[8]</td>
 </tr>
 <tr>
-<td><strong>alpha</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alphabetical characters.</td>
-<td></td>
+<td><strong>matches</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element does not match the one in the parameter.</td>
+<td>matches[field_name]</td>
 </tr>
 <tr>
-<td><strong>alpha_numeric</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters.</td>
-<td></td>
+<td><strong>max</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is longer then the parameter value.</td>
+<td>max[12]</td>
 </tr>
 <tr>
-<td><strong>alpha_dash</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters,  underscores or dashes.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>numeric</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than numeric characters.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>integer</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than an integer.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>decimal</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element is not exactly the parameter value.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>valid_email</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the form element does not contain a valid email address.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>valid_ip</strong></td>
-<td>No</td>
-<td>Returns <code>FALSE</code> if the supplied IP is not valid.</td>
-<td></td>
+<td><strong>min</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the form element is shorter then the parameter value.</td>
+<td>min[6]</td>
 </tr>
 <tr>
 <td><strong>md5</strong></td>
@@ -603,27 +607,27 @@
 <td></td>
 </tr>
 <tr>
+<td><strong>not_regex</strong></td>
+<td>Yes</td>
+<td>Does not match a user-defined regex.</td>
+<td>not_regex[/^\d+$/]</td>
+</tr>
+<tr>
+<td><strong>numeric</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the form element contains anything other than numeric characters.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>regex</strong></td>
+<td>Yes</td>
+<td>Matches a user-defined regex.</td>
+<td>regex[/[^0-9]/]</td>
+</tr>
+<tr>
 <td><strong>sha1</strong></td>
 <td>No</td>
 <td>Returns an sha1 encrypted string.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>hash</strong></td>
-<td>No</td>
-<td>Returns an encrypted string using the <code>password_hash</code> function.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>sanitize_string</strong></td>
-<td>No</td>
-<td>Passes result through the <code>FILTER_SANITIZE_STRING</code> function.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>sanitize_url</strong></td>
-<td>No</td>
-<td>Passes result through the <code>FILTER_SANITIZE_URL</code> function.</td>
 <td></td>
 </tr>
 <tr>
@@ -639,6 +643,18 @@
 <td></td>
 </tr>
 <tr>
+<td><strong>sanitize_string</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_STRING</code> function.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sanitize_url</strong></td>
+<td>No</td>
+<td>Passes result through the <code>FILTER_SANITIZE_URL</code> function.</td>
+<td></td>
+</tr>
+<tr>
 <td><strong>slug</strong></td>
 <td>No</td>
 <td>Creates a Twitter-style username string containing only letters, numbers and underscores.</td>
@@ -651,9 +667,15 @@
 <td></td>
 </tr>
 <tr>
-<td><strong>allow_html</strong></td>
+<td><strong>valid_email</strong></td>
 <td>No</td>
-<td>Allows HTML, script tags, etc. Use with caution!</td>
+<td>Returns <code>FALSE</code> if the form element does not contain a valid email address.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>valid_ip</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the supplied IP is not valid.</td>
 <td></td>
 </tr>
 </tbody>
@@ -728,15 +750,15 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

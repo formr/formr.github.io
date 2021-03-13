@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://formr.github.io/methods/">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
@@ -174,40 +174,43 @@
       
       
 
-
-
-  <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
-      Home
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
   
 
+    
+      
+      
+      
 
-  <li class="md-nav__item md-nav__item--active">
+  
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Methods
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Methods
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -908,86 +911,99 @@
     </ul>
   
 </nav>
-    
-  </li>
-
-    
       
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../properties/" class="md-nav__link">
-      Properties
-    </a>
-  </li>
+    </li>
+  
 
     
       
       
       
 
-
-
-  <li class="md-nav__item">
-    <a href="../validation/" class="md-nav__link">
-      Validation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="../upload-files/" class="md-nav__link">
-      Upload Files
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
 
     
       
       
       
 
-
-
-  <li class="md-nav__item">
-    <a href="../fastform/" class="md-nav__link">
-      FastForm
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="https://github.com/formr/extend" class="md-nav__link">
-      Extend
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validation/" class="md-nav__link">
+        Validation
+      </a>
+    </li>
+  
 
     
       
       
       
 
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upload-files/" class="md-nav__link">
+        Upload Files
+      </a>
+    </li>
+  
 
+    
+      
+      
+      
 
-  <li class="md-nav__item">
-    <a href="../blog/" class="md-nav__link">
-      Blog
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastform/" class="md-nav__link">
+        FastForm
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/formr/extend" class="md-nav__link">
+        Extend
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
 
     
   </ul>
@@ -1908,18 +1924,6 @@
 <li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
 <li>The optional sixth parameter contains an associative array which creates hidden fields.</li>
 </ol>
-<div class="admonition notice">
-<p class="admonition-title">Notice</p>
-<p>If an action isn't specified, <code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will assume you want to process the form in the current script and will add the script's filename in the form's <code>action</code> attribute using <code class="highlight"><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SCRIPT_NAME&#39;</span><span class="p">]</span></code>.</p>
-</div>
-<div class="admonition notice">
-<p class="admonition-title">Notice</p>
-<p><code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will optionally let you add form attributes and hidden input fields, and will always add the attribute <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span></code>, unless you change the <code class="highlight"><span class="nv">$charset</span></code> property.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The global property <a href="../properties/#id"><code>$form-&gt;id</code></a> will override the second parameter of <code class="highlight"><span class="nx">open</span><span class="p">()</span></code>.</p>
-</div>
 <div class="admonition example">
 <p class="admonition-title">Opening a form and setting an ID</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;MyForm&#39;</span><span class="p">);</span>
@@ -1939,12 +1943,12 @@ Produces the following HTML
 <div class="admonition example">
 <p class="admonition-title">Adding hidden input fields</p>
 <p>Hidden fields can be added by passing an associative array to the sixth parameter, where the array key is the field name and the array value is the field's value.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$array</span> <span class="o">=</span> <span class="p">[</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$hidden</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;JohnWick&#39;</span><span class="p">,</span>
     <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;johnwick@gunfu.com&#39;</span>
 <span class="p">];</span>
 
-<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;form.php&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="nv">$array</span><span class="p">);</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">(</span><span class="s1">&#39;form.php&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="nv">$hidden</span><span class="p">);</span>
 </code></pre></div>
 <p>Produces the following HTML
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;form.php&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;MyForm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
@@ -1952,6 +1956,18 @@ Produces the following HTML
 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;JohnWick&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;johnwick@gunfu.com&quot;</span><span class="p">&gt;</span>
 </code></pre></div></p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>If an action isn't specified, <code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will assume you want to process the form in the current script and will add the script's filename in the form's <code>action</code> attribute using <code class="highlight"><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;SCRIPT_NAME&#39;</span><span class="p">]</span></code>.</p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><code class="highlight"><span class="nx">open</span><span class="p">()</span></code> will always add the attribute <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span></code>, unless you change the <code class="highlight"><span class="nv">$charset</span></code> property.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The global property <a href="../properties/#id"><code>$form-&gt;id</code></a> will override the second parameter of <code class="highlight"><span class="nx">open</span><span class="p">()</span></code>.</p>
 </div>
 <h3 id="open_multipart">open_multipart</h3>
 <p>This method is identical to <code class="highlight"><span class="nx">open</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
@@ -2833,15 +2849,15 @@ Produces the following slugged text
       
     </div>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
