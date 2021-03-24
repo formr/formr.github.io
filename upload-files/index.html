@@ -433,14 +433,11 @@
 <p>Formr's method of uploading and resizing files is fairly simplistic: Formr will provide basic security in renaming uploaded file names - by stripping out anything that's not a letter, number or underscore - and allows for the checking of mime types and/or file extensions.</p>
 <div class="admonition tip">
 <p class="admonition-title">Using Another Script for File Uploads</p>
-</div>
 <p>File uploads with Formr may satisfy most people's uploading needs, however, if your file operations are more complex I suggest you disable file uploads and use the excellent <a href="http://www.verot.net/php_class_upload.htm">class.upload.php</a> by Colin Verot.</p>
-<div class="highlight"><pre><span></span><code>Disabling upload processing will still let you use Formr to build your input fields, it just won&#39;t upload and process the files. To stop Formr from uploading your files, just set the `uploads` property to `#!php FALSE`.
-
-```php
-$form-&gt;uploads = FALSE;
-```
+<p>Disabling upload processing will still let you use Formr to build your input fields, it just won't upload and process the files. To stop Formr from uploading your files, just set the <code>uploads</code> property to <code class="highlight"><span class="k">FALSE</span></code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">uploads</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
 </code></pre></div>
+</div>
 <h2 id="security-check">Security Check</h2>
 <p>We don't want our visitors uploading PDF or Word documents; only photos. So let's perform a security check and make sure only images are being uploaded. We can easily do this with the <a href="../properties/#upload_accepted_mimes"><code>$upload_accepted_mimes</code></a> property, which will check the mime type of the uploaded file and make sure it's either a GIF, JPG, or PNG file.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">upload_accepted_mimes</span> <span class="o">=</span> <span class="s1">&#39;images&#39;</span><span class="p">;</span>
@@ -461,14 +458,13 @@ $form-&gt;uploads = FALSE;
 <p>The following will generate a 100px x 100px image, prepend the filename with <code>tn_</code>, save it into the uploads directory, and use 90% compression when saving.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
+<p><code>php $form-&gt;upload_resize = [ 'tn' =&gt; '100,100,tn_,/srv/www/uploads,90' ];</code></p>
+<p>Produces something like</p>
+<p><code>tn_1603725041.jpg</code></p>
 </div>
-<p><code>php $form-&gt;upload_resize = [ 'tn' =&gt; '100,100,tn_,/srv/www/uploads,90' ];</code>
-Produces something like
-<code>tn_1603725041.jpg</code></p>
 <h2 id="full-upload-example">Full Upload Example</h2>
 <div class="admonition example">
 <p class="admonition-title">A Complete Upload Example</p>
-</div>
 <div class="highlight"><pre><span></span><code><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">require</span> <span class="s1">&#39;Formr/class.formr.php&#39;</span><span class="p">;</span>
 
@@ -498,28 +494,27 @@ Produces something like
   <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">printr</span><span class="p">(</span><span class="nv">$file</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="cp">?&gt;</span><span class="x"></span>
-<span class="x">    ```</span>
-<span class="x">    ```php</span>
-<span class="x">    &lt;div class=&quot;container&quot;&gt;</span>
-<span class="x">        </span><span class="cp">&lt;?php</span>
-        <span class="c1">// always print Formr&#39;s messages!</span>
-        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
 
-        <span class="c1">// open our form element</span>
-        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open_multipart</span><span class="p">();</span>
+<span class="x">&lt;div class=&quot;container&quot;&gt;</span>
+<span class="x">  </span><span class="cp">&lt;?php</span>
+    <span class="c1">// always print Formr&#39;s messages!</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
 
-        <span class="c1">// add our file element</span>
-        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">);</span>
+    <span class="c1">// open our form element</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open_multipart</span><span class="p">();</span>
 
-        <span class="c1">// submit button</span>
-        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submit_button</span><span class="p">();</span>
+    <span class="c1">// add our file element</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">);</span>
 
-        <span class="c1">//close the form</span>
-        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">close</span><span class="p">();</span>
-        <span class="cp">?&gt;</span><span class="x"></span>
-<span class="x">    &lt;/div&gt;</span>
-<span class="x">    ```</span>
+    <span class="c1">// submit button</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submit_button</span><span class="p">();</span>
+
+    <span class="c1">//close the form</span>
+    <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">close</span><span class="p">();</span>
+  <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;/div&gt;</span>
 </code></pre></div>
+</div>
                 
                   
                 

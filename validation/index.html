@@ -445,7 +445,6 @@
 <h2 id="retrieving-form-input">Retrieving Form Input</h2>
 <h3 id="validate">validate</h3>
 <p>The easiest, and most basic way to validate a form. Simply add a comma separated list of your form's labels and Formr will grab all of the form data, perform basic sanitization on it, validate it according to your rules, and put the values into an array.</p>
-<p>If a label contains the word <code>email</code>, Formr will automatically assign the <a href="./#validation-rules"><code class="highlight"><span class="nx">valid_email</span></code></a> validation rule.</p>
 <p>The only parameter accepts a comma delimited string of form labels and their associated validation rules, wrapped in parentheses, and is required.</p>
 <div class="admonition example">
 <p class="admonition-title">Retrieve the form's values</p>
@@ -457,18 +456,18 @@
 <span class="nv">$age</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">];</span>
 </code></pre></div>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Notice how our label is named <code>Email Address</code> and our form field is named <code>email_address</code>? This is because Formr will take any spaces in the labels and convert them to an underscore.</p>
 </div>
 <p>In order to perform validation, just add your rules in parentheses after the label. If a label contains the word <code>email</code>, a <a href="./#validation-rules"><code class="highlight"><span class="nx">valid_email</span></code></a> validation rule will automatically be applied.</p>
 <div class="admonition example">
 <p class="admonition-title">Validate the form's values</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name(min[2]|max[32]), Email, Comments, Age(min[18])&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name(min[2]|max[32]), Email Address, Comments, Age(greater_than[17])&#39;</span><span class="p">);</span>
 </code></pre></div>
 </div>
-<div class="admonition into">
-<p class="admonition-title">Into</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>You can add as many validation rules as you like by separating each rule with a pipe <code>|</code> character.</p>
 </div>
 <h3 id="fastpost">fastpost</h3>
@@ -529,6 +528,12 @@
 </thead>
 <tbody>
 <tr>
+<td><strong>after</strong></td>
+<td>No</td>
+<td>Checks if the given date is after the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
+<td></td>
+</tr>
+<tr>
 <td><strong>allow_html</strong></td>
 <td>No</td>
 <td>Allows HTML, script tags, etc. Nullifies all other string rules. Use with caution!</td>
@@ -537,32 +542,44 @@
 <tr>
 <td><strong>alpha</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alphabetical characters.</td>
+<td>Returns <code>FALSE</code> if the given string contains anything other than alphabetical characters.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>alpha_dash</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters,  underscores or dashes.</td>
+<td>Returns <code>FALSE</code> if the given string contains anything other than alpha-numeric characters,  underscores or dashes.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>alpha_numeric</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than alpha-numeric characters.</td>
+<td>Returns <code>FALSE</code> if the given string contains anything other than alpha-numeric characters.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>before</strong></td>
+<td>No</td>
+<td>Checks if the given date is before the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>exact</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is not exactly the parameter value.</td>
+<td>Returns <code>FALSE</code> if the given string is not exactly the parameter value.</td>
 <td>exact[8]</td>
 </tr>
 <tr>
 <td><strong>greater_than</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is less than the parameter value or not numeric.</td>
-<td>greater_than[8]</td>
+<td>Returns <code>FALSE</code> if the given string is less than the parameter value, or is not numeric.</td>
+<td>gt[8]</td>
+</tr>
+<tr>
+<td><strong>greater_than_or_equal</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the given string is less than or equal to the parameter value, or is not numeric.</td>
+<td>gte[8]</td>
 </tr>
 <tr>
 <td><strong>hash</strong></td>
@@ -573,31 +590,37 @@
 <tr>
 <td><strong>int</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than an integer.</td>
+<td>Returns <code>FALSE</code> if the given string contains anything other than an integer.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>less_than</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is greater than the parameter value or not numeric.</td>
-<td>less_than[8]</td>
+<td>Returns <code>FALSE</code> if the given string is greater than the parameter value or not numeric.</td>
+<td>lt[8]</td>
+</tr>
+<tr>
+<td><strong>less_than_or_equal</strong></td>
+<td>Yes</td>
+<td>Returns <code>FALSE</code> if the given string is greater than or equal to the parameter value, or is not numeric.</td>
+<td>lte[8]</td>
 </tr>
 <tr>
 <td><strong>matches</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element does not match the one in the parameter.</td>
+<td>Returns <code>FALSE</code> if the given string does not match the one in the parameter.</td>
 <td>matches[field_name]</td>
 </tr>
 <tr>
 <td><strong>max</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is longer then the parameter value.</td>
+<td>Returns <code>FALSE</code> if the given string is longer then the parameter value.</td>
 <td>max[12]</td>
 </tr>
 <tr>
 <td><strong>min</strong></td>
 <td>Yes</td>
-<td>Returns <code>FALSE</code> if the form element is shorter then the parameter value.</td>
+<td>Returns <code>FALSE</code> if the given string is shorter then the parameter value.</td>
 <td>min[6]</td>
 </tr>
 <tr>
@@ -615,7 +638,7 @@
 <tr>
 <td><strong>numeric</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element contains anything other than numeric characters.</td>
+<td>Returns <code>FALSE</code> if the given string contains anything other than numeric characters.</td>
 <td></td>
 </tr>
 <tr>
@@ -669,13 +692,19 @@
 <tr>
 <td><strong>valid_email</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the form element does not contain a valid email address.</td>
+<td>Returns <code>FALSE</code> if the supplied string does not contain a valid email address.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>valid_ip</strong></td>
 <td>No</td>
-<td>Returns <code>FALSE</code> if the supplied IP is not valid.</td>
+<td>Returns <code>FALSE</code> if the supplied string is not a valid IP address.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>valid_url</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the supplied string is not formatted as a URL</td>
 <td></td>
 </tr>
 </tbody>

@@ -267,6 +267,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#format_rule_dates" class="md-nav__link">
+    format_rule_dates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honeypot" class="md-nav__link">
+    honeypot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#html_purifier" class="md-nav__link">
     html_purifier
   </a>
@@ -584,6 +598,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#format_rule_dates" class="md-nav__link">
+    format_rule_dates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honeypot" class="md-nav__link">
+    honeypot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#html_purifier" class="md-nav__link">
     html_purifier
   </a>
@@ -816,6 +844,23 @@ Produces the following HTML
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;Email|Please enter your email&#39;</span><span class="p">,</span> <span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
 </code></pre></div>
 </div>
+<h3 id="format_rule_dates">format_rule_dates</h3>
+<p>Allows you to choose how you want to format your dates when using the <code>before</code> and <code>after</code> validation rules. Default is <code>'M d, Y'</code>,</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">format_rule_dates</span> <span class="o">=</span> <span class="s1">&#39;Y-m-d&#39;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<h3 id="honeypot">honeypot</h3>
+<p>Adds a hidden "<a href="https://stackoverflow.com/questions/36227376/better-honeypot-implementation-form-anti-spam">honeypot</a>" field to the form, which is useful in preventing bots from hijacking the form (without the headache of a CAPTCHA) by killing the script if the field was filled.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">honeypot</span> <span class="o">=</span> <span class="s1">&#39;your_email_address_here&#39;</span><span class="p">;</span>
+</code></pre></div>
+Produces the following HTML
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;your_email_address_here&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
 <h3 id="html_purifier">html_purifier</h3>
 <p>Formr will clean any text passed through the <a href="../methods/#validate"><code class="highlight"><span class="nx">validate</span><span class="p">()</span></code></a>, <a href="../methods/#fastpost"><code class="highlight"><span class="nx">fastpost</span><span class="p">()</span></code></a>, <a href="../methods/#post"><code class="highlight"><span class="nx">post</span><span class="p">()</span></code></a> and <a href="../methods/#get"><code class="highlight"><span class="nx">get</span><span class="p">()</span></code></a> methods using a combination of <code class="highlight"><span class="nb">strip_tags</span><span class="p">()</span></code> and <code class="highlight"><span class="nx">FILTER_SANITIZE_SPECIAL_CHARS</span></code>.</p>
 <p>However, if you want to go deeper, you can easily use <a href="http://htmlpurifier.org">HTML Purifier</a>. Just set the full path to your HTML Purifier script and Formr will do the rest.</p>
@@ -858,7 +903,7 @@ Produces the following HTML
 <h3 id="inline_errors">inline_errors</h3>
 <p>Boolean. Default is <code class="highlight"><span class="k">FALSE</span></code>. Turns off textual error messages and, if you use the following CSS, inserts a small PNG (not included) to the right of the form field.</p>
 <div class="admonition example">
-<p class="admonition-title">add an image to the right of the form field</p>
+<p class="admonition-title">Add an image to the right of the form field</p>
 <p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">inline_errors</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
 </code></pre></div>
 CSS class and example code to show the "warning" PNG

@@ -466,10 +466,10 @@
 <p>And here's how to retrieve and validate the form's values, and assign them to variables.</p>
 <div class="admonition example">
 <p class="admonition-title">Validating the login FastForm</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastpost</span><span class="p">(</span><span class="s1">&#39;login);</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastpost</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span>
 
-<span class="s1">$username = $data[&#39;</span><span class="nx">username</span><span class="s1">&#39;];</span>
-<span class="s1">$password = $data[&#39;</span><span class="nx">password</span><span class="err">&#39;</span><span class="p">];</span>
+<span class="nv">$username</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">];</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">];</span>
 </code></pre></div>
 </div>
 <h2 id="lets-build-a-fastform">Let's Build a FastForm</h2>
@@ -615,7 +615,7 @@ Produces the following HTML (using Bootstrap as our Wrapper)</p>
    <span class="s1">&#39;small&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Small&#39;</span>
 <span class="p">];</span>
 
-<span class="c1">// now we build our drop-down array and add the t-shirt array as our list of options</span>
+<span class="c1">// now we build our drop-down menu and add the t-shirt array as our list of options</span>
 <span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;select&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
         <span class="s1">&#39;name&#39;</span><span class="o">=&gt;</span> <span class="s1">&#39;shirts&#39;</span><span class="p">,</span>
@@ -743,7 +743,7 @@ Produces the following HTML (using Bootstrap as our Wrapper)</p>
    <span class="p">}</span>
 
    <span class="c1">// print the form</span>
-   <span class="k">echo</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;my_login&#39;</span><span class="p">);</span>
+   <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;my_login&#39;</span><span class="p">);</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
