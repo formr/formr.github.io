@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://formr.github.io/blog/">
+        <link rel="canonical" href="https://formr.github.io/blog/recaptcha/">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
-        <title>Blog - Formr</title>
+        <title>Using reCAPTCHA v3 with Formr - Formr</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -38,7 +38,7 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
       
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#recaptcha-v3" class="md-skip">
+        <a href="#using-recaptcha-v3-with-formr" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Blog
+              Using reCAPTCHA v3 with Formr
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -193,7 +193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../methods/" class="md-nav__link">
+      <a href="../../methods/" class="md-nav__link">
         Methods
       </a>
     </li>
@@ -208,7 +208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../properties/" class="md-nav__link">
+      <a href="../../properties/" class="md-nav__link">
         Properties
       </a>
     </li>
@@ -223,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../validation/" class="md-nav__link">
+      <a href="../../validation/" class="md-nav__link">
         Validation
       </a>
     </li>
@@ -238,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../upload-files/" class="md-nav__link">
+      <a href="../../upload-files/" class="md-nav__link">
         Upload Files
       </a>
     </li>
@@ -253,7 +253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fastform/" class="md-nav__link">
+      <a href="../../fastform/" class="md-nav__link">
         FastForm
       </a>
     </li>
@@ -281,66 +281,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Blog
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
         Blog
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recaptcha-v3" class="md-nav__link">
-    reCaptcha v3
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-forms-on-one-page" class="md-nav__link">
-    Multiple Forms on One Page
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formr-for-designers" class="md-nav__link">
-    Formr for Designers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fastform-in-the-real-world" class="md-nav__link">
-    FastForm in the Real World
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -360,6 +305,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -368,29 +315,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recaptcha-v3" class="md-nav__link">
-    reCaptcha v3
+  <a href="#step-1-get-your-keys" class="md-nav__link">
+    Step 1: Get Your Keys
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-forms-on-one-page" class="md-nav__link">
-    Multiple Forms on One Page
+  <a href="#step-2-add-your-keys-to-formr" class="md-nav__link">
+    Step 2: Add Your Keys to Formr
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#formr-for-designers" class="md-nav__link">
-    Formr for Designers
+  <a href="#step-3-add-html-javascript" class="md-nav__link">
+    Step 3: Add HTML &amp; JavaScript
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fastform-in-the-real-world" class="md-nav__link">
-    FastForm in the Real World
+  <a href="#step-4-pass-or-fail" class="md-nav__link">
+    Step 4: Pass or Fail?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    Full Example
   </a>
   
 </li>
@@ -408,16 +362,68 @@
               
                 
                 
-                  <h1>Blog</h1>
-                
-                <h2 id="recaptcha-v3"><a href="recaptcha/">reCaptcha v3</a></h2>
-<p>Setting up reCAPTCHA v3 with Formr is as easy as 1-2-3... 4.</p>
-<h2 id="multiple-forms-on-one-page"><a href="multiple-forms-on-one-page/">Multiple Forms on One Page</a></h2>
-<p>Learn how easy it is to add and validate multiple forms on one web page.</p>
-<h2 id="formr-for-designers"><a href="formr-for-designers/">Formr for Designers</a></h2>
-<p>Formr is a PHP library which allows developers to easily build forms; but what if you’re not a PHP developer? What if you don’t even know PHP? No problem, Formr has you covered.</p>
-<h2 id="fastform-in-the-real-world"><a href="fastform-in-the-real-world/">FastForm in the Real World</a></h2>
-<p>One of my favorite things about Formr is the ability to save form + validation sets for reuse; let me show you how.</p>
+                <h1 id="using-recaptcha-v3-with-formr">Using reCAPTCHA v3 with Formr</h1>
+<p>Formr has support for reCAPTCHA v3, and it's super easy to install.</p>
+<h2 id="step-1-get-your-keys">Step 1: Get Your Keys</h2>
+<p>The first step is to <a href="https://www.google.com/recaptcha/admin/create">register your site</a> and get your keys, which you can do here: <a href="https://www.google.com/recaptcha/admin/create">https://google.com/recaptcha/admin/create</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure you select the reCAPTCHA v3 checkbox!</p>
+</div>
+<h2 id="step-2-add-your-keys-to-formr">Step 2: Add Your Keys to Formr</h2>
+<p>Next we want to tell Formr that we're using reCAPTCHA, and we do that by using the <a href="/properties#recaptcha_secret_key"><code>recaptcha_secret_key</code></a> and <a href="/properties#recaptcha_site_key"><code>recaptcha_site_key</code></a> properties.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_secret_key</span> <span class="o">=</span> <span class="s1">&#39;REPLACE-WITH-YOUR-SECRET-KEY&#39;</span><span class="p">;</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_site_key</span> <span class="o">=</span> <span class="s1">&#39;REPLACE-WITH-YOUR-SITE-KEY&#39;</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="step-3-add-html-javascript">Step 3: Add HTML &amp; JavaScript</h2>
+<p>We need to add some code to our web page so that Google can generate a score and verify that a human is actually using our form. We do this with the <a href="/methods#recaptcha_head"><code>recaptcha_head</code></a> and <a href="/methods#recaptcha_body"><code>recaptcha_body</code></a> methods. These methods will print the appropriate HTML and JavaScript to make sure our reCAPTCHA works.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_head</span><span class="p">();</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_body</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="step-4-pass-or-fail">Step 4: Pass or Fail?</h2>
+<p>All that's left is to verify if the reCAPTCHA passed after the form was submitted, and we do that with the <a href="/methods#recaptcha_passed"><code>recaptcha_passed</code></a> method.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_passed</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">// reCAPTCHA passed</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="p">(</span><span class="o">!</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_passed</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">// reCAPTCHA failed</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="full-example">Full Example</h2>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_site_key</span> <span class="o">=</span> <span class="s1">&#39;REPLACE-WITH-YOUR-SITE-KEY&#39;</span><span class="p">;</span>
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_secret_key</span> <span class="o">=</span> <span class="s1">&#39;REPLACE-WITH-YOUR-SECRET-KEY&#39;</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_passed</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">success_message</span><span class="p">(</span><span class="s1">&#39;reCAPTCHA Passed!&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">    &lt;head&gt;</span>
+<span class="x">        &lt;title&gt;Formr&lt;/title&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span>
+            <span class="c1"># includes a reCAPTCHA JavaScript file from Google</span>
+            <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_head</span><span class="p">();</span>
+        <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">    &lt;/head&gt;</span>
+<span class="x">    &lt;body&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span>
+            <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
+
+            <span class="c1"># build our form</span>
+            <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Name, Email, Comments|textarea&#39;</span><span class="p">);</span>
+
+            <span class="c1"># print the reCAPTCHA JavaScript</span>
+            <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_body</span><span class="p">();</span>
+        <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">    &lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</code></pre></div>
                 
                   
                 
@@ -428,6 +434,10 @@
   
 
 
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://formr.github.io/blog/recaptcha/",this.page.identifier="/blog/recaptcha/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//formr.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+
               
             </article>
           </div>
@@ -436,27 +446,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../fastform/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                FastForm
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -474,15 +463,15 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

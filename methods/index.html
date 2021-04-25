@@ -875,6 +875,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha-v3" class="md-nav__link">
+    reCAPTCHA v3
+  </a>
+  
+    <nav class="md-nav" aria-label="reCAPTCHA v3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_body" class="md-nav__link">
+    recaptcha_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_head" class="md-nav__link">
+    recaptcha_head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_passed" class="md-nav__link">
+    recaptcha_passed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#misc" class="md-nav__link">
     Misc.
   </a>
@@ -1686,6 +1720,40 @@
           <li class="md-nav__item">
   <a href="#info" class="md-nav__link">
     info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recaptcha-v3" class="md-nav__link">
+    reCAPTCHA v3
+  </a>
+  
+    <nav class="md-nav" aria-label="reCAPTCHA v3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_body" class="md-nav__link">
+    recaptcha_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_head" class="md-nav__link">
+    recaptcha_head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha_passed" class="md-nav__link">
+    recaptcha_passed
   </a>
   
 </li>
@@ -2774,6 +2842,24 @@ Last Name: Wick
 </code></pre></div>
 </div>
 <hr />
+<h2 id="recaptcha-v3">reCAPTCHA v3</h2>
+<h3 id="recaptcha_body">recaptcha_body</h3>
+<p>Prints the necessary JavaScript for client-side token retrieval. Put this before the closing <code>&lt;/body&gt;</code> of your document.</p>
+<h3 id="recaptcha_head">recaptcha_head</h3>
+<p>Prints the <code>&lt;script&gt;</code> attribute which links to an external Google reCaptcha script (api.js) for client-side validation. Put this in the <code>&lt;head&gt;</code> section of your document.</p>
+<h3 id="recaptcha_passed">recaptcha_passed</h3>
+<p>Boolean. Checks if the reCAPTCHA passed validation.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_passed</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">// the reCAPTCHA passed</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="p">(</span><span class="o">!</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_passed</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">// the reCAPTCHA failed</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <h2 id="misc">Misc.</h2>
 <h3 id="csrf">csrf</h3>
 <p>The only parameter changes the expiration time, in seconds, and is optional. Default expiration value is 3600 seconds (1 hour).</p>

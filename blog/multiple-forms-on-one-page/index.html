@@ -1,0 +1,495 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://formr.github.io/blog/multiple-forms-on-one-page/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
+    
+    
+      
+        <title>Multiple Forms on One Page - Formr</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-2126511-9","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#multiple-forms-on-one-page" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://formr.github.io" title="Formr" class="md-header-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Formr
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Multiple Forms on One Page
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://formr.github.io" title="Formr" class="md-nav__button md-logo" aria-label="Formr">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Formr
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/" class="md-nav__link">
+        Methods
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/" class="md-nav__link">
+        Validation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upload-files/" class="md-nav__link">
+        Upload Files
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fastform/" class="md-nav__link">
+        FastForm
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/formr/extend" class="md-nav__link">
+        Extend
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-instantiate-the-forms" class="md-nav__link">
+    Step 1: Instantiate the Forms.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-build-the-forms" class="md-nav__link">
+    Step 2: Build the forms.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-submit-the-forms" class="md-nav__link">
+    Step 3: Submit the Forms.
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="multiple-forms-on-one-page">Multiple Forms on One Page</h1>
+<p>Sometimes you need multiple forms on a page, like an Account Settings page where a user can change their profile information, password, avatar, etc. You don't really want the Change Password form to be part of the Profile form, and you definitely don't want the Avatar form to be part of the Change Password form.</p>
+<p>The solution? Multiple forms, and it's easier than ever with Formr.</p>
+<h2 id="step-1-instantiate-the-forms">Step 1: Instantiate the Forms.</h2>
+<p>The first step is to instantiate (create) your forms, and give each its own name and ID.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$profileForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">;</span>
+<span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="s1">&#39;UserProfile&#39;</span><span class="p">;</span>
+
+<span class="nv">$passwordForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">;</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="s1">&#39;ChangePassword&#39;</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="step-2-build-the-forms">Step 2: Build the forms.</h2>
+<p>The next step is to build the forms. Build them the short way, or the long way; doesn't matter.
+<div class="highlight"><pre><span></span><code><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Name, Email, Bio&#39;</span><span class="p">);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">();</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">password</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="s1">&#39;Password&#39;</span><span class="p">);</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">password</span><span class="p">(</span><span class="s1">&#39;confirm_password&#39;</span><span class="p">,</span> <span class="s1">&#39;Confirm Password&#39;</span><span class="p">);</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">submit_button</span><span class="p">(</span><span class="s1">&#39;Change Password&#39;</span><span class="p">);</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">close</span><span class="p">();</span>
+</code></pre></div></p>
+<h2 id="step-3-submit-the-forms">Step 3: Submit the Forms.</h2>
+<p>Finally we can check if each form was submitted, and then process the data for that form. The only catch here is that you will need to pass the form's ID to the <a href="/methods#submitted"><code>submitted</code></a> method so Formr knows which form has been submitted. You can pass the <a href="/properties#id"><code>id</code></a> variable or a string containing the form's ID.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">(</span><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ProfileForm was submitted</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">(</span><span class="s1">&#39;ChangePassword&#39;</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ChangePassword was submitted</span>
+<span class="p">}</span>
+</code></pre></div>
+<h1 id="full-example">Full Example</h1>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="c1"># include Formr</span>
+<span class="k">require</span> <span class="s1">&#39;Formr/class.formr.php&#39;</span><span class="p">;</span>
+
+<span class="c1"># instantiate the User Profile form</span>
+<span class="nv">$profileForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
+<span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="s1">&#39;UserProfile&#39;</span><span class="p">;</span>
+
+<span class="c1"># instantiate the Change Password form</span>
+<span class="nv">$passwordForm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
+<span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="s1">&#39;ChangePassword&#39;</span><span class="p">;</span>
+
+<span class="c1"># check if the User Profile form was submitted</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">(</span><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">))</span>
+<span class="p">{</span>
+   <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">validate</span><span class="p">(</span><span class="s1">&#39;Name, Email, Bio&#39;</span><span class="p">);</span>
+
+   <span class="k">if</span><span class="p">(</span><span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">ok</span><span class="p">())</span> <span class="p">{</span>
+      <span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">success_message</span><span class="p">(</span><span class="s1">&#39;Profile Updated!&#39;</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># check if the Change Password form was submitted</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">(</span><span class="s1">&#39;ChangePassword&#39;</span><span class="p">))</span>
+<span class="p">{</span>
+   <span class="c1"># this time we&#39;re using the post() method for validating the password field</span>
+   <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;password, &#39;</span><span class="nx">Password</span><span class="s1">&#39;, matches[confirm_password]&#39;</span><span class="p">);</span>
+
+   <span class="k">if</span><span class="p">(</span><span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">ok</span><span class="p">())</span> <span class="p">{</span>
+       <span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">success_message</span><span class="p">(</span><span class="s1">&#39;Password Changed!&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html lang=&quot;en&quot;&gt;</span>
+<span class="x">&lt;head&gt;</span>
+<span class="x">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span>
+<span class="x">    &lt;title&gt;Formr&lt;/title&gt;</span>
+<span class="x">&lt;/head&gt;</span>
+<span class="x">&lt;body&gt;</span>
+
+<span class="x">    </span><span class="cp">&lt;?php</span>
+        <span class="c1"># display messages for each form</span>
+        <span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
+        <span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">messages</span><span class="p">();</span>
+    <span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">    &lt;!-- build the forms --&gt;</span>
+
+<span class="x">    &lt;h2&gt;Account Profile&lt;/h2&gt;</span>
+<span class="x">    </span><span class="cp">&lt;?php</span> <span class="nv">$profileForm</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Name, Email, Bio|textarea&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">    &lt;h2&gt;Change Password&lt;/h2&gt;</span>
+<span class="x">    </span><span class="cp">&lt;?php</span> <span class="nv">$passwordForm</span><span class="o">-&gt;</span><span class="na">create_form</span><span class="p">(</span><span class="s1">&#39;Password, Confirm Password&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</code></pre></div>
+                
+                  
+                
+              
+              
+                
+
+  
+
+
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://formr.github.io/blog/multiple-forms-on-one-page/",this.page.identifier="/blog/multiple-forms-on-one-page/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//formr.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

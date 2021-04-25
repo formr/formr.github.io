@@ -288,6 +288,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha" class="md-nav__link">
+    reCAPTCHA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#validation-rules" class="md-nav__link">
     Validation Rules
   </a>
@@ -421,6 +428,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha" class="md-nav__link">
+    reCAPTCHA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#validation-rules" class="md-nav__link">
     Validation Rules
   </a>
@@ -515,6 +529,50 @@
 <div class="highlight"><pre><span></span><code><span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="s1">&#39;Email|Please enter your email address&#39;</span><span class="p">,</span><span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
 </code></pre></div>
 </div>
+<h2 id="recaptcha">reCAPTCHA</h2>
+<p>Formr supports Google reCAPTCHA v3, in which no user input is required. Instead Google calculates a score, and if the validation score falls below a certain value (default is 0.5) the validation fails and the form stops processing.</p>
+<p>Setting up reCAPTCHA is really easy. First thing you need to do is head over to the <a href="https://www.google.com/recaptcha/admin/create">reCAPTCHA v3</a> page and request your keys.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure you select the <code>reCAPTCHA v3</code> for the reCAPTCHA type!</p>
+</div>
+<p>Next, add those keys to Formr using the <code>recaptcha_secret_key</code> and <code>recaptcha_site_key</code> properties. You can also change the default score value with the <code>recaptcha_score</code> property.</p>
+<p>After that add the <code>$form-&gt;recaptcha_head()</code> method to the <code>&lt;head&gt;</code> section of your document, and the <code>$form-&gt;recaptcha_body()</code> method right before the closing <code>&lt;/body&gt;</code> tag (or anywhere you want to place your JavaScript).</p>
+<p>Finally, check if the reCAPTCHA validation passed, or failed, using the <code>recaptcha_passed()</code> method after the form has been submitted.</p>
+<div class="admonition example">
+<p class="admonition-title">Adding reCAPTCHA</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="cp">&lt;?php</span>
+<span class="cp">    $form = new Formr\Formr();</span>
+<span class="cp">    $form-&gt;recaptcha_site_key = &#39;YOUR-SITE-KEY&#39;;</span>
+<span class="cp">    $form-&gt;recaptcha_secret_key = &#39;YOUR-SECRET-KEY&#39;;</span>
+
+<span class="cp">    if($form-&gt;submitted())</span>
+<span class="cp">        if(! $form-&gt;recaptcha_passed()) {</span>
+<span class="cp">            $form-&gt;error_message(&#39;reCAPTCHA Failed&#39;);</span>
+<span class="cp">        }</span>
+<span class="cp">    }</span>
+<span class="cp">?&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Formr reCAPTCHA<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="cp">&lt;?= $form-&gt;recaptcha_head() ?&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="cp">&lt;?php</span>
+<span class="cp">       $form-&gt;messages();</span>
+
+<span class="cp">       // build your form</span>
+<span class="cp">       $form-&gt;create_form(&#39;Name,Email,Comments|textarea&#39;);</span>
+
+<span class="cp">       // add the reCAPTCHA JavaScript</span>
+<span class="cp">       $form-&gt;recaptcha_body();</span>
+<span class="cp">    ?&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
 <h2 id="validation-rules">Validation Rules</h2>
 <p>The following table contains all validation rules.</p>
 <table>
@@ -524,6 +582,7 @@
 <th>Parameter?</th>
 <th>Description</th>
 <th>Example</th>
+<th>Alias</th>
 </tr>
 </thead>
 <tbody>
@@ -532,17 +591,20 @@
 <td>No</td>
 <td>Checks if the given date is after the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>allow_html</strong></td>
 <td>No</td>
 <td>Allows HTML, script tags, etc. Nullifies all other string rules. Use with caution!</td>
 <td></td>
+<td>html</td>
 </tr>
 <tr>
 <td><strong>alpha</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the given string contains anything other than alphabetical characters.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -550,83 +612,97 @@
 <td>No</td>
 <td>Returns <code>FALSE</code> if the given string contains anything other than alpha-numeric characters,  underscores or dashes.</td>
 <td></td>
+<td>ad</td>
 </tr>
 <tr>
 <td><strong>alpha_numeric</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the given string contains anything other than alpha-numeric characters.</td>
 <td></td>
+<td>an</td>
 </tr>
 <tr>
 <td><strong>before</strong></td>
 <td>No</td>
 <td>Checks if the given date is before the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
-<td><strong>exact</strong></td>
+<td><strong>exact_length</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is not exactly the parameter value.</td>
 <td>exact[8]</td>
+<td>exact, el</td>
 </tr>
 <tr>
 <td><strong>greater_than</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is less than the parameter value, or is not numeric.</td>
 <td>gt[8]</td>
+<td>gt</td>
 </tr>
 <tr>
 <td><strong>greater_than_or_equal</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is less than or equal to the parameter value, or is not numeric.</td>
 <td>gte[8]</td>
+<td>gte</td>
 </tr>
 <tr>
 <td><strong>hash</strong></td>
 <td>No</td>
 <td>Returns an encrypted string using the <code>password_hash</code> function.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
-<td><strong>int</strong></td>
+<td><strong>integer</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the given string contains anything other than an integer.</td>
 <td></td>
+<td>int</td>
 </tr>
 <tr>
 <td><strong>less_than</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is greater than the parameter value or not numeric.</td>
 <td>lt[8]</td>
+<td>lt</td>
 </tr>
 <tr>
 <td><strong>less_than_or_equal</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is greater than or equal to the parameter value, or is not numeric.</td>
 <td>lte[8]</td>
+<td>lte</td>
 </tr>
 <tr>
 <td><strong>matches</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string does not match the one in the parameter.</td>
 <td>matches[field_name]</td>
+<td></td>
 </tr>
 <tr>
-<td><strong>max</strong></td>
+<td><strong>max_length</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is longer then the parameter value.</td>
 <td>max[12]</td>
+<td>max, ml</td>
 </tr>
 <tr>
-<td><strong>min</strong></td>
+<td><strong>min_length</strong></td>
 <td>Yes</td>
 <td>Returns <code>FALSE</code> if the given string is shorter then the parameter value.</td>
 <td>min[6]</td>
+<td>min</td>
 </tr>
 <tr>
 <td><strong>md5</strong></td>
 <td>No</td>
 <td>Returns an md5 encrypted string.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -634,11 +710,13 @@
 <td>Yes</td>
 <td>Does not match a user-defined regex.</td>
 <td>not_regex[/^\d+$/]</td>
+<td></td>
 </tr>
 <tr>
 <td><strong>numeric</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the given string contains anything other than numeric characters.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -646,11 +724,20 @@
 <td>Yes</td>
 <td>Matches a user-defined regex.</td>
 <td>regex[/[^0-9]/]</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>required</strong></td>
+<td>No</td>
+<td>Returns <code>FALSE</code> if the field is empty.</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>sha1</strong></td>
 <td>No</td>
 <td>Returns an sha1 encrypted string.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -658,11 +745,13 @@
 <td>No</td>
 <td>Passes result through the <code>FILTER_SANITIZE_EMAIL</code> function.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>sanitize_int</strong></td>
 <td>No</td>
 <td>Passes result through the <code>FILTER_SANITIZE_NUMBER_INT</code> function.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -670,11 +759,13 @@
 <td>No</td>
 <td>Passes result through the <code>FILTER_SANITIZE_STRING</code> function.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>sanitize_url</strong></td>
 <td>No</td>
 <td>Passes result through the <code>FILTER_SANITIZE_URL</code> function.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -682,11 +773,13 @@
 <td>No</td>
 <td>Creates a Twitter-style username string containing only letters, numbers and underscores.</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td><strong>strip_numeric</strong></td>
 <td>No</td>
 <td>Strips out everything but numbers.</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -694,18 +787,21 @@
 <td>No</td>
 <td>Returns <code>FALSE</code> if the supplied string does not contain a valid email address.</td>
 <td></td>
+<td>email</td>
 </tr>
 <tr>
 <td><strong>valid_ip</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the supplied string is not a valid IP address.</td>
 <td></td>
+<td>ip</td>
 </tr>
 <tr>
 <td><strong>valid_url</strong></td>
 <td>No</td>
 <td>Returns <code>FALSE</code> if the supplied string is not formatted as a URL</td>
 <td></td>
+<td>url</td>
 </tr>
 </tbody>
 </table>

@@ -344,6 +344,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha_score" class="md-nav__link">
+    recaptcha_score
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recaptcha_secret_key" class="md-nav__link">
+    recaptcha_secret_key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recaptcha_site_key" class="md-nav__link">
+    recaptcha_site_key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
     required
   </a>
@@ -675,6 +696,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha_score" class="md-nav__link">
+    recaptcha_score
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recaptcha_secret_key" class="md-nav__link">
+    recaptcha_secret_key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recaptcha_site_key" class="md-nav__link">
+    recaptcha_site_key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
     required
   </a>
@@ -852,7 +894,7 @@ Produces the following HTML
 </code></pre></div>
 </div>
 <h3 id="honeypot">honeypot</h3>
-<p>Adds a hidden "<a href="https://stackoverflow.com/questions/36227376/better-honeypot-implementation-form-anti-spam">honeypot</a>" field to the form, which is useful in preventing bots from hijacking the form (without the headache of a CAPTCHA) by killing the script if the field was filled.</p>
+<p>Adds a hidden "<a href="https://stackoverflow.com/questions/36227376/better-honeypot-implementation-form-anti-spam">honeypot</a>" field to the form, which is useful in preventing bots from hijacking the form by killing the script if the field was filled.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">honeypot</span> <span class="o">=</span> <span class="s1">&#39;your_email_address_here&#39;</span><span class="p">;</span>
@@ -957,6 +999,12 @@ Produces the following HTML
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;foo.php&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;cheese&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">accept-charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
 </code></pre></div></p>
 </div>
+<h3 id="recaptcha_score">recaptcha_score</h3>
+<p>The default score for Google's reCAPTCHA is <code>0.5</code>. Use this property to change that value.</p>
+<h3 id="recaptcha_secret_key">recaptcha_secret_key</h3>
+<p>Your Google reCAPTCHA <code>secret</code> key, which can be obtained <a href="https://www.google.com/recaptcha/admin/create">here</a>.</p>
+<h3 id="recaptcha_site_key">recaptcha_site_key</h3>
+<p>Your Google reCAPTCHA <code>site</code> key, which can be obtained <a href="https://www.google.com/recaptcha/admin/create">here</a>.</p>
 <h3 id="required">required</h3>
 <p>Formr enables you to easily make one field required, all fields required, or all but one field required. The <code class="highlight"><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">required</span> <span class="nx">property</span></code> is global, which means that you don't have to mark each and every form field, form label and POST validation rule to "required"… instead, you supply the required field names to this property and Formr will handle everything for you automatically!</p>
 <p>You can also omit fields from being required, which can be a huge time saver because using omitted fields will automatically make all other fields in the form required!</p>
