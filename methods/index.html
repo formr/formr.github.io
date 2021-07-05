@@ -913,7 +913,14 @@
     Misc.
   </a>
   
-    <nav class="md-nav" aria-label="Misc.">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear
+  </a>
+  
+    <nav class="md-nav" aria-label="clear">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1768,7 +1775,14 @@
     Misc.
   </a>
   
-    <nav class="md-nav" aria-label="Misc.">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear
+  </a>
+  
+    <nav class="md-nav" aria-label="clear">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2861,6 +2875,21 @@ Last Name: Wick
 </code></pre></div>
 </div>
 <h2 id="misc">Misc.</h2>
+<h2 id="clear">clear</h2>
+<p>Empties the <code>$_POST</code> super global after a form submission. Handy if you want to show an empty form after a successful submission.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">submitted</span><span class="p">())</span>
+<span class="p">{</span>
+    <span class="nv">$name</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+    <span class="nv">$email</span> <span class="o">=</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">ok</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">clear</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <h3 id="csrf">csrf</h3>
 <p>The only parameter changes the expiration time, in seconds, and is optional. Default expiration value is 3600 seconds (1 hour).</p>
 <p>Adds CSRF protection to your form by creating a hidden field and filling it with a random token, which is validated upon form submission. If the token fails validation an error message will be shown to the user.</p>
