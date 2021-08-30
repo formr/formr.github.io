@@ -267,6 +267,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error_heading_plural" class="md-nav__link">
+    error_heading_plural
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error_heading_singular" class="md-nav__link">
+    error_heading_singular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#format_rule_dates" class="md-nav__link">
     format_rule_dates
   </a>
@@ -626,6 +640,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error_heading_plural" class="md-nav__link">
+    error_heading_plural
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error_heading_singular" class="md-nav__link">
+    error_heading_singular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#format_rule_dates" class="md-nav__link">
     format_rule_dates
   </a>
@@ -900,6 +928,15 @@ Produces the following HTML
 <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;Email|Please enter your email&#39;</span><span class="p">,</span> <span class="s1">&#39;valid_email&#39;</span><span class="p">);</span>
 </code></pre></div>
 </div>
+<h3 id="error_heading_plural">error_heading_plural</h3>
+<p>When a form error occurs the <a href="/methods/#messages"><code>messages</code></a> method will add singular - or plural - default header text wrapped in an <code>&lt;h4&gt;</code> tag. This parameter allows you to change the default message string for when there is more than one error in the form.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">error_heading_plural</span> <span class="o">=</span> <span class="s1">&#39;Correct the Errors&#39;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<h3 id="error_heading_singular">error_heading_singular</h3>
+<p>Same as <code class="highlight"><span class="nx">error_heading_plural</span></code> except that it will be shown if there is only one error in the form.</p>
 <h3 id="format_rule_dates">format_rule_dates</h3>
 <p>Allows you to choose how you want to format your dates when using the <code>before</code> and <code>after</code> validation rules. Default is <code>'M d, Y'</code>,</p>
 <div class="admonition example">
@@ -997,7 +1034,7 @@ Produces the following HTML
 </code></pre></div></p>
 </div>
 <h3 id="minify">minify</h3>
-<p>Boolean. Setting this to TRUE will remove all formatting and minify your output.</p>
+<p>Boolean. Setting this to <code class="highlight"><span class="k">TRUE</span></code> will remove all formatting and minify your output.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">minify</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
