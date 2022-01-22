@@ -567,11 +567,12 @@
 <p class="admonition-title">Adding reCAPTCHA</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="cp">&lt;?php</span>
+<span class="cp">    require &#39;Formr/class.formr.php&#39;;</span>
 <span class="cp">    $form = new Formr\Formr();</span>
 <span class="cp">    $form-&gt;recaptcha_site_key = &#39;YOUR-SITE-KEY&#39;;</span>
 <span class="cp">    $form-&gt;recaptcha_secret_key = &#39;YOUR-SECRET-KEY&#39;;</span>
 
-<span class="cp">    if($form-&gt;submitted())</span>
+<span class="cp">    if($form-&gt;submitted()) {</span>
 <span class="cp">        if(! $form-&gt;recaptcha_passed()) {</span>
 <span class="cp">            $form-&gt;error_message(&#39;reCAPTCHA Failed&#39;);</span>
 <span class="cp">        }</span>
