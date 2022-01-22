@@ -400,6 +400,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha_use_curl" class="md-nav__link">
+    recaptcha_use_curl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
     required
   </a>
@@ -769,6 +776,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#recaptcha_use_curl" class="md-nav__link">
+    recaptcha_use_curl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
     required
   </a>
@@ -994,19 +1008,17 @@ Produces the following HTML
 </code></pre></div></p>
 </div>
 <h3 id="inline_errors">inline_errors</h3>
-<p>Boolean. Default is <code class="highlight"><span class="k">FALSE</span></code>. Turns off textual error messages and, if you use the following CSS, inserts a small PNG (not included) to the right of the form field.</p>
-<div class="admonition example">
+<p>Boolean. Default is <code class="highlight"><span class="k">FALSE</span></code>. Turns off textual error messages at the top of the form and will instead display error messages below each field element.</p>
+<div class="admonition tip">
 <p class="admonition-title">Add an image to the right of the form field</p>
-<p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">inline_errors</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
-</code></pre></div>
-CSS class and example code to show the "warning" PNG
+<p>If you use the following CSS, Formr will insert a small PNG of your choice (not included) to the right of the form field.</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">inline-error</span> <span class="p">{</span>
     <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
     <span class="k">width</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
     <span class="k">height</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
     <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;../img/invalid.png&#39;</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div>
 </div>
 <h3 id="inline_errors_class">inline_errors_class</h3>
 <p>Sets the CSS class name if you're using inline error reporting. Default class is named <code class="highlight"><span class="nt">inline-error</span></code>.</p>
@@ -1058,6 +1070,8 @@ Produces the following HTML
 <p>Your Google reCAPTCHA <code>secret</code> key, which can be obtained <a href="https://www.google.com/recaptcha/admin/create">here</a>.</p>
 <h3 id="recaptcha_site_key">recaptcha_site_key</h3>
 <p>Your Google reCAPTCHA <code>site</code> key, which can be obtained <a href="https://www.google.com/recaptcha/admin/create">here</a>.</p>
+<h3 id="recaptcha_use_curl">recaptcha_use_curl</h3>
+<p>By default, Formr will use <code class="highlight"><span class="nb">file_get_contents</span><span class="p">()</span></code> for verification with Google's servers. You can use cURL instead by setting this property to <code class="highlight"><span class="k">TRUE</span></code>.</p>
 <h3 id="required">required</h3>
 <p>Formr enables you to easily make one field required, all fields required, or all but one field required. The <code class="highlight"><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">required</span> <span class="nx">property</span></code> is global, which means that you don't have to mark each and every form field, form label and POST validation rule to "required"… instead, you supply the required field names to this property and Formr will handle everything for you automatically!</p>
 <p>You can also omit fields from being required, which can be a huge time saver because using omitted fields will automatically make all other fields in the form required!</p>

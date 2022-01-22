@@ -599,6 +599,12 @@
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 </div>
+<div class="admonition info">
+<p class="admonition-title">Use cURL for Validation</p>
+<p>By default, Formr will use <code class="highlight"><span class="nb">file_get_contents</span><span class="p">()</span></code> for verification with Google's servers. You can use cURL instead by setting the <code class="highlight"><span class="nx">recaptcha_use_curl</span></code> property to <code class="highlight"><span class="k">TRUE</span></code>.
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">recaptcha_use_curl</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+</code></pre></div></p>
+</div>
 <h2 id="validation-rules">Validation Rules</h2>
 <p>The following table contains all validation rules.</p>
 <table>
@@ -614,7 +620,7 @@
 <tr>
 <td><strong>after</strong></td>
 <td>No</td>
-<td>Checks if the given date is after the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
+<td>Checks if the given date is after the current date using server time. The form input field must be formatted as <code>YYYY-MM-DD</code>.</td>
 <td></td>
 </tr>
 <tr>
@@ -644,7 +650,7 @@
 <tr>
 <td><strong>before</strong></td>
 <td>No</td>
-<td>Checks if the given date is before the current date using server time. Input must be formatted as <code>YYYY-MM-DD</code>.</td>
+<td>Checks if the given date is before the current date using server time. The form input field must be formatted as <code>YYYY-MM-DD</code>.</td>
 <td></td>
 </tr>
 <tr>
