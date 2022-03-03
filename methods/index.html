@@ -1931,7 +1931,7 @@
 <p>This method allows you to build incredibly complex forms using simple key/value arrays and strings. <a href="../fastform/">Read the FastForm docs</a> for complete examples. Validate with the <code class="highlight"><span class="nx">fastpost</span><span class="p">()</span></code> method;</p>
 <ol>
 <li>The first parameter contains the array (or string) and is required.</li>
-<li>If you'd like to add CSRF protection, just enter <code>CSRF</code> or <code class="highlight"><span class="k">TRUE</span></code> in the second parameter.</li>
+<li>If you'd like to add CSRF protection, just enter <code class="highlight"><span class="nx">CSRF</span></code> or <code class="highlight"><span class="k">TRUE</span></code> in the second parameter.</li>
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2939,8 +2939,8 @@ Last Name: Wick
 </code></pre></div>
 </div>
 <h3 id="csrf">csrf</h3>
-<p>The only parameter changes the expiration time, in seconds, and is optional. Default expiration value is 3600 seconds (1 hour).</p>
 <p>Adds CSRF protection to your form by creating a hidden field and filling it with a random token, which is validated upon form submission. If the token fails validation an error message will be shown to the user.</p>
+<p>The only parameter changes the expiration time, in seconds, and is optional. Default expiration value is 3600 seconds (1 hour).</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p><div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">open</span><span class="p">();</span>
