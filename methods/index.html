@@ -1931,7 +1931,7 @@
 <p>This method allows you to build incredibly complex forms using simple key/value arrays and strings. <a href="../fastform/">Read the FastForm docs</a> for complete examples. Validate with the <code class="highlight"><span class="nx">fastpost</span><span class="p">()</span></code> method;</p>
 <ol>
 <li>The first parameter contains the array (or string) and is required.</li>
-<li>If you'd like to add CSRF protection, just enter <code class="highlight"><span class="nx">CSRF</span></code> or <code class="highlight"><span class="k">TRUE</span></code> in the second parameter.</li>
+<li>If you'd like to add CSRF protection, just enter either the desired SESSION timeout duration (in seconds), <code class="highlight"><span class="nx">CSRF</span></code>, or <code class="highlight"><span class="k">TRUE</span></code> in the second parameter. <code class="highlight"><span class="nx">CSRF</span></code> and <code class="highlight"><span class="k">TRUE</span></code> default to a 3600 second (1 hour) timeout.</li>
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -1947,12 +1947,12 @@
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
 </div>
-<h3 id="fastform_multipart">fastform_multipart</h3>
-<p>Identical to <code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>When using CSRF protection you must enable sessions by adding <code class="highlight"><span class="nb">session_start</span><span class="p">()</span></code> at the top of your file.</p>
 </div>
+<p>When using CSRF protection you must enable sessions by adding <code class="highlight"><span class="nb">session_start</span><span class="p">()</span></code> at the top of your file.</p>
+<h3 id="fastform_multipart">fastform_multipart</h3>
+<p>Identical to <code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code> except that it adds the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">enctype</span><span class="o">=</span><span class="s">&quot;multipart/form-data&quot;</span><span class="p">&gt;</span></code> attribute.</p>
 <hr />
 <h2 id="form-processors">Form Processors</h2>
 <h3 id="validate">validate</h3>
@@ -2831,6 +2831,7 @@ Produces the following HTML
 <li>The required third parameter contains the message body.</li>
 <li>The optional fourth parameter accepts a 'from' email address.</li>
 <li>The optional fifth parameter is binary: set to <code class="highlight"><span class="k">TRUE</span></code> if you'd like to send the email as HTML.</li>
+<li>The optional sixth parameter lets you pass custom mail headers as a string.</li>
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Send a plain-text email</p>
@@ -2863,6 +2864,15 @@ Produces something like
 <div class="highlight"><pre><span></span><code>your_name: John Wick
 your_email: johnwick@gunfu.com
 </code></pre></div></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Pass custom Headers</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$headers</span>  <span class="o">=</span> <span class="s2">&quot;MIME-Version: 1.0</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="nv">$headers</span> <span class="o">.=</span> <span class="s2">&quot;Content-Type: text/html; charset=ISO-8859-1</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="nv">$headers</span> <span class="o">.=</span> <span class="s2">&quot;From: &quot;</span> <span class="o">.</span> <span class="nv">$from</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">;</span>
+
+<span class="nv">$form</span><span class="o">-&gt;</span><span class="na">send_email</span><span class="p">(</span><span class="nv">$to</span><span class="p">,</span> <span class="nv">$subject</span><span class="p">,</span> <span class="nv">$message</span><span class="p">,</span> <span class="nv">$from</span><span class="p">,</span> <span class="s1">&#39;HTML&#39;</span><span class="p">,</span> <span class="nv">$headers</span><span class="p">);</span>
+</code></pre></div>
 </div>
 <p>If you want prettier emails while looping through the <code class="highlight"><span class="nv">$_POST</span></code> array, name your input fields with capital letters and underscores, and then prepend each name with an underscore. Prepending a field with an underscore tells Formr to replace all underscores with spaces, making for an easier to read email.</p>
 <div class="admonition example">

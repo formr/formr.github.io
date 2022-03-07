@@ -591,20 +591,20 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap3&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap4&#39;</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="quick-start">Quick Start</h2>
 <h3 id="1-create-the-form">1. Create the Form</h3>
-<p>To use Formr you will need to create a new form object. You can name it anything you like, so let's keep it simple and call it <code>$form</code>.</p>
+<p>To use Formr you will need to create a new form object. You can name it anything you like, so let's keep it simple and call it <code class="highlight"><span class="nv">$form</span></code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">();</span>
 </code></pre></div>
-<p>There are two arguments we can pass to our new form: the Wrapper, and the Silencer. The Wrapper tells Formr how you want your forms to be laid out; such as with Bootstrap, Bulma, or just a simple <code>&lt;div&gt;</code> tag.</p>
+<p>There are two arguments we can pass to our new form: the Wrapper, and the Switch. The Wrapper tells Formr how you want your forms to be laid out; such as with Bootstrap, Bulma, or just a simple <code>&lt;div&gt;</code> tag.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>Formr will automatically echo form elements and messages to the screen, and this is usually fine. However, in some instances this is not an option, such as when using a templating framework. In these cases simply pass <code>hush</code> to the switch parameter and then manually <code>echo</code> your elements and messages.</p>
+<p>Formr will automatically echo form elements and messages to the screen, and this is usually fine. However, in some instances this is not an option, such as when using a templating framework. In these cases simply pass <code>hush</code> to the Switch parameter and then manually <code class="highlight"><span class="k">echo</span></code> your elements and messages.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">,</span> <span class="s1">&#39;hush&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>You can also omit a framework's wrapping div (e.g.; <code>&lt;div class="form-group"&gt;</code>) by adding <code>nowrap</code> to the switch parameter.</p>
+<p>You can also omit a framework's wrapping div (e.g.; <code class="highlight"><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="o">=</span><span class="s2">&quot;form-group&quot;</span><span class="o">&gt;</span></code>) by adding <code class="highlight"><span class="nx">nowrap</span></code> to the switch parameter.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Formr\Formr</span><span class="p">(</span><span class="s1">&#39;bootstrap&#39;</span><span class="p">,</span> <span class="s1">&#39;nowrap&#39;</span><span class="p">);</span>
 </code></pre></div>
 <p>You can use multiple switches by separating each with a comma.
