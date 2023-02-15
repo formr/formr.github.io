@@ -2542,6 +2542,12 @@ Produces the following HTML
 </table>
 <h3 id="select_multiple">select_multiple</h3>
 <p>Identical to <code class="highlight"><span class="nx">select</span><span class="p">()</span></code>, plus adds the <code>multiple</code> attribute to create a multiple select list.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't forget to add square brackets to your field name, or PHP will only allow one selection at a time.
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">select_multiple</span><span class="p">(</span><span class="s1">&#39;name[]&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
 <h3 id="dropdown">dropdown</h3>
 <p>Alias of <code class="highlight"><span class="nx">select</span><span class="p">()</span></code></p>
 <h3 id="dropdown_multiple">dropdown_multiple</h3>

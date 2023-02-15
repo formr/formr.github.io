@@ -1153,13 +1153,12 @@ Produces somerthing like the following
 <p class="admonition-title">Danger</p>
 <p>You must add <code class="highlight"><span class="nb">session_start</span><span class="p">()</span></code> to the top of your script, then pass the <code class="highlight"><span class="nv">$_POST</span></code> values through the <a href="../methods/#fastpost"><code class="highlight"><span class="nx">fastpost</span><span class="p">()</span></code></a>, <a href="../methods/#post"><code class="highlight"><span class="nx">post</span><span class="p">()</span></code></a> or <a href="../methods/#validate"><code class="highlight"><span class="nx">validate</span><span class="p">()</span></code></a> methods or the <code class="highlight"><span class="nv">$_SESSION</span></code>data will not be set.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you want your form fields to be populated with the <code class="highlight"><span class="nv">$_SESSION</span></code> data, you must use the <code class="highlight"><span class="nx">session_values</span></code> property, as outlined below.</p>
+</div>
 <h3 id="session_values">session_values</h3>
 <p>Boolean. Will automatically populate all form fields with that field's corresponding value in the <code class="highlight"><span class="nv">$_SESSION</span></code>.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">session_values</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
-</code></pre></div>
-</div>
 <div class="admonition example">
 <p class="admonition-title">Use the $_SESSION values for all form fields</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">session_values</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
