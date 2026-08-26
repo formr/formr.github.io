@@ -10,8 +10,18 @@
       
         <link rel="canonical" href="https://formr.github.io/methods/">
       
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../properties/">
+      
+      
+        
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -19,14 +29,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -40,7 +50,7 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -49,14 +59,8 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,16 +80,19 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Formr" class="md-header__button md-logo" aria-label="Formr" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -105,39 +112,49 @@
     </div>
     
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -162,12 +179,13 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Formr" class="md-nav__button md-logo" aria-label="Formr" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Formr
@@ -177,14 +195,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -192,28 +222,53 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Methods
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Methods
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
       </a>
       
         
@@ -233,7 +288,11 @@
       
         <li class="md-nav__item">
   <a href="#form-builders" class="md-nav__link">
-    Form Builders
+    <span class="md-ellipsis">
+      
+        Form Builders
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Builders">
@@ -241,35 +300,55 @@
         
           <li class="md-nav__item">
   <a href="#create_form" class="md-nav__link">
-    create_form
+    <span class="md-ellipsis">
+      
+        create_form
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create_form_multipart" class="md-nav__link">
-    create_form_multipart
+    <span class="md-ellipsis">
+      
+        create_form_multipart
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create" class="md-nav__link">
-    create
+    <span class="md-ellipsis">
+      
+        create
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastform" class="md-nav__link">
-    fastform
+    <span class="md-ellipsis">
+      
+        fastform
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastform_multipart" class="md-nav__link">
-    fastform_multipart
+    <span class="md-ellipsis">
+      
+        fastform_multipart
+      
+    </span>
   </a>
   
 </li>
@@ -281,7 +360,11 @@
       
         <li class="md-nav__item">
   <a href="#form-processors" class="md-nav__link">
-    Form Processors
+    <span class="md-ellipsis">
+      
+        Form Processors
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Processors">
@@ -289,42 +372,66 @@
         
           <li class="md-nav__item">
   <a href="#validate" class="md-nav__link">
-    validate
+    <span class="md-ellipsis">
+      
+        validate
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#post" class="md-nav__link">
-    post
+    <span class="md-ellipsis">
+      
+        post
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#get" class="md-nav__link">
-    get
+    <span class="md-ellipsis">
+      
+        get
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastpost" class="md-nav__link">
-    fastpost
+    <span class="md-ellipsis">
+      
+        fastpost
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#redirect" class="md-nav__link">
-    redirect
+    <span class="md-ellipsis">
+      
+        redirect
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#submitted" class="md-nav__link">
-    submitted
+    <span class="md-ellipsis">
+      
+        submitted
+      
+    </span>
   </a>
   
 </li>
@@ -336,7 +443,11 @@
       
         <li class="md-nav__item">
   <a href="#form-tags" class="md-nav__link">
-    Form Tags
+    <span class="md-ellipsis">
+      
+        Form Tags
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Tags">
@@ -344,21 +455,33 @@
         
           <li class="md-nav__item">
   <a href="#open" class="md-nav__link">
-    open
+    <span class="md-ellipsis">
+      
+        open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#open_multipart" class="md-nav__link">
-    open_multipart
+    <span class="md-ellipsis">
+      
+        open_multipart
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#close" class="md-nav__link">
-    close
+    <span class="md-ellipsis">
+      
+        close
+      
+    </span>
   </a>
   
 </li>
@@ -370,7 +493,11 @@
       
         <li class="md-nav__item">
   <a href="#text-inputs" class="md-nav__link">
-    Text Inputs
+    <span class="md-ellipsis">
+      
+        Text Inputs
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Text Inputs">
@@ -378,133 +505,209 @@
         
           <li class="md-nav__item">
   <a href="#text" class="md-nav__link">
-    text
+    <span class="md-ellipsis">
+      
+        text
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#color" class="md-nav__link">
-    color
+    <span class="md-ellipsis">
+      
+        color
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#date" class="md-nav__link">
-    date
+    <span class="md-ellipsis">
+      
+        date
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#datetime" class="md-nav__link">
-    datetime
+    <span class="md-ellipsis">
+      
+        datetime
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#email" class="md-nav__link">
-    email
+    <span class="md-ellipsis">
+      
+        email
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error" class="md-nav__link">
-    error
+    <span class="md-ellipsis">
+      
+        error
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#hidden" class="md-nav__link">
-    hidden
+    <span class="md-ellipsis">
+      
+        hidden
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#honeypot" class="md-nav__link">
-    honeypot
+    <span class="md-ellipsis">
+      
+        honeypot
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#month" class="md-nav__link">
-    month
+    <span class="md-ellipsis">
+      
+        month
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#number" class="md-nav__link">
-    number
+    <span class="md-ellipsis">
+      
+        number
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#password" class="md-nav__link">
-    password
+    <span class="md-ellipsis">
+      
+        password
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#range" class="md-nav__link">
-    range
+    <span class="md-ellipsis">
+      
+        range
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#search" class="md-nav__link">
-    search
+    <span class="md-ellipsis">
+      
+        search
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#tel" class="md-nav__link">
-    tel
+    <span class="md-ellipsis">
+      
+        tel
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#textarea" class="md-nav__link">
-    textarea
+    <span class="md-ellipsis">
+      
+        textarea
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#time" class="md-nav__link">
-    time
+    <span class="md-ellipsis">
+      
+        time
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#url" class="md-nav__link">
-    url
+    <span class="md-ellipsis">
+      
+        url
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#value" class="md-nav__link">
-    value
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#week" class="md-nav__link">
-    week
+    <span class="md-ellipsis">
+      
+        week
+      
+    </span>
   </a>
   
 </li>
@@ -516,7 +719,11 @@
       
         <li class="md-nav__item">
   <a href="#checkboxes-radios" class="md-nav__link">
-    Checkboxes &amp; Radios
+    <span class="md-ellipsis">
+      
+        Checkboxes &amp; Radios
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Checkboxes &amp; Radios">
@@ -524,28 +731,44 @@
         
           <li class="md-nav__item">
   <a href="#checkbox" class="md-nav__link">
-    checkbox
+    <span class="md-ellipsis">
+      
+        checkbox
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#checkbox_inline" class="md-nav__link">
-    checkbox_inline
+    <span class="md-ellipsis">
+      
+        checkbox_inline
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#radio" class="md-nav__link">
-    radio
+    <span class="md-ellipsis">
+      
+        radio
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#radio_inline" class="md-nav__link">
-    radio_inline
+    <span class="md-ellipsis">
+      
+        radio_inline
+      
+    </span>
   </a>
   
 </li>
@@ -557,7 +780,11 @@
       
         <li class="md-nav__item">
   <a href="#select-menus" class="md-nav__link">
-    Select Menus
+    <span class="md-ellipsis">
+      
+        Select Menus
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Select Menus">
@@ -565,28 +792,44 @@
         
           <li class="md-nav__item">
   <a href="#select" class="md-nav__link">
-    select
+    <span class="md-ellipsis">
+      
+        select
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#select_multiple" class="md-nav__link">
-    select_multiple
+    <span class="md-ellipsis">
+      
+        select_multiple
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dropdown" class="md-nav__link">
-    dropdown
+    <span class="md-ellipsis">
+      
+        dropdown
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dropdown_multiple" class="md-nav__link">
-    dropdown_multiple
+    <span class="md-ellipsis">
+      
+        dropdown_multiple
+      
+    </span>
   </a>
   
 </li>
@@ -598,7 +841,11 @@
       
         <li class="md-nav__item">
   <a href="#file-uploads" class="md-nav__link">
-    File Uploads
+    <span class="md-ellipsis">
+      
+        File Uploads
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="File Uploads">
@@ -606,28 +853,44 @@
         
           <li class="md-nav__item">
   <a href="#file" class="md-nav__link">
-    file
+    <span class="md-ellipsis">
+      
+        file
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file_multiple" class="md-nav__link">
-    file_multiple
+    <span class="md-ellipsis">
+      
+        file_multiple
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#upload" class="md-nav__link">
-    upload
+    <span class="md-ellipsis">
+      
+        upload
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#upload_multiple" class="md-nav__link">
-    upload_multiple
+    <span class="md-ellipsis">
+      
+        upload_multiple
+      
+    </span>
   </a>
   
 </li>
@@ -639,7 +902,11 @@
       
         <li class="md-nav__item">
   <a href="#buttons" class="md-nav__link">
-    Buttons
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Buttons">
@@ -647,28 +914,44 @@
         
           <li class="md-nav__item">
   <a href="#button" class="md-nav__link">
-    button
+    <span class="md-ellipsis">
+      
+        button
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#input_submit" class="md-nav__link">
-    input_submit
+    <span class="md-ellipsis">
+      
+        input_submit
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#submit_button" class="md-nav__link">
-    submit_button
+    <span class="md-ellipsis">
+      
+        submit_button
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reset_button" class="md-nav__link">
-    reset_button
+    <span class="md-ellipsis">
+      
+        reset_button
+      
+    </span>
   </a>
   
 </li>
@@ -680,7 +963,11 @@
       
         <li class="md-nav__item">
   <a href="#messaging" class="md-nav__link">
-    Messaging
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Messaging">
@@ -688,35 +975,55 @@
         
           <li class="md-nav__item">
   <a href="#messages" class="md-nav__link">
-    messages
+    <span class="md-ellipsis">
+      
+        messages
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error_message" class="md-nav__link">
-    error_message
+    <span class="md-ellipsis">
+      
+        error_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#info_message" class="md-nav__link">
-    info_message
+    <span class="md-ellipsis">
+      
+        info_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#success_message" class="md-nav__link">
-    success_message
+    <span class="md-ellipsis">
+      
+        success_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#warning_message" class="md-nav__link">
-    warning_message
+    <span class="md-ellipsis">
+      
+        warning_message
+      
+    </span>
   </a>
   
 </li>
@@ -728,7 +1035,11 @@
       
         <li class="md-nav__item">
   <a href="#error-handling" class="md-nav__link">
-    Error Handling
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Error Handling">
@@ -736,35 +1047,55 @@
         
           <li class="md-nav__item">
   <a href="#errors" class="md-nav__link">
-    errors
+    <span class="md-ellipsis">
+      
+        errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#add_to_errors" class="md-nav__link">
-    add_to_errors
+    <span class="md-ellipsis">
+      
+        add_to_errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors" class="md-nav__link">
-    in_errors
+    <span class="md-ellipsis">
+      
+        in_errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors_if" class="md-nav__link">
-    in_errors_if
+    <span class="md-ellipsis">
+      
+        in_errors_if
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors_else" class="md-nav__link">
-    in_errors_else
+    <span class="md-ellipsis">
+      
+        in_errors_else
+      
+    </span>
   </a>
   
 </li>
@@ -776,7 +1107,11 @@
       
         <li class="md-nav__item">
   <a href="#labels" class="md-nav__link">
-    Labels
+    <span class="md-ellipsis">
+      
+        Labels
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Labels">
@@ -784,21 +1119,33 @@
         
           <li class="md-nav__item">
   <a href="#label" class="md-nav__link">
-    label
+    <span class="md-ellipsis">
+      
+        label
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#label_open" class="md-nav__link">
-    label_open
+    <span class="md-ellipsis">
+      
+        label_open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#label_close" class="md-nav__link">
-    label_close
+    <span class="md-ellipsis">
+      
+        label_close
+      
+    </span>
   </a>
   
 </li>
@@ -810,7 +1157,11 @@
       
         <li class="md-nav__item">
   <a href="#fieldsets" class="md-nav__link">
-    Fieldsets
+    <span class="md-ellipsis">
+      
+        Fieldsets
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Fieldsets">
@@ -818,14 +1169,22 @@
         
           <li class="md-nav__item">
   <a href="#fieldset_open" class="md-nav__link">
-    fieldset_open
+    <span class="md-ellipsis">
+      
+        fieldset_open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fieldset_close" class="md-nav__link">
-    fieldset_close
+    <span class="md-ellipsis">
+      
+        fieldset_close
+      
+    </span>
   </a>
   
 </li>
@@ -837,7 +1196,11 @@
       
         <li class="md-nav__item">
   <a href="#email_1" class="md-nav__link">
-    Email
+    <span class="md-ellipsis">
+      
+        Email
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Email">
@@ -845,7 +1208,11 @@
         
           <li class="md-nav__item">
   <a href="#send_email" class="md-nav__link">
-    send_email
+    <span class="md-ellipsis">
+      
+        send_email
+      
+    </span>
   </a>
   
 </li>
@@ -857,7 +1224,11 @@
       
         <li class="md-nav__item">
   <a href="#debugging" class="md-nav__link">
-    Debugging
+    <span class="md-ellipsis">
+      
+        Debugging
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Debugging">
@@ -865,28 +1236,44 @@
         
           <li class="md-nav__item">
   <a href="#printr" class="md-nav__link">
-    printr
+    <span class="md-ellipsis">
+      
+        printr
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dump" class="md-nav__link">
-    dump
+    <span class="md-ellipsis">
+      
+        dump
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dd" class="md-nav__link">
-    dd
+    <span class="md-ellipsis">
+      
+        dd
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#info" class="md-nav__link">
-    info
+    <span class="md-ellipsis">
+      
+        info
+      
+    </span>
   </a>
   
 </li>
@@ -898,7 +1285,11 @@
       
         <li class="md-nav__item">
   <a href="#recaptcha-v3" class="md-nav__link">
-    reCAPTCHA v3
+    <span class="md-ellipsis">
+      
+        reCAPTCHA v3
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="reCAPTCHA v3">
@@ -906,21 +1297,33 @@
         
           <li class="md-nav__item">
   <a href="#recaptcha_body" class="md-nav__link">
-    recaptcha_body
+    <span class="md-ellipsis">
+      
+        recaptcha_body
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#recaptcha_head" class="md-nav__link">
-    recaptcha_head
+    <span class="md-ellipsis">
+      
+        recaptcha_head
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#recaptcha_passed" class="md-nav__link">
-    recaptcha_passed
+    <span class="md-ellipsis">
+      
+        recaptcha_passed
+      
+    </span>
   </a>
   
 </li>
@@ -932,7 +1335,11 @@
       
         <li class="md-nav__item">
   <a href="#misc" class="md-nav__link">
-    Misc.
+    <span class="md-ellipsis">
+      
+        Misc.
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Misc.">
@@ -940,42 +1347,66 @@
         
           <li class="md-nav__item">
   <a href="#clear" class="md-nav__link">
-    clear
+    <span class="md-ellipsis">
+      
+        clear
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#csrf" class="md-nav__link">
-    csrf
+    <span class="md-ellipsis">
+      
+        csrf
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#ok" class="md-nav__link">
-    ok
+    <span class="md-ellipsis">
+      
+        ok
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#slug" class="md-nav__link">
-    slug
+    <span class="md-ellipsis">
+      
+        slug
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#unset_session" class="md-nav__link">
-    unset_session
+    <span class="md-ellipsis">
+      
+        unset_session
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#heading" class="md-nav__link">
-    heading
+    <span class="md-ellipsis">
+      
+        heading
+      
+    </span>
   </a>
   
 </li>
@@ -995,14 +1426,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../properties/" class="md-nav__link">
-        Properties
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1010,14 +1453,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../validation/" class="md-nav__link">
-        Validation
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1025,14 +1480,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../upload-files/" class="md-nav__link">
-        Upload Files
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upload Files
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1040,14 +1507,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../fastform/" class="md-nav__link">
-        FastForm
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FastForm
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1055,14 +1534,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="https://github.com/formr/extend" class="md-nav__link">
-        Extend
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extend
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1070,14 +1561,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../blog/" class="md-nav__link">
-        Blog
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -1111,7 +1614,11 @@
       
         <li class="md-nav__item">
   <a href="#form-builders" class="md-nav__link">
-    Form Builders
+    <span class="md-ellipsis">
+      
+        Form Builders
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Builders">
@@ -1119,35 +1626,55 @@
         
           <li class="md-nav__item">
   <a href="#create_form" class="md-nav__link">
-    create_form
+    <span class="md-ellipsis">
+      
+        create_form
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create_form_multipart" class="md-nav__link">
-    create_form_multipart
+    <span class="md-ellipsis">
+      
+        create_form_multipart
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create" class="md-nav__link">
-    create
+    <span class="md-ellipsis">
+      
+        create
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastform" class="md-nav__link">
-    fastform
+    <span class="md-ellipsis">
+      
+        fastform
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastform_multipart" class="md-nav__link">
-    fastform_multipart
+    <span class="md-ellipsis">
+      
+        fastform_multipart
+      
+    </span>
   </a>
   
 </li>
@@ -1159,7 +1686,11 @@
       
         <li class="md-nav__item">
   <a href="#form-processors" class="md-nav__link">
-    Form Processors
+    <span class="md-ellipsis">
+      
+        Form Processors
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Processors">
@@ -1167,42 +1698,66 @@
         
           <li class="md-nav__item">
   <a href="#validate" class="md-nav__link">
-    validate
+    <span class="md-ellipsis">
+      
+        validate
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#post" class="md-nav__link">
-    post
+    <span class="md-ellipsis">
+      
+        post
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#get" class="md-nav__link">
-    get
+    <span class="md-ellipsis">
+      
+        get
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fastpost" class="md-nav__link">
-    fastpost
+    <span class="md-ellipsis">
+      
+        fastpost
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#redirect" class="md-nav__link">
-    redirect
+    <span class="md-ellipsis">
+      
+        redirect
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#submitted" class="md-nav__link">
-    submitted
+    <span class="md-ellipsis">
+      
+        submitted
+      
+    </span>
   </a>
   
 </li>
@@ -1214,7 +1769,11 @@
       
         <li class="md-nav__item">
   <a href="#form-tags" class="md-nav__link">
-    Form Tags
+    <span class="md-ellipsis">
+      
+        Form Tags
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Form Tags">
@@ -1222,21 +1781,33 @@
         
           <li class="md-nav__item">
   <a href="#open" class="md-nav__link">
-    open
+    <span class="md-ellipsis">
+      
+        open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#open_multipart" class="md-nav__link">
-    open_multipart
+    <span class="md-ellipsis">
+      
+        open_multipart
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#close" class="md-nav__link">
-    close
+    <span class="md-ellipsis">
+      
+        close
+      
+    </span>
   </a>
   
 </li>
@@ -1248,7 +1819,11 @@
       
         <li class="md-nav__item">
   <a href="#text-inputs" class="md-nav__link">
-    Text Inputs
+    <span class="md-ellipsis">
+      
+        Text Inputs
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Text Inputs">
@@ -1256,133 +1831,209 @@
         
           <li class="md-nav__item">
   <a href="#text" class="md-nav__link">
-    text
+    <span class="md-ellipsis">
+      
+        text
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#color" class="md-nav__link">
-    color
+    <span class="md-ellipsis">
+      
+        color
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#date" class="md-nav__link">
-    date
+    <span class="md-ellipsis">
+      
+        date
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#datetime" class="md-nav__link">
-    datetime
+    <span class="md-ellipsis">
+      
+        datetime
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#email" class="md-nav__link">
-    email
+    <span class="md-ellipsis">
+      
+        email
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error" class="md-nav__link">
-    error
+    <span class="md-ellipsis">
+      
+        error
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#hidden" class="md-nav__link">
-    hidden
+    <span class="md-ellipsis">
+      
+        hidden
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#honeypot" class="md-nav__link">
-    honeypot
+    <span class="md-ellipsis">
+      
+        honeypot
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#month" class="md-nav__link">
-    month
+    <span class="md-ellipsis">
+      
+        month
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#number" class="md-nav__link">
-    number
+    <span class="md-ellipsis">
+      
+        number
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#password" class="md-nav__link">
-    password
+    <span class="md-ellipsis">
+      
+        password
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#range" class="md-nav__link">
-    range
+    <span class="md-ellipsis">
+      
+        range
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#search" class="md-nav__link">
-    search
+    <span class="md-ellipsis">
+      
+        search
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#tel" class="md-nav__link">
-    tel
+    <span class="md-ellipsis">
+      
+        tel
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#textarea" class="md-nav__link">
-    textarea
+    <span class="md-ellipsis">
+      
+        textarea
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#time" class="md-nav__link">
-    time
+    <span class="md-ellipsis">
+      
+        time
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#url" class="md-nav__link">
-    url
+    <span class="md-ellipsis">
+      
+        url
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#value" class="md-nav__link">
-    value
+    <span class="md-ellipsis">
+      
+        value
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#week" class="md-nav__link">
-    week
+    <span class="md-ellipsis">
+      
+        week
+      
+    </span>
   </a>
   
 </li>
@@ -1394,7 +2045,11 @@
       
         <li class="md-nav__item">
   <a href="#checkboxes-radios" class="md-nav__link">
-    Checkboxes &amp; Radios
+    <span class="md-ellipsis">
+      
+        Checkboxes &amp; Radios
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Checkboxes &amp; Radios">
@@ -1402,28 +2057,44 @@
         
           <li class="md-nav__item">
   <a href="#checkbox" class="md-nav__link">
-    checkbox
+    <span class="md-ellipsis">
+      
+        checkbox
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#checkbox_inline" class="md-nav__link">
-    checkbox_inline
+    <span class="md-ellipsis">
+      
+        checkbox_inline
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#radio" class="md-nav__link">
-    radio
+    <span class="md-ellipsis">
+      
+        radio
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#radio_inline" class="md-nav__link">
-    radio_inline
+    <span class="md-ellipsis">
+      
+        radio_inline
+      
+    </span>
   </a>
   
 </li>
@@ -1435,7 +2106,11 @@
       
         <li class="md-nav__item">
   <a href="#select-menus" class="md-nav__link">
-    Select Menus
+    <span class="md-ellipsis">
+      
+        Select Menus
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Select Menus">
@@ -1443,28 +2118,44 @@
         
           <li class="md-nav__item">
   <a href="#select" class="md-nav__link">
-    select
+    <span class="md-ellipsis">
+      
+        select
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#select_multiple" class="md-nav__link">
-    select_multiple
+    <span class="md-ellipsis">
+      
+        select_multiple
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dropdown" class="md-nav__link">
-    dropdown
+    <span class="md-ellipsis">
+      
+        dropdown
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dropdown_multiple" class="md-nav__link">
-    dropdown_multiple
+    <span class="md-ellipsis">
+      
+        dropdown_multiple
+      
+    </span>
   </a>
   
 </li>
@@ -1476,7 +2167,11 @@
       
         <li class="md-nav__item">
   <a href="#file-uploads" class="md-nav__link">
-    File Uploads
+    <span class="md-ellipsis">
+      
+        File Uploads
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="File Uploads">
@@ -1484,28 +2179,44 @@
         
           <li class="md-nav__item">
   <a href="#file" class="md-nav__link">
-    file
+    <span class="md-ellipsis">
+      
+        file
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file_multiple" class="md-nav__link">
-    file_multiple
+    <span class="md-ellipsis">
+      
+        file_multiple
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#upload" class="md-nav__link">
-    upload
+    <span class="md-ellipsis">
+      
+        upload
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#upload_multiple" class="md-nav__link">
-    upload_multiple
+    <span class="md-ellipsis">
+      
+        upload_multiple
+      
+    </span>
   </a>
   
 </li>
@@ -1517,7 +2228,11 @@
       
         <li class="md-nav__item">
   <a href="#buttons" class="md-nav__link">
-    Buttons
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Buttons">
@@ -1525,28 +2240,44 @@
         
           <li class="md-nav__item">
   <a href="#button" class="md-nav__link">
-    button
+    <span class="md-ellipsis">
+      
+        button
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#input_submit" class="md-nav__link">
-    input_submit
+    <span class="md-ellipsis">
+      
+        input_submit
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#submit_button" class="md-nav__link">
-    submit_button
+    <span class="md-ellipsis">
+      
+        submit_button
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reset_button" class="md-nav__link">
-    reset_button
+    <span class="md-ellipsis">
+      
+        reset_button
+      
+    </span>
   </a>
   
 </li>
@@ -1558,7 +2289,11 @@
       
         <li class="md-nav__item">
   <a href="#messaging" class="md-nav__link">
-    Messaging
+    <span class="md-ellipsis">
+      
+        Messaging
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Messaging">
@@ -1566,35 +2301,55 @@
         
           <li class="md-nav__item">
   <a href="#messages" class="md-nav__link">
-    messages
+    <span class="md-ellipsis">
+      
+        messages
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error_message" class="md-nav__link">
-    error_message
+    <span class="md-ellipsis">
+      
+        error_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#info_message" class="md-nav__link">
-    info_message
+    <span class="md-ellipsis">
+      
+        info_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#success_message" class="md-nav__link">
-    success_message
+    <span class="md-ellipsis">
+      
+        success_message
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#warning_message" class="md-nav__link">
-    warning_message
+    <span class="md-ellipsis">
+      
+        warning_message
+      
+    </span>
   </a>
   
 </li>
@@ -1606,7 +2361,11 @@
       
         <li class="md-nav__item">
   <a href="#error-handling" class="md-nav__link">
-    Error Handling
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Error Handling">
@@ -1614,35 +2373,55 @@
         
           <li class="md-nav__item">
   <a href="#errors" class="md-nav__link">
-    errors
+    <span class="md-ellipsis">
+      
+        errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#add_to_errors" class="md-nav__link">
-    add_to_errors
+    <span class="md-ellipsis">
+      
+        add_to_errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors" class="md-nav__link">
-    in_errors
+    <span class="md-ellipsis">
+      
+        in_errors
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors_if" class="md-nav__link">
-    in_errors_if
+    <span class="md-ellipsis">
+      
+        in_errors_if
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#in_errors_else" class="md-nav__link">
-    in_errors_else
+    <span class="md-ellipsis">
+      
+        in_errors_else
+      
+    </span>
   </a>
   
 </li>
@@ -1654,7 +2433,11 @@
       
         <li class="md-nav__item">
   <a href="#labels" class="md-nav__link">
-    Labels
+    <span class="md-ellipsis">
+      
+        Labels
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Labels">
@@ -1662,21 +2445,33 @@
         
           <li class="md-nav__item">
   <a href="#label" class="md-nav__link">
-    label
+    <span class="md-ellipsis">
+      
+        label
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#label_open" class="md-nav__link">
-    label_open
+    <span class="md-ellipsis">
+      
+        label_open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#label_close" class="md-nav__link">
-    label_close
+    <span class="md-ellipsis">
+      
+        label_close
+      
+    </span>
   </a>
   
 </li>
@@ -1688,7 +2483,11 @@
       
         <li class="md-nav__item">
   <a href="#fieldsets" class="md-nav__link">
-    Fieldsets
+    <span class="md-ellipsis">
+      
+        Fieldsets
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Fieldsets">
@@ -1696,14 +2495,22 @@
         
           <li class="md-nav__item">
   <a href="#fieldset_open" class="md-nav__link">
-    fieldset_open
+    <span class="md-ellipsis">
+      
+        fieldset_open
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#fieldset_close" class="md-nav__link">
-    fieldset_close
+    <span class="md-ellipsis">
+      
+        fieldset_close
+      
+    </span>
   </a>
   
 </li>
@@ -1715,7 +2522,11 @@
       
         <li class="md-nav__item">
   <a href="#email_1" class="md-nav__link">
-    Email
+    <span class="md-ellipsis">
+      
+        Email
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Email">
@@ -1723,7 +2534,11 @@
         
           <li class="md-nav__item">
   <a href="#send_email" class="md-nav__link">
-    send_email
+    <span class="md-ellipsis">
+      
+        send_email
+      
+    </span>
   </a>
   
 </li>
@@ -1735,7 +2550,11 @@
       
         <li class="md-nav__item">
   <a href="#debugging" class="md-nav__link">
-    Debugging
+    <span class="md-ellipsis">
+      
+        Debugging
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Debugging">
@@ -1743,28 +2562,44 @@
         
           <li class="md-nav__item">
   <a href="#printr" class="md-nav__link">
-    printr
+    <span class="md-ellipsis">
+      
+        printr
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dump" class="md-nav__link">
-    dump
+    <span class="md-ellipsis">
+      
+        dump
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#dd" class="md-nav__link">
-    dd
+    <span class="md-ellipsis">
+      
+        dd
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#info" class="md-nav__link">
-    info
+    <span class="md-ellipsis">
+      
+        info
+      
+    </span>
   </a>
   
 </li>
@@ -1776,7 +2611,11 @@
       
         <li class="md-nav__item">
   <a href="#recaptcha-v3" class="md-nav__link">
-    reCAPTCHA v3
+    <span class="md-ellipsis">
+      
+        reCAPTCHA v3
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="reCAPTCHA v3">
@@ -1784,21 +2623,33 @@
         
           <li class="md-nav__item">
   <a href="#recaptcha_body" class="md-nav__link">
-    recaptcha_body
+    <span class="md-ellipsis">
+      
+        recaptcha_body
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#recaptcha_head" class="md-nav__link">
-    recaptcha_head
+    <span class="md-ellipsis">
+      
+        recaptcha_head
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#recaptcha_passed" class="md-nav__link">
-    recaptcha_passed
+    <span class="md-ellipsis">
+      
+        recaptcha_passed
+      
+    </span>
   </a>
   
 </li>
@@ -1810,7 +2661,11 @@
       
         <li class="md-nav__item">
   <a href="#misc" class="md-nav__link">
-    Misc.
+    <span class="md-ellipsis">
+      
+        Misc.
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Misc.">
@@ -1818,42 +2673,66 @@
         
           <li class="md-nav__item">
   <a href="#clear" class="md-nav__link">
-    clear
+    <span class="md-ellipsis">
+      
+        clear
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#csrf" class="md-nav__link">
-    csrf
+    <span class="md-ellipsis">
+      
+        csrf
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#ok" class="md-nav__link">
-    ok
+    <span class="md-ellipsis">
+      
+        ok
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#slug" class="md-nav__link">
-    slug
+    <span class="md-ellipsis">
+      
+        slug
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#unset_session" class="md-nav__link">
-    unset_session
+    <span class="md-ellipsis">
+      
+        unset_session
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#heading" class="md-nav__link">
-    heading
+    <span class="md-ellipsis">
+      
+        heading
+      
+    </span>
   </a>
   
 </li>
@@ -1871,13 +2750,21 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
+          
+            <div class="md-content" data-md-component="content">
               
+              <article class="md-content__inner md-typeset">
                 
+                  
+
 
 
 <h1 id="methods">Methods</h1>
+<div class="admonition warning">
+<p class="admonition-title">Formr is Discontinued</p>
+<p>Formr is no longer maintained. Use <strong><a href="https://flickphp.com">Flick</a></strong> instead - the modern successor from the same developer.</p>
+<p>Migrate automatically: <code>composer require --dev flickphp/migrate</code></p>
+</div>
 <p>This document contains a list of Formr's public methods, grouped by functionality.</p>
 <h2 id="form-builders">Form Builders</h2>
 <h3 id="create_form">create_form</h3>
@@ -2030,12 +2917,12 @@
         <span class="nv">$username</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">];</span>
         <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">];</span>
     <span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+<span class="cp">?&gt;</span>
 <span class="x"> &lt;!DOCTYPE html&gt;</span>
 <span class="x"> &lt;html lang=&quot;en&quot;&gt;</span>
 <span class="x"> &lt;body&gt;</span>
 <span class="x">     &lt;div class=&quot;container&quot;&gt;</span>
-<span class="x">         </span><span class="cp">&lt;?php</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">         </span><span class="cp">&lt;?php</span> <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">fastform</span><span class="p">(</span><span class="s1">&#39;login&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span>
 <span class="x">     &lt;/div&gt;</span>
 <span class="x"> &lt;/body&gt;</span>
 <span class="x"> &lt;/html&gt;</span>
@@ -2304,7 +3191,7 @@ Produces the following HTML
 <li>The optional third parameter contains a default value.</li>
 <li>The optional fourth parameter contains the field's ID.</li>
 <li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
-<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span><span class="w"></span></code> block-level text.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
 <li>The optional seventh parameter tells Formr if the checkbox should be ticked.</li>
 </ol>
 <div class="admonition example">
@@ -2357,7 +3244,7 @@ Produces the following HTML
 <li>The optional third parameter contains a default value.</li>
 <li>The optional fourth parameter contains the field's ID.</li>
 <li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
-<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span><span class="w"></span></code> block-level text.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
 <li>The optional seventh parameter contains a default value.</li>
 <li>The required eighth parameter contains an array of options to populate the menu.</li>
 </ol>
@@ -2562,7 +3449,7 @@ Produces the following HTML
 <li>The optional third parameter contains a default value.</li>
 <li>The optional fourth parameter contains the field's ID.</li>
 <li>The optional fifth parameter contains a string, which lets you add CSS, JavaScript, etc.</li>
-<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span><span class="w"></span></code> block-level text.</li>
+<li>The optional sixth parameter utilizes Bootstrap's <code class="highlight"><span class="p">.</span><span class="nc">form-text</span></code> block-level text.</li>
 </ol>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -3024,51 +3911,31 @@ Produces the following slugged text
 </code></pre></div>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Home
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../properties/" class="md-footer__link md-footer__link--next" aria-label="Next: Properties" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Properties
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3090,10 +3957,15 @@ Produces the following slugged text
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

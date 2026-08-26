@@ -10,8 +10,18 @@
       
         <link rel="canonical" href="https://formr.github.io/properties/">
       
+      
+        <link rel="prev" href="../methods/">
+      
+      
+        <link rel="next" href="../validation/">
+      
+      
+        
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -19,14 +29,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -40,7 +50,7 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -49,14 +59,8 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,16 +80,19 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Formr" class="md-header__button md-logo" aria-label="Formr" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -105,39 +112,49 @@
     </div>
     
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -162,12 +179,13 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Formr" class="md-nav__button md-logo" aria-label="Formr" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Formr
@@ -177,14 +195,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -192,14 +222,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../methods/" class="md-nav__link">
-        Methods
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -207,28 +249,53 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Properties
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Properties
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
       </a>
       
         
@@ -248,266 +315,418 @@
       
         <li class="md-nav__item">
   <a href="#action" class="md-nav__link">
-    action
+    <span class="md-ellipsis">
+      
+        action
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#charset" class="md-nav__link">
-    charset
+    <span class="md-ellipsis">
+      
+        charset
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#controls" class="md-nav__link">
-    controls
+    <span class="md-ellipsis">
+      
+        controls
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#custom_validation_messages" class="md-nav__link">
-    custom_validation_messages
+    <span class="md-ellipsis">
+      
+        custom_validation_messages
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#error_heading_plural" class="md-nav__link">
-    error_heading_plural
+    <span class="md-ellipsis">
+      
+        error_heading_plural
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#error_heading_singular" class="md-nav__link">
-    error_heading_singular
+    <span class="md-ellipsis">
+      
+        error_heading_singular
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#format_rule_dates" class="md-nav__link">
-    format_rule_dates
+    <span class="md-ellipsis">
+      
+        format_rule_dates
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#html_purifier" class="md-nav__link">
-    html_purifier
+    <span class="md-ellipsis">
+      
+        html_purifier
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
-    id
+    <span class="md-ellipsis">
+      
+        id
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#info_message" class="md-nav__link">
-    info_message
+    <span class="md-ellipsis">
+      
+        info_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#inline_errors" class="md-nav__link">
-    inline_errors
+    <span class="md-ellipsis">
+      
+        inline_errors
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#inline_errors_class" class="md-nav__link">
-    inline_errors_class
+    <span class="md-ellipsis">
+      
+        inline_errors_class
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#link_errors" class="md-nav__link">
-    link_errors
+    <span class="md-ellipsis">
+      
+        link_errors
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#method" class="md-nav__link">
-    method
+    <span class="md-ellipsis">
+      
+        method
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#minify" class="md-nav__link">
-    minify
+    <span class="md-ellipsis">
+      
+        minify
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#name" class="md-nav__link">
-    name
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_action_name" class="md-nav__link">
-    recaptcha_action_name
+    <span class="md-ellipsis">
+      
+        recaptcha_action_name
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_score" class="md-nav__link">
-    recaptcha_score
+    <span class="md-ellipsis">
+      
+        recaptcha_score
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_secret_key" class="md-nav__link">
-    recaptcha_secret_key
+    <span class="md-ellipsis">
+      
+        recaptcha_secret_key
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_site_key" class="md-nav__link">
-    recaptcha_site_key
+    <span class="md-ellipsis">
+      
+        recaptcha_site_key
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_use_curl" class="md-nav__link">
-    recaptcha_use_curl
+    <span class="md-ellipsis">
+      
+        recaptcha_use_curl
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
-    required
+    <span class="md-ellipsis">
+      
+        required
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#required_indicator" class="md-nav__link">
-    required_indicator
+    <span class="md-ellipsis">
+      
+        required_indicator
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#sanitize_html" class="md-nav__link">
-    sanitize_html
+    <span class="md-ellipsis">
+      
+        sanitize_html
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#salt" class="md-nav__link">
-    salt
+    <span class="md-ellipsis">
+      
+        salt
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#session" class="md-nav__link">
-    session
+    <span class="md-ellipsis">
+      
+        session
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#session_values" class="md-nav__link">
-    session_values
+    <span class="md-ellipsis">
+      
+        session_values
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#show_valid" class="md-nav__link">
-    show_valid
+    <span class="md-ellipsis">
+      
+        show_valid
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#submit" class="md-nav__link">
-    submit
+    <span class="md-ellipsis">
+      
+        submit
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#success_message" class="md-nav__link">
-    success_message
+    <span class="md-ellipsis">
+      
+        success_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#warning_message" class="md-nav__link">
-    warning_message
+    <span class="md-ellipsis">
+      
+        warning_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_dir" class="md-nav__link">
-    upload_dir
+    <span class="md-ellipsis">
+      
+        upload_dir
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_accepted_types" class="md-nav__link">
-    upload_accepted_types
+    <span class="md-ellipsis">
+      
+        upload_accepted_types
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_accepted_mimes" class="md-nav__link">
-    upload_accepted_mimes
+    <span class="md-ellipsis">
+      
+        upload_accepted_mimes
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_max_filesize" class="md-nav__link">
-    upload_max_filesize
+    <span class="md-ellipsis">
+      
+        upload_max_filesize
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_rename" class="md-nav__link">
-    upload_rename
+    <span class="md-ellipsis">
+      
+        upload_rename
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_resize" class="md-nav__link">
-    upload_resize
+    <span class="md-ellipsis">
+      
+        upload_resize
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#uploads" class="md-nav__link">
-    uploads
+    <span class="md-ellipsis">
+      
+        uploads
+      
+    </span>
   </a>
   
 </li>
@@ -522,14 +741,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../validation/" class="md-nav__link">
-        Validation
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -537,14 +768,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../upload-files/" class="md-nav__link">
-        Upload Files
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upload Files
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -552,14 +795,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../fastform/" class="md-nav__link">
-        FastForm
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FastForm
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -567,14 +822,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="https://github.com/formr/extend" class="md-nav__link">
-        Extend
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extend
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -582,14 +849,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../blog/" class="md-nav__link">
-        Blog
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -623,266 +902,418 @@
       
         <li class="md-nav__item">
   <a href="#action" class="md-nav__link">
-    action
+    <span class="md-ellipsis">
+      
+        action
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#charset" class="md-nav__link">
-    charset
+    <span class="md-ellipsis">
+      
+        charset
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#controls" class="md-nav__link">
-    controls
+    <span class="md-ellipsis">
+      
+        controls
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#custom_validation_messages" class="md-nav__link">
-    custom_validation_messages
+    <span class="md-ellipsis">
+      
+        custom_validation_messages
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#error_heading_plural" class="md-nav__link">
-    error_heading_plural
+    <span class="md-ellipsis">
+      
+        error_heading_plural
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#error_heading_singular" class="md-nav__link">
-    error_heading_singular
+    <span class="md-ellipsis">
+      
+        error_heading_singular
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#format_rule_dates" class="md-nav__link">
-    format_rule_dates
+    <span class="md-ellipsis">
+      
+        format_rule_dates
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#html_purifier" class="md-nav__link">
-    html_purifier
+    <span class="md-ellipsis">
+      
+        html_purifier
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
-    id
+    <span class="md-ellipsis">
+      
+        id
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#info_message" class="md-nav__link">
-    info_message
+    <span class="md-ellipsis">
+      
+        info_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#inline_errors" class="md-nav__link">
-    inline_errors
+    <span class="md-ellipsis">
+      
+        inline_errors
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#inline_errors_class" class="md-nav__link">
-    inline_errors_class
+    <span class="md-ellipsis">
+      
+        inline_errors_class
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#link_errors" class="md-nav__link">
-    link_errors
+    <span class="md-ellipsis">
+      
+        link_errors
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#method" class="md-nav__link">
-    method
+    <span class="md-ellipsis">
+      
+        method
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#minify" class="md-nav__link">
-    minify
+    <span class="md-ellipsis">
+      
+        minify
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#name" class="md-nav__link">
-    name
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_action_name" class="md-nav__link">
-    recaptcha_action_name
+    <span class="md-ellipsis">
+      
+        recaptcha_action_name
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_score" class="md-nav__link">
-    recaptcha_score
+    <span class="md-ellipsis">
+      
+        recaptcha_score
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_secret_key" class="md-nav__link">
-    recaptcha_secret_key
+    <span class="md-ellipsis">
+      
+        recaptcha_secret_key
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_site_key" class="md-nav__link">
-    recaptcha_site_key
+    <span class="md-ellipsis">
+      
+        recaptcha_site_key
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#recaptcha_use_curl" class="md-nav__link">
-    recaptcha_use_curl
+    <span class="md-ellipsis">
+      
+        recaptcha_use_curl
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#required" class="md-nav__link">
-    required
+    <span class="md-ellipsis">
+      
+        required
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#required_indicator" class="md-nav__link">
-    required_indicator
+    <span class="md-ellipsis">
+      
+        required_indicator
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#sanitize_html" class="md-nav__link">
-    sanitize_html
+    <span class="md-ellipsis">
+      
+        sanitize_html
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#salt" class="md-nav__link">
-    salt
+    <span class="md-ellipsis">
+      
+        salt
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#session" class="md-nav__link">
-    session
+    <span class="md-ellipsis">
+      
+        session
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#session_values" class="md-nav__link">
-    session_values
+    <span class="md-ellipsis">
+      
+        session_values
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#show_valid" class="md-nav__link">
-    show_valid
+    <span class="md-ellipsis">
+      
+        show_valid
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#submit" class="md-nav__link">
-    submit
+    <span class="md-ellipsis">
+      
+        submit
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#success_message" class="md-nav__link">
-    success_message
+    <span class="md-ellipsis">
+      
+        success_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#warning_message" class="md-nav__link">
-    warning_message
+    <span class="md-ellipsis">
+      
+        warning_message
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_dir" class="md-nav__link">
-    upload_dir
+    <span class="md-ellipsis">
+      
+        upload_dir
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_accepted_types" class="md-nav__link">
-    upload_accepted_types
+    <span class="md-ellipsis">
+      
+        upload_accepted_types
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_accepted_mimes" class="md-nav__link">
-    upload_accepted_mimes
+    <span class="md-ellipsis">
+      
+        upload_accepted_mimes
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_max_filesize" class="md-nav__link">
-    upload_max_filesize
+    <span class="md-ellipsis">
+      
+        upload_max_filesize
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_rename" class="md-nav__link">
-    upload_rename
+    <span class="md-ellipsis">
+      
+        upload_rename
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#upload_resize" class="md-nav__link">
-    upload_resize
+    <span class="md-ellipsis">
+      
+        upload_resize
+      
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#uploads" class="md-nav__link">
-    uploads
+    <span class="md-ellipsis">
+      
+        uploads
+      
+    </span>
   </a>
   
 </li>
@@ -895,13 +1326,21 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
+          
+            <div class="md-content" data-md-component="content">
               
+              <article class="md-content__inner md-typeset">
                 
+                  
+
 
 
 <h1 id="properties">Properties</h1>
+<div class="admonition warning">
+<p class="admonition-title">Formr is Discontinued</p>
+<p>Formr is no longer maintained. Use <strong><a href="https://flickphp.com">Flick</a></strong> instead - the modern successor from the same developer.</p>
+<p>Migrate automatically: <code>composer require --dev flickphp/migrate</code></p>
+</div>
 <p>This document contains a list of Formr's public properties.</p>
 <h3 id="action">action</h3>
 <p>The form's action. Formr will automatically insert the current script's filename into the <code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span></code> tag unless you set this property to something else. Typically used with <a href="../fastform/"><code class="highlight"><span class="nx">fastform</span><span class="p">()</span></code></a>.</p>
@@ -999,16 +1438,16 @@ Produces the following HTML
 <div class="admonition tip">
 <p class="admonition-title">Add an image to the right of the form field</p>
 <p>If you use the following CSS, Formr will insert a small PNG of your choice (not included) to the right of the form field.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">inline-error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">float</span><span class="p">:</span><span class="w"> </span><span class="kc">left</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s1">&#39;../img/invalid.png&#39;</span><span class="p">)</span><span class="w"> </span><span class="kc">no-repeat</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">inline-error</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">float</span><span class="p">:</span><span class="w"> </span><span class="kc">left</span><span class="p">;</span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s1">&#39;../img/invalid.png&#39;</span><span class="p">)</span><span class="w"> </span><span class="kc">no-repeat</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <h3 id="inline_errors_class">inline_errors_class</h3>
-<p>Sets the CSS class name if you're using inline error reporting. Default class is named <code class="highlight"><span class="nt">inline-error</span><span class="w"></span></code>.</p>
+<p>Sets the CSS class name if you're using inline error reporting. Default class is named <code class="highlight"><span class="nt">inline-error</span></code>.</p>
 <div class="admonition example">
 <p class="admonition-title">inline_errors_class example</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">inline_errors_class</span> <span class="o">=</span> <span class="s1">&#39;my-inline-error-class&#39;</span><span class="p">;</span>
@@ -1101,10 +1540,10 @@ Produces the following HTML
 </code></pre></div></p>
 </div>
 <h3 id="sanitize_html">sanitize_html</h3>
-<p>Will pass any <code class="highlight"><span class="nv">$_POST</span></code> values through PHP's <code class="highlight"><span class="nx">FILTER_SANITIZE_SPECIAL_CHARS</span></code> filter. Disabled by default.</p>
+<p>Will pass any <code class="highlight"><span class="nv">$_POST</span></code> values through PHP's <code class="highlight"><span class="nx">FILTER_SANITIZE_SPECIAL_CHARS</span></code> filter. Enabled by default.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">sanitize_html</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">sanitize_html</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <h3 id="salt">salt</h3>
@@ -1320,51 +1759,31 @@ You can also just enter the string images and Formr will automatically allow JPG
 </code></pre></div>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../methods/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Methods" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Methods
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../validation/" class="md-footer__link md-footer__link--next" aria-label="Next: Validation" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Validation
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1386,10 +1805,15 @@ You can also just enter the string images and Formr will automatically allow JPG
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
